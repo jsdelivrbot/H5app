@@ -1,0 +1,88 @@
+{
+  "error": {
+    "returnCode": 0,
+    "returnMessage": "Ok.",
+    "returnUserMessage": "Ok."
+  },
+  "data": {
+    "payInfo": {
+      "avatar": "http://jdbserver.b0.upaiyun.com/images/57861460037964511!fixed120",
+      "name": "陈冬",
+      "transactInfo": "该礼包你已经领取过了哦~"
+    },
+    "awardInfo": "已领取7/10",
+    "awardList": [
+      {
+        "avatar": "",
+        "name": "",
+        "ct": "2016-04-08 20:54:30",
+        "content": "300分钟",
+        "type": "3",
+        "isBest": 0,
+        "awardTime": "2016-04-08 20:54"
+      },
+      {
+        "avatar": "http://wx.qlogo.cn/mmopen/PdibpV1sFDHfr87x3Wd7nMia2HacOgVVqHaAcPm2ZWhicsm2GXSKwmDZPicBfDD0IxIHtcu0PGiaLqV7ZWZ3uk66OkA/0",
+        "name": "刘梅",
+        "ct": "2016-04-08 18:55:43",
+        "content": "6分钟",
+        "type": "3",
+        "isBest": 0,
+        "awardTime": "2016-04-08 18:55"
+      },
+      {
+        "avatar": "http://wx.qlogo.cn/mmopen/PdibpV1sFDHelWq7s8Bmvx0NbAbtCh9K7fPb1XHQQA5C0xCCmM7RoVleyaNzzFZ6RB1jzLA63MfoS8kWGm8TsULSh37K7jQHs/0",
+        "name": "小蕾",
+        "ct": "2016-04-07 11:29:14",
+        "content": "1元",
+        "type": "2",
+        "isBest": 0,
+        "awardTime": "2016-04-07 11:29"
+      },
+      {
+        "avatar": "http://wx.qlogo.cn/mmopen/9TyKkjz2DDibRrgHXP4cmmXGTfFEicT59MUjTXrKH2MCrs6Cj7pFsicmsUibvSecA82k8IALhFAW1Um8DqXBRGziaiaQ3haGa44Qs5/0",
+        "name": "忠文忠文忠文忠文忠文",
+        "ct": "2016-03-31 22:04:53",
+        "content": "300分钟",
+        "type": "3",
+        "isBest": 0,
+        "awardTime": "2016-03-31 22:04"
+      },
+      {
+        "avatar": "http://wx.qlogo.cn/mmopen/02cTZgW1yFQTOvSwImsSbA7Rxsa1F1tw5bguMpTKMmenVnZmK0boQDH5WGNTGw2lKKscO8bPYl6icKiaeBuXO5PylKeKH0kY0f/0",
+        "name": "唐冬",
+        "ct": "2016-03-31 21:50:15",
+        "content": "1.2元",
+        "type": "2",
+        "isBest": 1,
+        "awardTime": "2016-03-31 21:50"
+      },
+      {
+        "avatar": "http://wx.qlogo.cn/mmopen/PdibpV1sFDHelWq7s8Bmvx7K0OF9YKuZ6XtG22rmsKicTBCvkQog2t3gQ5n2bTdRMBINY6hLEBUnFWKQ0uu8mljo56JrF7zwjX/0",
+        "name": "notCk",
+        "ct": "2016-03-31 21:49:23",
+        "content": "1分钟",
+        "type": "3",
+        "isBest": 0,
+        "awardTime": "2016-03-31 21:49"
+      },
+      {
+        "avatar": "http://jdbserver.b0.upaiyun.com/images/57861460037964511!fixed120",
+        "name": "陈冬",
+        "ct": "2016-03-31 21:47:52",
+        "content": "1分钟",
+        "type": "3",
+        "isBest": 0,
+        "awardTime": "2016-03-31 21:47"
+      }
+    ],
+    "couponInfo": {
+      "name": "获得借贷宝交易红包",
+      "content": "100元",
+      "useRule": "在借贷宝成功完成一笔交易,可获得现金奖励",
+      "status": 1,
+      "type": 1,
+      "minTradeAmount": 10000
+    }
+  }
+}

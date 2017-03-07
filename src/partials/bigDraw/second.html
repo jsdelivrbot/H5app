@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>借贷宝大礼包</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="bower_components/magic-check/css/magic-check.css">
+    <link rel="stylesheet" href="/sass/common/toast.scss">
+    <link rel="stylesheet" href="/sass/common/loading.scss">
+    <link rel="stylesheet" href="/sass/bigDraw/index.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2405b35e6ac1ae53a3c40ddff29c3f78";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<div id="bigDraw">
+    <div class="bd_up" id="bd_banner">
+        <div class="bd_info">
+
+        </div>
+    </div>
+    <div class="bd_down">
+        <div class="bd_bind">
+
+            <div class="code_num"><input class="moblie" type="tel" placeholder="请输入您的手机号" maxlength="13"></div>
+
+            <div class="code_num">
+                <input  class="code_value" type="tel" placeholder="请输入验证码" maxlength="6"/>
+                <button class="getCode">获取验证码</button>
+            </div>
+            <button class="bd_btn">领取红包</button>
+            <div class="bd_check">
+                    <div class="magic_box">
+                        <img class="magic-img" src="../../img/bigDraw/checked.png" alt="checked">
+                    </div>
+
+                <p>我已阅读并同意借贷宝的<em class="bd_rule">[活动规则]</em></p>
+            </div>
+            <div style="height:70px;"></div>
+        </div>
+    </div>
+    <div class="mask">
+        <div class="mask_rule">
+            <div class="mr_title"><em class="item_ico"><img src="../../img/bigDraw/item_ico.png" alt=""/></em>活动规则</div>
+            <div class="mr_mid">
+                <ul>
+                    <li><em class="tipItem">1</em>活动奖品需在借贷宝v1.8及以上版本中使用。</li>
+                    <li><em class="tipItem">2</em>使用奖品的手机号需与领取时的手机号一致，领取后在有效期内可使用。</li>
+                    <li><em class="tipItem">3</em>借贷宝对本活动拥有最终解释权。</li>
+                    <li><em class="tipItem">4</em>活动中遇到任何问题可拨打客服电话：400-100-6699</li>
+                    <li id="apple_rule"><em class="tipItem">5</em>本活动与苹果公司无关</li>
+                </ul>
+            </div>
+            <div class="queR">确定</div>
+        </div>
+    </div>
+</div>
+<!-- build:js [jsBuildPath] -->
+<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+<script type="text/javascript" src="/zepto.js/src/touch.js"></script>
+<script type="text/javascript" src="/js-url/url.min.js"></script>
+<script type="text/javascript" src="/Zepto-Cookie/zepto.cookie.min.js"></script>
+<script type="text/javascript" src="/blueimp-md5/js/md5.min.js"></script>
+<script type="text/javascript" src="/js/common/loading.js"></script>
+<script type="text/javascript" src="/js/common/toast.js"></script>
+<script type="text/javascript" src="/js/common/auth.js"></script>
+<script type="text/javascript" src="/microtemplates/index.js"></script>
+<script type="text/javascript" src="/js/common/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="/js/bigDraw/index.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "R20001",
+    "returnUserMessage": "结果不存在"
+  },
+  "data": {
+    "isCapacity": "1",
+    "tolNum": "2",
+    "billList": [
+      {
+        "contractNo": "1114C0000046900000017306",
+        "customerName": "",
+        "balance": "0",
+        "payAmount": "1730",
+        "beginDate": "201412",
+        "endDate": "20991231",
+        "billDat": "201412",
+        "vueDue": ""
+      },
+      {
+        "contractNo": "11152000004690000001730/",
+        "customerName": "",
+        "balance": "0",
+        "payAmount": "1730",
+        "beginDate": "201502",
+        "endDate": "20991231",
+        "billDat": "201502",
+        "vueDue": ""
+      }
+    ],
+    "institutionName": "上海松江水",
+    "billKey": "00000469"
+  }
+}

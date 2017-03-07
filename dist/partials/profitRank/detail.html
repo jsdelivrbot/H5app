@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>&#x501F;&#x8D37;&#x5B9D;&#x767E;&#x8D5A;&#x699C;</title>
+    <meta name="description" content="&#x501F;&#x8D37;&#x5B9D;&#x767E;&#x8D5A;&#x699C;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="/h5app/css/profitRank/detail.min.css?_=20161107154511">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="member-info" id="memberInfo">
+        <div class="user-title">
+            <img class="avatar" :src="memberInfo.thumbnailUrl || &apos;../../img/common/avatar-default-50.png&apos;" alt="avatar"> {{ memberInfo.memberName }}
+        </div>
+        <a class="how-intro j-how-intro" href="#makeMoneyTips">
+            <img src="../../img/profitRank/questionMark.png" alt="?"> &#x5982;&#x4F55;&#x767D;&#x8D5A;&#x94B1;
+        </a>
+        <div class="canvas-wrap">
+            <canvas id="infoChart"></canvas>
+            <p>
+                <span>&#x767D;&#x8D5A;&#x5230;</span>
+                <br> &#xFFE5;{{ baizhuanInfo.total | formatMoney &apos;short&apos; 2 }}
+            </p>
+        </div>
+    </div>
+    <div class="detail-list" id="detailList">
+        <ul>
+            <li v-for="item in list">
+                <p class="user-title">
+                    <span>
+                        <img class="rankIcon" :src="&apos;../../img/profitRank/&apos; +  imageNameMap[item] + &apos;.png&apos;" alt="{{ item }}">
+                    </span> {{ nameMap[item] }}
+                </p>
+                <p class="money">
+                    &#xFFE5;{{ baizhuanInfo[item].num | formatMoney }}
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="makeMoneyTipsContainer clearfix make-money-tips-wrap">
+
+    </div>
+
+    <script src="/h5app/js/profitRank/detail.min.js?_=20161107154511"></script>
+</body>
+
+</html>

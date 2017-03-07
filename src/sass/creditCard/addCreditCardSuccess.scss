@@ -1,0 +1,86 @@
+#addCreditCardSuccess {
+	display:block;
+	.topDiv{
+	    padding-left: 33px;
+	    padding-top: 33px;
+	    background-color: white;
+	    padding-bottom: 31px;
+	    h3 {
+		    font-size: 25px;
+		    .flagImg {
+
+		    	img {
+					width: 20px;
+					margin-left: 5px;
+					/* margin-top: 3px; */
+		    	}
+		    }
+	    }
+	    .cardNo {
+			margin-top: 24px;
+	    	line-height: 20px;
+	    }
+	    .bankName_p {
+		    margin-top: 11px;
+		    position: relative;
+		    .logoContainer {
+				min-width: 26px;
+				position: absolute;
+				top: 11px;
+				width: 7%;
+				left: 53px;
+				top: -2px;
+				left: 39px;
+				height: 25px;
+				overflow: hidden;
+				background-image: url(../../img/creditCard/bank-icons.png);
+				background-repeat: no-repeat;
+				background-size: 26px;
+				background-position: 0px 0px;
+				.bankLogo{
+					width: 25px;
+					//position: absolute;
+					/* top: 11px; */
+					width: 100%;
+					/* left: 53px; */
+					//top: -50px;
+					/* left: 16%; */
+					//left: 0px;
+
+				}
+
+			}
+	    	img{
+				width: 23px;
+				position: absolute;
+				top: -5px;
+				z-index: 1;
+				left: 45px;
+			}
+			.bankName{
+			    margin-left: 27px;
+		    	font-size: 14px;
+
+			}
+	    }
+	    .remind_p {
+		    margin-top: 22px;
+			font-size: 12px;
+			line-height: 15px;
+			width: 76%;
+		}
+	}
+	.bigButton {
+	   	margin-top: 22px;
+	}
+	#backList{
+		margin-top: 11px;
+		background-color: white;
+		color:#2a8bf8;
+		
+		&:active {
+				background-color: #f0f2f5;
+		}
+	}
+
+} 

@@ -1,0 +1,33 @@
+	<div class="idx-content">
+		<div class="idx-head">
+			<p class="top-title"><i></i>昨日收益(元)<a class="setting-btn" href="./setting.html?token=<%=token%>"></a></p>
+			<div class="income">
+				<%=revAmt%>
+			</div>
+			<p class="sum-money">
+				<a href="./history.html?token=<%=token%>" class="history-icon"></a>
+				<span class="sum-title">总金额(元)</span>
+				<%=totAmt%>
+			</p>
+		</div>
+		<div class="idx-view">
+			<div class="middle-bar clearfix">
+				<div>
+					<p>万份收益</p>
+					<span><%=cnPrdIn%></span>
+				</div>
+				<div class="elsediv">
+					<p>累计收益</p>
+					<span><%=totRevAmt%></span>
+				</div>
+			</div>
+			<div class="chart-view">
+				<p>七日年化收益率(％)</p>
+				<canvas></canvas>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-bar clearfix">
+		<a href="./turnIn.html?token=<%=token%>"><span>转入</span></a>
+		<a class="btn-turnout" href="./turnOut.html?token=<%=token%>"><span>转出</span></a>
+	</div>

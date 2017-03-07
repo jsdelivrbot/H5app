@@ -1,0 +1,154 @@
+            <% if( error.returnCode != "0" ) { %>
+                <div id="error" class="error">
+                    <img src="../../img/payment/icon_error.png" alt="">
+                    <p><%=error.returnUserMessage%></p>
+                </div>
+            <% }else{ %>
+                <header> 
+
+                    <div class="top"><%=data.base.tradingStatus%></div>
+                    <div class="middle"><h2><%=data.base.money%></h2><span>元</span></div>
+                    <div class="bottom">
+                    <% if(data.base.tradingObject.icon){ %>
+                        <img class="title" src="<%=data.base.tradingObject.icon%>" alt=""/>
+                    <% }else{ %>
+                        <img class="title" src="../../img/payment/icon/icon_jdb.png" alt=""/>
+                        <% } %>
+                        <span><%=data.base.tradingObject.name%></span>
+                    </div>
+                </header>
+       
+                        <section id="start" class="start">
+                <% if (data.orderStatus.isshow == "0") { %>
+                            <div class="all">
+                            <% if(data.orderStatus.list.length == 4) {%>
+                                <% for (var i=0;i<data.orderStatus.list.length;i++){%>
+                                    <div class="step">
+                                    <%if(data.orderStatus.list[i].current == "0"){%>
+                                        <%if(i == 0){%>
+                                            <div class="leader step">
+                                                <span class="circle current"></span>
+                                                <h3 class="current"><%=data.orderStatus.list[i].statusName%></h3>
+                                                <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                    <p></p>
+                                                <% }else{ %>
+                                                    <p><%=data.orderStatus.list[i].operationTime%></p>
+                                                <% } %>
+                                            </div>
+
+                                        <%}else{%>
+                                            <hr class="current"/>
+                                            <span class="circle current"></span>
+                                            <h3 class="current"><%=data.orderStatus.list[i].statusName%></h3>
+                                            <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                <p></p>
+                                            <% }else{ %>
+                                                <p><%=data.orderStatus.list[i].operationTime%></p>
+                                            <% } %>
+                                        <% } %>
+                                    <%}else{%>
+                                        <hr/>
+                                        <span class="circle"></span>
+                                        <h3 id="submit"><%=data.orderStatus.list[i].statusName%></h3>
+                                        <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                            <p></p>
+                                        <% }else{ %>
+                                            <p><%=data.orderStatus.list[i].operationTime%></p>
+                                        <% } %>
+                                    <%}%>
+                                 </div>
+                                <% } %>
+                            <% }else{ %>
+                                <% for (var i=0;i<data.orderStatus.list.length;i++){%>
+                                    <%if(data.orderStatus.list[i].current == "0"){%>
+                                        <%if(i == 0){%>
+                                            <div class="step">
+                                                <span class="circle current"></span>
+                                                <h3 class="current"><%=data.orderStatus.list[i].statusName%></h3>
+                                                <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                    <p></p>
+                                                <% }else{ %>
+                                                    <p><%=data.orderStatus.list[i].operationTime%></p>
+                                                <% } %>
+                                            </div>
+
+                                        <%}else if(i == (data.orderStatus.list.length-1)){%>
+                                            <div class="step">
+                                            <hr class="current third_current"/>
+                                            <span class="circle current"></span>
+                                            <h3 class="current"><%=data.orderStatus.list[i].statusName%></h3>
+                                            <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                <p></p>
+                                            <% }else{ %>
+                                                <p><%=data.orderStatus.list[i].operationTime%></p>
+                                            <% } %>
+                                            </div>
+                                        <% }else{ %>
+                                            <div class="step current_step">
+                                            <hr class="current third_current"/>
+                                            <span class="circle current"></span>
+                                            <h3 class="current"><%=data.orderStatus.list[i].statusName%></h3>
+                                            <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                <p></p>
+                                            <% }else{ %>
+                                                <p><%=data.orderStatus.list[i].operationTime%></p>
+                                    
+                                            <% } %>
+                                            </div>
+                                        <% } %>
+                                    <%}else{%>
+                                        <%if(i == 0){%>
+                                            <div class="step">
+                                                <span class="circle"></span>
+                                                <h3><%=data.orderStatus.list[i].statusName%></h3>
+                                                <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                    <p></p>
+                                                <% }else{ %>
+                                                    <p><%=data.orderStatus.list[i].operationTime%></p>
+                                                <% } %>
+                                            </div>
+
+                                        <%}else if(i == (data.orderStatus.list.length-1)){%>
+                                            <div class="step">
+                                            <hr class="third_current"/>
+                                            <span class="circle"></span>
+                                            <h3><%=data.orderStatus.list[i].statusName%></h3>
+                                            <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                <p></p>
+                                            <% }else{ %>
+                                                <p><%=data.orderStatus.list[i].operationTime%></p>
+                                    
+                                            <% } %>
+                                            </div>
+                                        <% }else{ %>
+                                            <div class="step current_step">
+                                            <hr class="third_current"/>
+                                            <span class="circle"></span>
+                                            <h3><%=data.orderStatus.list[i].statusName%></h3>
+                                            <% if(data.orderStatus.list[i].operationTime == "null"){ %>
+                                                <p></p>
+                                            <% }else{ %>
+                                                <p><%=data.orderStatus.list[i].operationTime%></p>
+                                    
+                                            <% } %>
+                                            </div>
+                                        <% } %>
+                                    <%}%>
+                                <% } %>
+                            <% } %>
+                            </div>
+                <% } %>
+                            <ul>
+                                <% for (var i = 0;i<data.orderDetail.length;i++){%>
+                                    
+                                        <% if(data.orderDetail[i].key == "退款信息"){ %>
+                                            <li class="linkIcon"><span class="item"><%=data.orderDetail[i].key%></span><span class="last-item"><%=data.orderDetail[i].val%></span></li>
+                                        <% }else{ %>
+                                            <li><span class="item"><%=data.orderDetail[i].key%></span><span class="last-item"><%=data.orderDetail[i].val%></span></li>
+                                        <% } %>
+                                   
+                                <% } %>
+                            </ul>
+                        </section>
+        <% } %>
+            

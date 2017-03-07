@@ -1,0 +1,134 @@
+.container {
+	background-color: #f5f7fa;
+	height: 100%;
+	padding-top: 15px;
+	.all_list {
+		background-color: #fff;
+		
+		>p.title {
+			font-size: 14px;
+			color: #979899;
+			
+			padding: 3% 4%;
+		}
+		.icon {
+			display: inline-block;
+			width: 15px;
+			height: 12px;
+			background: url('../../img/creditCard/get_card_icon.png') no-repeat center center;
+			background-size: cover;
+			margin-right: 8px;
+			vertical-align: middle;
+		}
+		a {
+			text-decoration: none;
+		}
+		ul {
+			border-bottom: 1px solid #e1e3e5;
+			border-top: 1px solid #e1e3e5;
+			padding: 0 0 0 4%;
+			li {
+				padding: 4% 0;
+				border-bottom: 1px solid #e1e3e5;
+				&:last-child {
+					border-bottom: none;
+				}
+				img {
+					width: 30px;
+					height: 30px;
+					display: inline-block;
+					vertical-align: 10%;
+					margin-right: 15px;
+				}
+				div {
+					display: inline-block;
+					line-height: 20px;
+					h3 {
+						font-size: 16px;
+						color: #000;
+					}
+					p {
+						font-size: 12px;
+						color: #afb0b2;
+					}
+				}
+				
+			}
+		}
+
+	}
+	.get_card_list {
+		ul {
+			li {
+				position: relative;
+				a {
+					width: 63px;
+					height: 30px;
+					float: right;
+					line-height: 30px;
+					font-size: 12px;
+					text-align: center;
+					color: #3479df;
+					border: 1px solid #3479df;
+					background-color: #fff;
+					border-radius: 2px;
+					margin-right: 4%;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -15px;
+				}
+			}
+		}
+	}
+	.query_list {
+		margin-top: 15px;
+		ul {
+			li {
+				position: relative;
+				img {
+					vertical-align: middle;
+				}
+				a {
+					width: 63px;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					margin-right: 6%;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -15px;
+					font-size: 14px;
+					color: #d8d8d9;
+				}
+			}
+		}
+		.icon {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background: url('../../img/creditCard/query_list.png') no-repeat center center;
+			background-size: cover;
+			margin-right: 8px;
+			vertical-align: middle;
+		}
+	}
+	.linkIcon:after {
+            content: "";
+            border-right: 1px solid #d8d8d9;
+            border-bottom: 1px solid #d8d8d9;
+            min-height: 9px;
+            min-width: 9px;
+            position: absolute;
+            overflow: hidden;
+            /* background: black; */
+            transform: rotate(-45deg);
+            -ms-transform:rotate(-45deg);   /* IE 9 */
+            -moz-transform:rotate(-45deg);  /* Firefox */
+            -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+            -o-transform:rotate(-45deg);
+            top: 50%;
+            margin-top: -5px;
+    }
+}

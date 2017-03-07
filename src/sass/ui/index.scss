@@ -1,0 +1,44 @@
+html { 
+	overflow: auto;
+
+	.top-desc {
+		line-height: 26px;
+		padding: 10px;
+		font-size: 16px;
+		color: #eee;
+		background: #387ef5;
+	}
+
+	.comp-block {
+
+		margin: 30px 0;
+		padding: 30px 0;
+		border-bottom: 3px solid #B6D1FF;
+
+		h1 {
+			margin: 0 0 40px 0;
+			font-size: 24px;
+			color: #387ef5;
+			padding-left: 10px;
+		}
+	}
+
+	.form-block {
+		padding: 10px 5px;
+		margin-bottom: 10px;
+		background: #DDEDF9;
+  		border: 1px solid #C9DEF9;
+	}
+
+	.ionicons-demo {
+		font-size: 40px;
+		padding: 0 20px;
+
+		li {
+			float: left;
+			width: 20%;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	}
+}

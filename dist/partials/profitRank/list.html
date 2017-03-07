@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>&#x501F;&#x8D37;&#x5B9D;&#x767E;&#x8D5A;&#x699C;</title>
+    <meta name="description" content="&#x501F;&#x8D37;&#x5B9D;&#x767E;&#x8D5A;&#x699C;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="/h5app/css/profitRank/list.min.css?_=20161107154511">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="personal-info" id="personalInfo">
+        <div class="user-title">
+            <img class="avatar" :src="memberInfo.thumbnailUrl || &apos;../../img/common/avatar-default-50.png&apos;" alt="avatar"> {{ memberInfo.memberName }}&#x5728;&#x501F;&#x8D37;&#x5B9D;&#x767D;&#x8D5A;&#x5230;
+        </div>
+        <a class="how-intro j-how-intro" href="#makeMoneyTips">
+            <img src="../../img/profitRank/questionMark.png" alt="?"> &#x5982;&#x4F55;&#x767D;&#x8D5A;&#x94B1;
+        </a>
+        <div class="profit-count clearfix">
+            <p class="profit-count-num">
+                <a :href="&apos;./detail.html?id=&apos; + memberInfo.memberID" target="_blank">&#xFFE5;{{ amount | formatMoney }}</a>
+            </p>
+        </div>
+    </div>
+    <div class="profit-rank-list" id="profitRankList">
+        <ul>
+            <li v-for="item in list">
+                <p class="user-title">
+                    <span>
+                        <img v-if="$index === 0" class="rankIcon" src="../../img/profitRank/rankIcon1.png" alt="1">
+                        <img v-if="$index === 1" class="rankIcon" src="../../img/profitRank/rankIcon2.png" alt="2">
+                        <img v-if="$index === 2" class="rankIcon" src="../../img/profitRank/rankIcon3.png" alt="3">
+                        {{ $index &gt; 2 ? $index + 1 : &apos;&apos; }}
+                    </span>
+                    <img class="avatar" :src="item.memberInfo.thumbnailUrl || &apos;../../img/common/avatar-default-50.png&apos;" alt="avatar"> {{ item.memberInfo.memberName }}
+                </p>
+                <p class="money">
+                    <span>&#xFFE5;</span> {{ item.amount | formatMoney }}
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="makeMoneyTipsContainer clearfix make-money-tips-wrap">
+
+    </div>
+
+    <script src="/h5app/js/profitRank/list.min.js?_=20161107154511"></script>
+</body>
+
+</html>

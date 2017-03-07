@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="pragma" contet="no-cache"> 
+    <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
+    <meta http-equiv="max-age" content="0">
+    <meta http-equiv="expires" content="-1"> 
+    <title>关于借贷宝等级</title>
+    <style type="text/css">
+
+
+        body {
+          background: #f5f7fa;
+          color: #666;
+          font-size: 12px;
+          line-height: 18px;
+          font-family:STHeiti,sans-serif,Arial,"Lucida Grande", Helvetica; 
+          margin: 0;
+        }
+
+        .aboutBorder {
+          margin-top: 20px;
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+
+        /**
+         * Clearfix helper
+         * Used to contain floats: http://nicolasgallagher.com/micro-clearfix-hack/
+         */
+
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        h1 {
+          font-size: 16px;
+          color: #2675df;
+          line-height: 24px;
+        }
+
+        h1 .round {
+          display: block;
+          float: left;
+          height: 18px;
+          border-radius: 1000px;
+          width: 18px;
+          font-size: 12px;
+          background-color: #2675df;
+          text-align: center;
+          color: #fff;
+          line-height: 18px;
+          vertical-align: baseline;
+          margin-right: 5px;
+          margin-top: 2px;
+        }
+
+        .aboutBorder h2 {
+          font-size: 14px;
+          line-height: 18px;
+          color: #2675df;
+          margin-top: 5px;
+          font-weight: lighter;
+        }
+
+        .line-right {
+          margin-right: -15px;
+          height: 0px;
+          border-top: 1px solid #e1e3e6;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          margin: 1.5em 0 0;
+          font-size: 14px;
+        }
+        p {
+          margin: 0.5em 0;
+        }
+        .mid {
+          text-align: center;
+        }
+        .tx-blue {
+          color: #3b7afd;
+        }
+        .tx-gray {
+          color: #a0a0a0;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        table th {
+          background: #ccc;
+        }
+        table td {
+          text-align: center;
+        }
+        table th,
+        table td {
+          border: 1px solid #333;
+        }
+        table tr:nth-child(2n) {
+          background: #dce7f5;
+        }
+        .list {
+          list-style: none;
+          padding-left: 15px;
+          border-top: 1px solid #e1e3e6;
+          border-bottom: 1px solid #e1e3e6;
+          background: #fff;
+        }
+        .list li {
+          border-bottom: 1px solid #e1e3e6;
+        }
+        .list li:last-child {
+          border: none;
+        }
+        .list a {
+          display: block;
+          padding: 15px 15px 15px 0;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: left;
+          color: #676767;
+          text-decoration: none;
+        }
+        .list a:active {
+          background: #f0f0f0;
+        }
+        .mid img {
+          width: 80%;
+        }
+
+        .right {
+          float: right;
+        }
+
+        .list .lt-icon {
+          margin-top: 15px;
+          margin-right: 15px;
+        }
+
+        .lt-icon {
+          background-image: url(../../../img/introduce/lt-s.png);
+          background-repeat: no-repeat;
+          width: 9px;
+          height: 16px;
+          display: block;
+        }
+
+        .body-margin {
+          margin: 20px 15px;
+        }
+
+        .bold {
+          font-weight: bolder;
+        }
+
+        dd {
+          margin-left: 0;
+        }
+        .imagesInside {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          clear: both;
+        }
+        .imagesInside2 {
+          width: 100%;
+          margin-bottom: 10px;
+          clear: both;
+        }
+        .imagesInside img {
+          width: 60%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+
+        .imagesInside2 img {
+          width: 45%;
+          height: auto;
+          margin-left: 2.5%;
+          margin-right: 2.5%;
+          display: inline-block;
+          float: left;
+        }
+
+        .clearfix:before,
+        .clearfix:after,
+        .container:before,
+        .container:after,
+        .container-fluid:before,
+        .container-fluid:after,
+        .row:before,
+        .row:after,
+        .form-horizontal .form-group:before,
+        .form-horizontal .form-group:after,
+        .btn-toolbar:before,
+        .btn-toolbar:after,
+        .btn-group-vertical > .btn-group:before,
+        .btn-group-vertical > .btn-group:after,
+        .nav:before,
+        .nav:after,
+        .navbar:before,
+        .navbar:after,
+        .navbar-header:before,
+        .navbar-header:after,
+        .navbar-collapse:before,
+        .navbar-collapse:after,
+        .pager:before,
+        .pager:after,
+        .panel-body:before,
+        .panel-body:after,
+        .modal-footer:before,
+        .modal-footer:after {
+          display: table;
+          content: " ";
+        }
+        .clearfix:after,
+        .container:after,
+        .container-fluid:after,
+        .row:after,
+        .form-horizontal .form-group:after,
+        .btn-toolbar:after,
+        .btn-group-vertical > .btn-group:after,
+        .nav:after,
+        .navbar:after,
+        .navbar-header:after,
+        .navbar-collapse:after,
+        .pager:after,
+        .panel-body:after,
+        .modal-footer:after {
+          clear: both;
+        }
+
+
+    </style>
+</head>
+
+<body class="body-margin">
+    <h2>什么是借贷宝等级？</h2>
+    <p>借贷宝等级是根据用户在借贷宝的活跃情况（借入、借出、赚利差、理财、好友等）计算积分并进行分级的。</p>
+    <p>需要特别注意的是：等级仅反映用户交易情况<span class="bold">不构成对用户信用的评价。</span></p>
+    <h2>都有哪些等级？等级有什么作用？</h2>
+    <p>借贷宝等级根据用户在借贷宝的活跃情况计算积分并分级，主要从借入、借出、赚利差、理财、好友等角度来对用户活跃情况进行量化计算而得到的结果。借贷宝等级对您的好友数上限有着直接的影响，具体情况如下：</p>
+    <table>
+        <tr>
+            <th style='min-width:28px'>等级</th>
+            <th style='min-width:55px'>名称</th>
+            <th>等级净借入额度</th>
+            <th>等级借入和赚利差总额度</th>
+            <th>关注人数上限/被关注人数上限</th>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>金融大亨</td>
+            <td>100万</td>
+            <td>300万</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>金融大佬</td>
+            <td>80万</td>
+            <td>200万</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>金融家</td>
+            <td>70万</td>
+            <td>150万</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>总行行长</td>
+            <td>60万</td>
+            <td>120万</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>分行行长</td>
+            <td>50万</td>
+            <td>100万</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>支行行长</td>
+            <td>50万</td>
+            <td>80万</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>部门经理</td>
+            <td>50万</td>
+            <td>60万</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>客户经理</td>
+            <td>50万</td>
+            <td>50万</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>柜员</td>
+            <td>40万</td>
+            <td>40万</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>见习生</td>
+            <td>30万</td>
+            <td>30万</td>
+            <td>1000</td>
+        </tr>
+    </table>
+        <h2>如何提升等级？</h2>
+ <p>
+        您可通过以下方式提升等级：<br>
+         1) 多发起借入、借出、赚利差等交易，交易越多积分越多；<br>
+         2) 及时还款，增加积分（借入或者赚利差逾期时，也会被狠狠地扣分哦）；<br>
+        3) 多购买理财，土豪当然积分多；<br>
+         4) 以更低利率借入、更高利率借出、并在赚利差交易中获得更高的利差，挣得越多积分越多；<br>
+            
+        5) 多加好友，积分也会有一定增加哦。<br>
+    </p>
+
+            <h2>什么情况下会降级？</h2>
+ <p>
+     
+         1）用户交易所得积分会随时间衰减，所以当近期交易不够活跃时，积分会减少，导致降级；<br>
+        2）用户发生逾期时，会被大幅度扣减积分，导致降级；<br>
+       3）出于风险控制的需要，借贷宝会不定期对用户等级计算模型进行调整，也会导致部分用户的降级。<br>
+        
+    </p>
+
+
+
+</body>
+
+</html>

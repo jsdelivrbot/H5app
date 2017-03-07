@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title id="share_title"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/common/toast.scss">
+    <link rel="stylesheet" href="/sass/upBorrow/index.scss">
+    <!-- endbuild -->
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1259953671'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1259953671' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+        window.onload = function() {
+            var cW = document.documentElement.clientWidth;
+            if (cW >= 420) {
+                cW = 420;
+            }
+            document.documentElement.style.fontSize = cW / 320 * 20 + 'px';
+            window.onresize = function() {
+                if (cW >= 420) {
+                    cW = 420;
+                }
+                document.documentElement.style.fontSize = cW / 320 * 20 + 'px';
+            };
+        };
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head_bg">
+            <div class="head_content clearFix">
+                <div class="head_left fl">
+                    <div class="head_img"></div>
+                </div>
+                <div class="head_right fl">
+                    <h2></h2>
+                    <div class="head_desc">
+                    </div>
+                </div>
+            </div>
+            <div class="head_triangle"></div>
+        </div>
+        <div class="des_bg">
+            <div class="des_top">
+                <h3>借款信息</h3>
+                <div class="desc_rate"><span>%</span></div>
+                <div class="desc_top_bott">年化收益率</div>
+                <div class="desc_top_bg" id="borrow_state"></div>
+            </div>
+            <div class="des_bott">
+                <div class="desc_detail clearFix">
+                    <div class="desc_borrow fl">金额&nbsp<span></span>&nbsp<b>元</b></div>
+                    <div class="desc_day fl">期限&nbsp<span></span>&nbsp<b>天</b></div>
+                </div>
+                <div class="desc_protect_bg clearFix"><span class="fl"></span><a class="fl" href="https://app.jiedaibao.com/aboutCredit/index.html">&nbsp受法律及立体催收系统保护</a></div>
+            </div>
+        </div>
+        <div class="borrow_me"><span>10</span>元起借</div>
+        <div class="borrow_me_desc">全额借给TA 预期可获得<span></span>元收益</div>
+        <a href="javascript:;" class="add_friends" id="borrowTA">借给TA 赚利息</a>
+        <div class="jdbIs">
+            <a href="http://www.jiedaibao.com">借贷宝是什么</a>
+            <img src="../../img/upBorrow/wenhao.png"/>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper_login">
+            <h4>在借贷宝关注TA 便于出借</h4>
+            <ul>
+                <li class="entry clearFix"><span class="fl">手机号</span>
+                    <input class="fl" type="tel" id="mobile" maxlength="13" />
+                </li>
+                <li class="toast_error" id="correct_num">手机号输入有误</li>
+                <li class="entry entry_last clearFix"><span class="fl">验证码</span>
+                    <input class="fl" type="tel" id="re_captha" maxlength="6" />
+                    <input class="get-message fl" type="button" value="获取验证码" />
+                </li>
+                <li class="toast_error" id="correct_message">验证码输入有误</li>
+            </ul>
+            <input type="button" class="login_submit" id="subCnzz" value="提  交" />
+            <div class="shutdown"></div>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="follow_bg">
+            <div class="follow_top_bg"></div>
+            <div class="follow_guide">登录借贷宝完成出借</div>
+            <div class="follow_guide_detail">在借贷宝首页即可查看该借款详情</div>
+            <a class="go_see download" href="javascript:;" id="goSeeCnzz">去借贷宝看看</a>
+            <div class="bind_mobile clearFix"><span class="fl bind_mobile_num">当前绑定手机号 </span><a href="javascript:;" class="clearFix fl"><span class="fl" id="modify_mobile">修改</span><b class="fl"></b></a></div>
+            <div class="shutdown" id="follow_shut"></div>
+        </div>
+    </div>
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+    <script type="text/javascript" src="/zepto.js/src/touch.js"></script>
+    <script type="text/javascript" src="/js-url/url.min.js"></script>
+    <script type="text/javascript" src="/blueimp-md5/js/md5.min.js"></script>
+    <script type="text/javascript" src="/Zepto-Cookie/zepto.cookie.min.js"></script>
+    <script type="text/javascript" src="/js/common/toast.js"></script>
+    <script type="text/javascript" src="/js/common/loading.js"></script>
+    <script type="text/javascript" src="/js/upBorrow/index.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

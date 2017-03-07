@@ -1,0 +1,24 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "id": 54,
+        "memberId": "518902548027944410",
+        "account": "6225757586409949",
+        "name": "王锦",
+        "bankid": 2,
+        "remindDate": "2",
+        "paymethod": 1,
+        "cardType": "2",
+        "status": 1,
+        "cardStatus": 1,
+        "comment": null,
+        "messageStatus": "0",
+        "noticeDate": 1449061903850,
+        "createAt": null,
+        "amount": null
+    }
+}

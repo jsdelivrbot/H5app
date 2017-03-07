@@ -1,0 +1,15 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "",
+        "returnUserMessage": ""
+    },
+    "data": {
+        "accTotAmt": "12354",
+        "estDt": "9-30",
+        "estWeekDay": "3",
+        "calDt": "10-01",
+        "calWeekDay": "4",
+        "popFlg": "Y"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "data":{
+        "base":{
+            "icon":"http://jdbserver.b0.upaiyun.com/images/icon_guangfa.png",
+            "money":"-100",  
+            "tradingObject":{
+                "name":"艾玛",
+                "objectId":"558622980331023317"
+            },
+            "tradingStatus":"交易成功"
+         },
+        "orderDetail":[
+            {
+                "displayStatus":"1",
+                "key":"付款账户",
+                "val":"余额"
+            },
+            {
+                "displayStatus":"1",
+                "key":"借贷利率",
+                "val":"20.0%"
+            },
+            {
+                "displayStatus":"1",
+                "key":"预期收益",
+                "val":"0.10"
+            },
+            {
+                "displayStatus":"1",
+                "key":"创建时间",
+                "val":"2016-02-23 13:02:32"
+            },
+            {
+                "displayStatus":"1",
+                "key":"订单编号",
+                "val":"<a href=\"https://native.jiedaibao.com/web2Native/lendOutlinePage?productID=5683921128825905050001&orderID=568392112882590510\">201602230510</a>"
+            },
+            {
+                "displayStatus":"1",
+                "key":"条形码",
+                "val":"123456"
+            }
+        ],
+        "orderStatus":{
+            "isshow":"1",
+            "list":[]
+        }
+    },
+    "error":{
+        "returnCode":0,
+        "returnMessage":"success",
+        "returnUserMessage":"成功"
+    }
+}

@@ -1,0 +1,232 @@
+*, *:before, *:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #f5f7fa;
+
+	P {
+		margin: 0;
+	}
+
+	.result-turnIn {
+		margin-bottom: 24px;
+		padding: 10px 30px;
+		background: #fff;
+		border-bottom: 1px solid #e1e3e6;
+
+		li {
+			position: relative;
+			height: 42px;
+			padding: 26px 0 24px 54px;
+
+			.step-view {
+				position: absolute;
+				top: 0;
+				left: 5px;
+				height: 100%;
+				width: 34px;
+
+				.step-icon {
+					position: absolute;
+					left: 0;
+					top: 28px;
+					width: 34px;
+					height: 34px;
+					background: #e1e3e5;
+					border-radius: 50%;
+					overflow: hidden;
+
+					div {
+						height: 100%;
+						background: url( '../../img/jdCapital/step-icons.png' ) no-repeat;
+					    background-size: 24px auto;
+					}
+				}
+				
+				.step-1 {
+					div {
+						background-position: 7px 9px;
+					}
+				}
+
+				.step-2 {
+					div {
+						background-position: 5px -29px;
+					}
+				}
+
+				.step-3 {
+					div {
+						background-position: 10px -69px;
+					}
+				}
+
+				i {
+					position: absolute;
+					left: 50%;
+					height: 32px;
+					width: 3px;
+					margin: -1px;
+					background: #e1e3e5;
+				}
+
+				.alive-line {
+					background: #4598ff;
+				}
+
+				.top-line {
+					top: 0;
+				}
+
+				.bottom-line {
+					bottom: 0;
+				}
+			}
+
+			.step-name {
+				font-size: 18px;
+				color: #3d434c;
+			}
+
+			.step-date {
+				font-size: 14px;
+				color: #afb1b2;
+			}
+
+			.alive-text {
+				color: #4598ff;
+			}
+		}
+	}
+
+	.result-turnOut {
+		margin-bottom: 24px;
+  		padding: 30px;
+  		background: #fff;
+		border-bottom: 1px solid #e1e3e6;
+
+		div {
+			position: relative;
+			height: 120px;
+			width: 120px;
+			margin: 0 auto;
+			background: #4bc73e;
+			border-radius: 50%;
+			margin-bottom: 24px;
+
+			&:after {
+				transform: rotate(-45deg);
+				-webkit-transform: rotate(-45deg);
+				position: absolute;
+				top: 26%;
+				left: 24%;
+				display: block;
+				width: 54px;
+				height: 28px;
+				border: 13px solid #fff;
+				border-top: 0;
+				border-right: 0;
+				box-shadow: -2px 2px 1px #3B943C;
+				content: ' ';
+				box-sizing: initial;
+			}
+		}
+
+		h2 {
+			margin: 0 0 4px 0;
+    		line-height: 1.2;
+			text-align: center;
+			font-size: 18px;
+			color: #3d434c;
+			font-weight: 500;
+		}
+
+		a {
+			font-size: 26px;
+			color: #3d434c;
+			display: block;
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		p {
+			text-align: center;
+			font-size: 14px;
+			color: #667180;
+			&.head {
+				padding: 0px 14px;
+			}
+		}
+		ul {
+			position: relative;
+			&::after {
+				content: ' ';
+				display: inline-block;
+				width: 41%;
+				height: 1px;
+				background-color: #ddd;
+				position: absolute;
+				top: 28px;
+    			right: 34px;
+				z-index: 3;
+			}
+			&::before {
+				content: ' ';
+				display: inline-block;
+				width: 41%;
+				height: 1px;
+				background-color: #2d81e0;
+				position: absolute;
+    			top: 28px;
+				left: 34px;
+				z-index: 5;
+			}
+
+
+			li {
+				display: inline-block;
+				text-align: center;
+
+				.circle {
+					display: inline-block;
+					height: 16px;
+					width: 16px;
+					border: 1px solid #2d81e0;
+					border-radius: 50%;
+					background-color: #2d81e0;
+					position: relative;
+					z-index: 100000;
+				}
+				
+				&:last-child {
+					float: right;
+					.circle {
+						background-color: #fff;
+						border: 1px solid #ddd;
+					}
+				}
+		
+			}
+		}
+	}
+
+	.check-block {
+		padding: 0 20px;
+		
+		.button {
+			font-size: 18px;
+			color: #fff;
+			background: #2d81e0;
+
+			&:active {
+				background: #0f71cc;
+			}
+		}
+	} 
+
+}

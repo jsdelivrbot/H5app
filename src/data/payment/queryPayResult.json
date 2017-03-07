@@ -1,0 +1,27 @@
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "success",
+        "returnUserMessage": "success"
+    },
+    "data": {
+        "payedTotal": "100",
+        "orderTotal": "200",
+        "payTips": "支付提示",
+        "title": "title",
+        "list":[
+            {
+                "key":"订单金额",
+                "value": "100元"
+            },
+            {
+                "key":"订单金额",
+                "value": "100元"
+            },
+            {
+                "key":"订单金额",
+                "value": "100元"
+            }
+        ]
+    }
+}

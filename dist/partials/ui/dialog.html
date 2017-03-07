@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Dialog Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="/h5app/css/ui/dialog.min.css?_=20161107154511">
+	<style type="text/css">
+		.button-wrap {
+			text-align: center;
+			margin: 50px 0;
+		}
+
+		.dialog-btn-good {
+			color: #D62416;
+		}
+
+		.dialog-btn-genius {
+			color: #F7C717;
+		}
+	</style>
+</head>
+<body>
+	<div class="button-wrap">
+		<a id="alert" class="button button-balanced button-outline">Show alert</a>
+	</div>
+
+	<div class="button-wrap">
+		<a id="confirm1" class="button button-assertive button-outline">Show confirm</a>
+	</div>
+
+	<div class="button-wrap">
+		<a id="confirm2" class="button button-royal button-outline">show confirm2</a>
+	</div>
+
+	<div class="button-wrap">
+		<a id="custom" class="button button-royal button-outline">Custom confirm</a>
+	</div>
+
+	<script type="text/javascript" src="/h5app//zepto.js/dist/zepto.min.js?_=20161107154511"></script>
+	<script type="text/javascript" src="/h5app//js/common/dialog.js?_=20161107154511"></script>
+	<script type="text/javascript">
+		$( '#alert' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			dialog.alert( 'This is a alert！' );
+		} );
+
+		$( '#confirm1' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			dialog.confirm( 'Show me your money！', function( result ) {
+				console.log( 'the result is:' + result );
+				if( result.closeType == 'ok' ) {
+					console.log( 'choose "确定"，your money is mine' );
+				} else {
+					console.log( 'choose "取消"，一百块都不给我' );
+				}
+			} );
+		} );
+
+		$( '#confirm2' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			dialog.confirm( {
+				title: '万万没想到！',
+				content: '啦啦啦啦啦，啦啦啦啦啦，啦啦啦啦啦，啦啦啦啦啦，啦啦啦啦啦，啦啦啦啦啦！',
+				callback: function( result ) {
+					console.log( result );
+				}
+			} );
+		} );
+
+
+		$( '#custom' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			dialog.dialog( {
+				type: 'custom',
+				title: '其实我的英语挺好的',
+				content: '我就是这样觉得的，你也这样觉得，对吧！',
+				button: [
+					{ style: 'default', type: 'nb', text: '牛逼' },
+					{ style: 'genius', type: 'genius', text: '学霸' },
+					{ style: 'good', type: 'good', text: '赞！' }
+				],
+				callback: function( result ) {
+					if( result.closeType == 'default' ) {
+						console.log( '你选择的是“牛逼”，我不知道我在说什么' );
+					} else if ( result.closeType == 'genius' ) {
+						console.log( '你选择的是“学霸”，果然还是藏不住啊！' );
+					} else {
+						console.log( '你选择的是“赞！”，谢谢！' );
+					}
+				}
+			} );
+		} );
+	</script>
+</body>
+</html>

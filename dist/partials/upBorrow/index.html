@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title id="share_title"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="/h5app/css/upBorrow/index.min.css?_=20161107154511">
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1259953671'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1259953671' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+        window.onload = function() {
+            var cW = document.documentElement.clientWidth;
+            if (cW >= 420) {
+                cW = 420;
+            }
+            document.documentElement.style.fontSize = cW / 320 * 20 + 'px';
+            window.onresize = function() {
+                if (cW >= 420) {
+                    cW = 420;
+                }
+                document.documentElement.style.fontSize = cW / 320 * 20 + 'px';
+            };
+        };
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head_bg">
+            <div class="head_content clearFix">
+                <div class="head_left fl">
+                    <div class="head_img"></div>
+                </div>
+                <div class="head_right fl">
+                    <h2></h2>
+                    <div class="head_desc">
+                    </div>
+                </div>
+            </div>
+            <div class="head_triangle"></div>
+        </div>
+        <div class="des_bg">
+            <div class="des_top">
+                <h3>&#x501F;&#x6B3E;&#x4FE1;&#x606F;</h3>
+                <div class="desc_rate"><span>%</span></div>
+                <div class="desc_top_bott">&#x5E74;&#x5316;&#x6536;&#x76CA;&#x7387;</div>
+                <div class="desc_top_bg" id="borrow_state"></div>
+            </div>
+            <div class="des_bott">
+                <div class="desc_detail clearFix">
+                    <div class="desc_borrow fl">&#x91D1;&#x989D;&#xA0;<span></span>&#xA0;<b>&#x5143;</b></div>
+                    <div class="desc_day fl">&#x671F;&#x9650;&#xA0;<span></span>&#xA0;<b>&#x5929;</b></div>
+                </div>
+                <div class="desc_protect_bg clearFix"><span class="fl"></span><a class="fl" href="https://app.jiedaibao.com/aboutCredit/index.html">&#xA0;&#x53D7;&#x6CD5;&#x5F8B;&#x53CA;&#x7ACB;&#x4F53;&#x50AC;&#x6536;&#x7CFB;&#x7EDF;&#x4FDD;&#x62A4;</a></div>
+            </div>
+        </div>
+        <div class="borrow_me"><span>10</span>&#x5143;&#x8D77;&#x501F;</div>
+        <div class="borrow_me_desc">&#x5168;&#x989D;&#x501F;&#x7ED9;TA &#x9884;&#x671F;&#x53EF;&#x83B7;&#x5F97;<span></span>&#x5143;&#x6536;&#x76CA;</div>
+        <a href="javascript:;" class="add_friends" id="borrowTA">&#x501F;&#x7ED9;TA &#x8D5A;&#x5229;&#x606F;</a>
+        <div class="jdbIs">
+            <a href="http://www.jiedaibao.com">&#x501F;&#x8D37;&#x5B9D;&#x662F;&#x4EC0;&#x4E48;</a>
+            <img src="../../img/upBorrow/wenhao.png">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper_login">
+            <h4>&#x5728;&#x501F;&#x8D37;&#x5B9D;&#x5173;&#x6CE8;TA &#x4FBF;&#x4E8E;&#x51FA;&#x501F;</h4>
+            <ul>
+                <li class="entry clearFix"><span class="fl">&#x624B;&#x673A;&#x53F7;</span>
+                    <input class="fl" type="tel" id="mobile" maxlength="13">
+                </li>
+                <li class="toast_error" id="correct_num">&#x624B;&#x673A;&#x53F7;&#x8F93;&#x5165;&#x6709;&#x8BEF;</li>
+                <li class="entry entry_last clearFix"><span class="fl">&#x9A8C;&#x8BC1;&#x7801;</span>
+                    <input class="fl" type="tel" id="re_captha" maxlength="6">
+                    <input class="get-message fl" type="button" value="&#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;">
+                </li>
+                <li class="toast_error" id="correct_message">&#x9A8C;&#x8BC1;&#x7801;&#x8F93;&#x5165;&#x6709;&#x8BEF;</li>
+            </ul>
+            <input type="button" class="login_submit" id="subCnzz" value="&#x63D0;  &#x4EA4;">
+            <div class="shutdown"></div>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="follow_bg">
+            <div class="follow_top_bg"></div>
+            <div class="follow_guide">&#x767B;&#x5F55;&#x501F;&#x8D37;&#x5B9D;&#x5B8C;&#x6210;&#x51FA;&#x501F;</div>
+            <div class="follow_guide_detail">&#x5728;&#x501F;&#x8D37;&#x5B9D;&#x9996;&#x9875;&#x5373;&#x53EF;&#x67E5;&#x770B;&#x8BE5;&#x501F;&#x6B3E;&#x8BE6;&#x60C5;</div>
+            <a class="go_see download" href="javascript:;" id="goSeeCnzz">&#x53BB;&#x501F;&#x8D37;&#x5B9D;&#x770B;&#x770B;</a>
+            <div class="bind_mobile clearFix"><span class="fl bind_mobile_num">&#x5F53;&#x524D;&#x7ED1;&#x5B9A;&#x624B;&#x673A;&#x53F7; </span><a href="javascript:;" class="clearFix fl"><span class="fl" id="modify_mobile">&#x4FEE;&#x6539;</span><b class="fl"></b></a></div>
+            <div class="shutdown" id="follow_shut"></div>
+        </div>
+    </div>
+    <script src="/h5app/js/upBorrow/index.min.js?_=20161107154511"></script>
+</body>
+
+</html>

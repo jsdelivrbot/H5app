@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>付款成功</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/checkoutPay/payOk.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2405b35e6ac1ae53a3c40ddff29c3f78";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body id="success" v-cloak>
+    
+    <ul class="success_area">
+        <li><img class="success_pic" src="../../img/checkoutPay/success.png" alt=""></li>
+        <li class="success_text random_success">付款成功</li>
+        <li class="money">￥{{orderInfos.payAmount}}</li>
+        <li class="coupon_money marginBtom">已优惠{{orderInfos.preferentialAmount}}元</li>
+        <!-- <li class="where_method" v-cloak>{{orderInfos.merName}}: {{orderInfos.payType | payTypeFilter}}</li> -->
+    </ul>
+    <ul class="mingXiList">
+        <li class="hasBorderTop">订单金额<span>{{orderInfos.amount}}元</span></li>
+        <li v-for="item in orderInfos.couponList">{{item.title || "优惠卷"}}<span>-{{item.amount}}元</span></li>
+        <!-- <li>优惠卷<span>－10元</span></li> -->
+        <li>收款商户<span class="merchantName">{{orderInfos.merName}}</span></li>
+    </ul>
+    <ul class="btn_group">
+        <li class="btn1" v-on:click="continuePay($event)">完成</li>
+    </ul>
+    
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/common/toast.js"></script>
+    <script type="text/javascript" src="/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/js/payment/randomSuccess.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

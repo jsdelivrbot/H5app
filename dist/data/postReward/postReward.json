@@ -1,0 +1,148 @@
+{
+  "error": {
+    "returnCode": 0,
+    "returnMessage": "success",
+    "returnUserMessage": "success"
+  },
+  "data": {
+    "topicDetail": {
+      "content": "悬赏。299.99元",
+      "topicImg": [],
+      "postDate": "3小时前",
+      "totalBonus": "101090",
+      "leftBonus": "283.53",
+      "totalNum": "50",
+      "repliedNum": 47,
+      "validateTip": "还有10天",
+      "status": "1",
+      "rewardID": "4bb3dca06ca946a3eac6ea5036a20068",
+      "memberInfo": {
+        "memberID": "538522734200627281",
+        "memberName": "***",
+        "thumbnailUrl": null,
+        "isVip": 0
+      },
+      "likeCount": 0
+    },
+    "replyList": [
+      {
+        "memberInfo": {
+          "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851449122492219!percent25",
+          "memberName": "***",
+          "isVip": 0,
+          "memberID": "538522734200627314"
+        },
+        "replyID": "726f8e146cb88ed90df13e5bf78824d2",
+        "messageID": "2943",
+        "replyImg": [],
+        "replyContent": "ha",
+        "postDate": "1小时前",
+        "likeCount": 0,
+        "replyBonus": "",
+        "p2pBonus": ""
+      },
+      {
+        "memberInfo": {
+          "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851449122492219!percent25",
+          "memberName": "***",
+          "isVip": 0,
+          "memberID": "538522734200627314"
+        },
+        "replyID": "1b822bab158d3921c8057c4780d0b757",
+        "messageID": "2942",
+        "replyImg": [
+          {
+            "small": "http://jdbserver.b0.upaiyun.com/images/53851459226181740#h=331#w=474!percent25",
+            "big": "http://jdbserver.b0.upaiyun.com/images/53851459226181740#h=331#w=474"
+          }
+        ],
+        "replyContent": "",
+        "postDate": "1小时前",
+        "likeCount": 0,
+        "replyBonus": "10.24元",
+        "p2pBonus": ""
+      },
+      {
+        "memberInfo": {
+          "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851459156220948!percent25",
+          "memberName": "***",
+          "isVip": 0,
+          "memberID": "538522734200627296"
+        },
+        "replyID": "709ddb8794381e0c9aa52cc70a406836",
+        "messageID": "2941",
+        "replyImg": [
+          {
+            "small": "http://jdbserver.b0.upaiyun.com/images/53851459224293781#h=1136#w=640!percent25",
+            "big": "http://jdbserver.b0.upaiyun.com/images/53851459224293781#h=1136#w=640"
+          }
+        ],
+        "replyContent": "还大喊大叫的吧就顶焦度计的吧难道觉得呢难道觉得吧基督教的呢难道觉得吧的吧难道觉得你呢你打开顶焦度计就顶焦度计jejdj",
+        "postDate": "1小时前",
+        "likeCount": 0,
+        "replyBonus": "",
+        "p2pBonus": ""
+      },
+      {
+        "memberInfo": {
+          "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851459156220948!percent25",
+          "memberName": "***",
+          "isVip": 0,
+          "memberID": "538522734200627296"
+        },
+        "replyID": "ab693021714c584d855debbe6f902b28",
+        "messageID": "2938",
+        "replyImg": [],
+        "replyContent": "浑身解数军事基地吧就顶焦度计的吧就顶焦度计的呢难道觉得呢难道觉得呢难道你烦恼难道呢",
+        "postDate": "1小时前",
+        "likeCount": 0,
+        "replyBonus": "",
+        "p2pBonus": ""
+      },
+      {
+        "memberInfo": {
+          "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851459156220948!percent25",
+          "memberName": "***",
+          "isVip": 0,
+          "memberID": "538522734200627296"
+        },
+        "replyID": "475b839c4c69d8419c81cbb453ff7aba",
+        "messageID": "2937",
+        "replyImg": [],
+        "replyContent": "还大喊大叫的吧就顶焦度计的吧难道觉得呢难道觉得吧基督教的呢难道觉得吧的吧难道觉得你呢你打开顶焦度计就顶焦度计jejdj",
+        "postDate": "1小时前",
+        "likeCount": 0,
+        "replyBonus": "3.06元",
+        "p2pBonus": ""
+      },
+      {
+        "memberInfo": {
+          "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851450083453992!percent25",
+          "memberName": "***",
+          "isVip": 0,
+          "memberID": "538522734200627242"
+        },
+        "replyID": "2d712cb7e6daa6e2a6902ce56ca32844",
+        "messageID": "2887",
+        "replyImg": [
+          {
+            "small": "http://jdbserver.b0.upaiyun.com/images/53851459220459985#h=2848#w=4288!percent25",
+            "big": "http://jdbserver.b0.upaiyun.com/images/53851459220459985#h=2848#w=4288"
+          },
+          {
+            "small": "http://jdbserver.b0.upaiyun.com/images/53851459220462103#h=2002#w=3000!percent25",
+            "big": "http://jdbserver.b0.upaiyun.com/images/53851459220462103#h=2002#w=3000"
+          }
+        ],
+        "replyContent": "",
+        "postDate": "2小时前",
+        "likeCount": 0,
+        "replyBonus": "3.16元",
+        "p2pBonus": "追赏1.50元"
+      }
+    ],
+    "hasMore": 0,
+    "isShielded": 0,
+    "shieldedTip": "该内容因违规已被屏蔽"
+  }
+}

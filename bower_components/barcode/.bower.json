@@ -1,0 +1,13 @@
+{
+  "name": "barcode",
+  "homepage": "https://github.com/jbdemonte/barcode",
+  "_release": "a24faaf0c6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a24faaf0c6af680db302652cc8b1a95504bdd8cf"
+  },
+  "_source": "https://github.com/jbdemonte/barcode.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/jbdemonte/barcode.git"
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f7fa;
+  font-size: 12px;
+  color: #4c4c4c;
+}
+
+body, html {
+  width: 100%;
+}
+.nhead {
+  width:100%;
+  height:auto;
+
+  img {
+    width:100%;
+  }
+}
+p {
+  text-indent: 2em;
+  margin:15px 0;
+  padding: 0 5%;
+  width:90%;
+  line-height:30px;
+  font-size:16px;
+  color:#19191a;
+  a {
+    color:#4279d6;
+    margin: 0 3px;
+    text-decoration: none;
+  }
+}

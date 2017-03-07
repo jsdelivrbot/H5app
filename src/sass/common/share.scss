@@ -1,0 +1,81 @@
+.share-modal {
+	position: fixed;
+	bottom: 0;
+	z-index: 1026;
+	text-align: center;
+	background-color: #eee;
+	color: #818892;
+	max-width: 420px;
+	width: 100%;
+	.invite-title {
+		font-size: 17px;
+		line-height: 21px;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.invite-content .invite-item {
+		text-align: center;
+		margin-bottom: 10px;
+		width: 33.333%;
+		float: left;
+		.share-method {
+			margin-top: 4px;
+		}
+		.share-icon {
+			display: block;
+			background-image: url(../../img/common/btn_share.png);
+			background-size: 320px 320px;
+			height: 63px;
+			width: 63px;
+			background-repeat: no-repeat;
+			margin: 0 auto;
+			&.s1 {
+			  background-position: -20px -46px;
+			}
+			&.s2 {
+			  background-position: -128px -46px;
+			}
+			&.s3 {
+			  background-position: -236px -46px;
+			}
+			&.s4 {
+			  background-position: -20px -137px;
+			}
+			&.s5 {
+			  background-position: -128px -137px;
+			}
+			&.s6 {
+			  background-position: -20px -228px;
+			}
+			&.s7 {
+			  background-position: -236px -229px;
+			}
+			&.s8 {
+			  background-position: -128px -228px;
+			}
+		}
+	}
+	.invite-bottom {
+		margin: 10px 20px;
+		button {
+			color: #333;
+			background-color: #fff;
+			display: inline-block;
+			margin-bottom: 0;
+			font-weight: 400;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			background-image: none;
+			border: 1px solid #ccc;
+			white-space: nowrap;
+			padding: 10px 12px;
+			font-size: 16px;
+			line-height: 1.428571429;
+			border-radius: 4px;
+			-webkit-user-select: none;
+			width: 100%;
+		}
+	}
+}

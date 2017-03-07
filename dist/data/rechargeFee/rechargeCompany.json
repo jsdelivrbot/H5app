@@ -1,0 +1,109 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "",
+    "returnUserMessage": ""
+  },
+  "data": {
+    "compList": [
+      {
+        "provId" : "省编号",
+        "cityId" : "citybeijing",
+        "instCd" : "缴费事业编号1",
+        "instNm" : "北京电力局",
+        "instRmk1" : "yes"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "cityhainan",
+        "instCd" : "缴费事业编号2",
+        "instNm" : "海南市电力局（市区）",
+        "instRmk1" : "yes"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citynanjing",
+        "instCd" : "缴费事业编号3",
+        "instNm" : "南京电力局",
+        "instRmk1" : "yes"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citynanjing",
+        "instCd" : "缴费事业编号4",
+        "instNm" : "南京电力局",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citybeijing",
+        "instCd" : "缴费事业编号6",
+        "instNm" : "北京市电力局（市区）",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "cityguangzhou",
+        "instCd" : "缴费事业编号7",
+        "instNm" : "广州电力局",
+        "instRmk1" : "yes"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citybeijing",
+        "instCd" : "缴费事业编号8",
+        "instNm" : "北京电力局",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "cityhangzhou",
+        "instCd" : "缴费事业编号9",
+        "instNm" : "杭州电力局",
+        "instRmk1" : "yes"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citynanjing",
+        "instCd" : "缴费事业编号10",
+        "instNm" : "富阳电力局",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "cityguangzhou",
+        "instCd" : "缴费事业编11",
+        "instNm" : "广州电力局",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "cityguangzhou",
+        "instCd" : "缴费事业编号12",
+        "instNm" : "广州市电力局（市区）",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citybaoding",
+        "instCd" : "缴费事业编号13",
+        "instNm" : "保定电力局",
+        "instRmk1" : "yes"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citybaoding",
+        "instCd" : "缴费事业编号14",
+        "instNm" : "保定电力局",
+        "instRmk1" : "no"
+      },
+      {
+        "provId" : "省编号",
+        "cityId" : "citybaoding",
+        "instCd" : "缴费事业编号15",
+        "instNm" : "保定电力局",
+        "instRmk1" : "yes"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>确认电话</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/accounts/mobileConfirm.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+<div>
+    <ul>
+        <li><span>姓名</span><input type="text" disabled placeholder="请输入姓名"></li>
+        <li><span>身份证</span><input type="number" disabled placeholder="311 211 1992 0621 1111"></li>
+        <li><span>银行卡</span><input type="number" disabled placeholder="1111 2222 3333 4444"></li>
+        <li><span>手机号</span><input type="tel" placeholder="18511123423"><a id="tip">i</a></li>
+    </ul>
+    <div id="content">
+        <p>请检查该号码是否是银行预留号码</p>
+        <div class="sendMessage">
+            <input id="number" type="number" placeholder="请输入短信验证码">
+            <button id="send">发送验证码</button>
+        </div>
+        <div id="choose">
+            <span></span>
+        </div>同意<span>《用户协议》</span>
+    </div>
+    <input id="sub" type="button" value="下一步" />
+    <div id="mask">
+        <article id="tap">
+            <a id="close">x</a>
+            <h2>银行预留手机号</h2>
+            <p>银行预留的手机号码是办理该银行卡时所填写的手机号码。没有预留、手机号忘记或者已停用，请联系该银行客服更新处理。</p>
+        </article>
+    </div>
+</div>
+<!-- build:js [jsBuildPath] -->
+<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+<script type="text/javascript" src="/js/accounts/mobileConfirm.js"></script>
+<!-- endbuild -->
+</body>
+</html>

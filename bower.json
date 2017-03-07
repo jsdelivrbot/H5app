@@ -1,0 +1,41 @@
+{
+  "name": "h5app",
+  "version": "0.0.1",
+  "authors": [
+    "juntao.wu <wujuntao.com@gmail.com>"
+  ],
+  "description": "h5app",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "h5app"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto.js": "~1.1.6",
+    "underscore": "~1.8.3",
+    "Chart.js": "~1.0.2",
+    "vue": "~1.0.8",
+    "director": "~1.2.8",
+    "js-url": "~2.0.2",
+    "promise-js": "~0.0.6"
+  },
+  "devDependencies": {
+    "microtemplates": "~0.1.0",
+    "blueimp-md5": "JavaScript-MD5#~1.1.1",
+    "vue": "~1.0.8",
+    "bootstrap": "~3.3.5",
+    "xss": "~0.2.7",
+    "Zepto-Cookie": "https://github.com/dcompute/Zepto-Cookie.git",
+    "magic-check": "~1.0.2",
+    "barcode": "https://github.com/jbdemonte/barcode.git"
+  }
+}

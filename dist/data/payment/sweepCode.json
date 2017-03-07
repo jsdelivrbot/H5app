@@ -1,0 +1,81 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "",
+    "returnUserMessage": ""
+  },
+  "data": {
+    "base": {
+      "tradingStatus": "还款失败",
+      "money": "-95.00",
+      "tradingObject": {
+        "name": "7-11 便利店",
+        "icon": ""
+      }
+    },
+    "ext": {
+      "orderId": "123412342314",
+      "businessType": "19"
+    },
+    "orderDetail": [
+      {
+        "key": "转账到",
+        "val": "100.00元"
+      },
+      {
+        "key": "退款信息",
+        "val": "信用卡还款_招商银行(6677)"
+      },
+      {
+        "key": "预计到帐时间",
+        "val": "24小时内"
+      },
+      {
+        "key": "交易状态",
+        "val": "已经退款"
+      },
+      {
+        "key": "支付方式",
+        "val": "账户余额"
+      },
+      {
+        "key": "交易时间",
+        "val": "2015-09-03 19:32"
+      },
+      {
+        "key": "备注",
+        "val": "海底捞聚餐"
+      }
+    ],
+    "orderStatus": {
+      "isshow": "0",
+      "list": [
+        {
+          "status": "",
+          "statusName": "提交成功",
+          "sourceStatus": "",
+          "index": "",
+          "operationTime": "09-03 19:32",
+          "current": "0"
+        },
+        {
+          "status": "",
+          "statusName": "银行处理中",
+          "sourceStatus": "",
+          "index": "",
+          "operationTime": "09-03 19:32",
+          "current": "0"
+        },
+        
+        {
+          "status": "",
+          "statusName": "银行处理中",
+          "sourceStatus": "",
+          "index": "",
+          "operationTime": "null",
+          "current": "1"
+        }
+      ]
+    }
+  }
+} 

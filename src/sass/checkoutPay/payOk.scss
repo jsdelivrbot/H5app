@@ -1,0 +1,95 @@
+[v-cloak]{display:none;}
+body{ background-color: #f6f7fb;}
+.success_area{
+    background-color:#FFF;
+    width:100%;
+    font-family:"Microsoft YaHei";
+    text-align:center;
+    line-height:1;
+    padding:25px 0 14px;
+    .success_pic{
+        width:64px;
+        height:64px;
+        margin-bottom:4px;
+    }
+    .success_text{
+        font-size:14px;
+        color:#656565;
+        margin-bottom:18px;
+    }
+    .random_success{
+        color:#b1b1b3;
+    }
+    .money{
+     font-family:"STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:36px;
+        color:#202020;
+        margin-bottom:5px;
+        letter-spacing:0px;
+        position:relative;
+        left:-4px;
+    }
+    .coupon_money{
+        font-size:14px;
+        color:#b2b2b2;
+        margin-bottom:22px;
+
+    }
+    .marginBtom{
+        margin-bottom:8px;
+        color:#656566;
+    }
+    .where_method{
+        font-size:12px;
+        color:#b2b2b2;
+    }
+}
+.mingXiList{
+    line-height:1;
+    font-size:14px;
+    color:#7e7f80;
+    padding:0 0 10px;
+    background-color:#FFF;
+    li{
+        margin:0 15px;
+        overflow:hidden;
+        padding:7px 0;
+    }
+    .hasBorderTop{
+        border-top:1px solid #e1e3e6;
+        padding-top:21px;
+    }
+    span{
+        float:right;
+    }
+    .merchantName{
+        display:inline-block;
+        width:50%;
+        line-height:1.4;
+        text-align:right;
+    }
+}
+.btn_group{
+    font-family:"Microsoft YaHei";
+    border-top:1px solid #e1e3e6;
+    color:#FFF;
+    padding:0 15px;
+
+    li{
+        border-radius:6px;
+        margin:22px 0;
+        height:44px;
+        text-align:center;
+        line-height:44px;
+        letter-spacing:1px;
+    }
+    .btn1{
+        background-color:#3479e0;
+    }
+    .btn2{
+        background-color:#2a61b3;
+    }
+    .btn3{
+        background-color:#9bbcf1;
+    }
+}

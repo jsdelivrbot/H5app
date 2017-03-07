@@ -1,0 +1,520 @@
+{
+    /**
+     * 余额生息接口
+     */
+	// 获取生财宝个人信息api
+	"getCapitalApi": {
+		"serve": "/data/jdCapital/index.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/profitQuery",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/profitQuery",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/profitQuery",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/profitQuery"
+	},
+	// 获取设置信息api
+	"getCapitalSettingnApi": {
+		"serve": "/data/jdCapital/setting.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/msgQuery",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/msgQuery",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/msgQuery",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/msgQuery"
+	},
+	// 设置设置信息api
+	"setCapitalSettingnApi": {
+		"serve": "/data/jdCapital/setting.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/msgSetting",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/msgSetting",
+		"beta": "//beta-tradeapi.jiedaibao.com/payfront/finance/msgSetting",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/msgSetting"
+	},
+	// 设置补充信息api
+	"setInformationApi": {
+		"serve": "/data/jdCapital/turnIn.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/infoCompl",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/infoCompl",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/infoCompl",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/infoCompl"
+	},
+	// 获取转入信息api
+	"getCapitalTurnInDetailApi": {
+		"serve": "/data/jdCapital/turnIn.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/infoQuery",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/infoQuery",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/infoQuery",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/infoQuery"
+	},
+	// 转入操作api
+	"getCapitalTurnInApi": {
+		"serve": "/data/jdCapital/turnIn.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/transIn",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/transIn",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/transIn",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/transIn"
+	},
+	// 转出操作api
+	"getCapitalTurnOutApi": {
+		"serve": "/data/jdCapital/turnIn.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/transOut",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/transOut",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/transOut",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/transOut"
+	},
+	//转出到银行卡银行信息接口
+	"getCapitalBankApi": {
+		"serve": "/data/jdCapital/bankList.json",
+		"dev": "http://api.dev.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCardList",
+		"test": "http://api.test.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCardList",
+		"beta": "https://beta-tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCardList",
+		"prod": "//tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCardList"
+	},
+	// 获取转入转出历史api
+	"getCapitalHistoryApi": {
+		"serve": "/data/jdCapital/history.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/recQuery",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/recQuery",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/recQuery",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/recQuery"
+	},
+	// 获取交易记录详情api
+	"getCapitalDetailApi": {
+		"serve": "/data/jdCapital/history.json",
+		"dev": "//100.73.12.19:8080/balupper/finance/tradeDetailQuery",
+		"test": "//balupper.test.jiedaibao.com/balupper/finance/tradeDetailQuery",
+		"beta": "//beta-yesx.jiedaibao.com/balupper/finance/tradeDetailQuery",
+		"prod": "//online-yesx.jiedaibao.com/balupper/finance/tradeDetailQuery"
+	},
+
+
+    /**
+     * 扫码接口
+     */
+
+	// 扫码支付功能获取优惠券信息接口
+	"couponListApi": {
+		"serve": "/data/payment/couponList.json",
+		"dev": "//shop.dev.jiedaibao.com/api/merchant/coupon/get-list",
+		"test": "//shop.test.jiedaibao.com/api/merchant/coupon/get-list",
+		"beta": "http://beta-shop.jiedaibao.com/api/merchant/coupon/get-list",
+		"prod": "//e.jiedaibao.com/api/merchant/coupon/get-list"
+	},
+	// 扫码支付生成支付订单
+	"generateOrderApi": {
+		"serve": "/data/payment/generateOrder.json",
+		"dev": "//shop.dev.jiedaibao.com/api/merchant/order/generate",
+		"test": "//shop.test.jiedaibao.com/api/merchant/order/generate",
+		"beta": "http://beta-shop.jiedaibao.com/api/merchant/order/generate",
+		"prod": "//e.jiedaibao.com/api/merchant/order/generate"
+	},
+	// 获取商户详情
+	"merchantDetailApi": {
+		"serve": "/data/payment/serveSelf.json",
+		"dev": "//shop.dev.jiedaibao.com:80/api/merchant/account/get-detail",
+		"test": "//shop.test.jiedaibao.com/api/merchant/account/get-detail",
+		"beta": "http://beta-shop.jiedaibao.com/api/merchant/account/get-detail",
+		"prod": "//e.jiedaibao.com/api/merchant/account/get-detail"
+	},
+  	// 首页客户信息机表号
+  	"rechargeInfoApi": {
+		"serve": "/data/rechargeFee/index.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/addressList",
+		"dev": "//100.105.3.2:8080/payfront/consume/addressList",
+		"beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/addressList",
+		"prod": "//tradeapi.jiedaibao.com/payfront/consume/addressList"
+  	},
+  	// 删除历史账单
+  	"deleteAddressApi": {
+		"serve": "/data/rechargeFee/deleteAddress.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/deleteAddress",
+		"dev": "//100.105.3.2:8080/payfront/consume/deleteAddress",
+		"beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/deleteAddress",
+		"prod": "//tradeapi.jiedaibao.com/payfront/consume/deleteAddress"
+  	},
+    // 账单查询生成水电煤账单信息
+    "rechargeListApi": {
+        "serve": "/data/rechargeFee/rechargeList.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/billList",
+        "dev": "//100.105.3.2:8080/payfront/consume/billList",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/billList",
+        "prod": "//tradeapi.jiedaibao.com/payfront/consume/billList"
+    },
+    // 二次查询账单
+    "rechargeSecondApi": {
+        "serve": "/data/rechargeFee/rechargeSecond.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/secBillList",
+        "dev": "//100.105.3.2:8080/payfront/consume/secBillList",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/secBillList",
+        "prod": "//tradeapi.jiedaibao.com/payfront/consume/secBillList"
+    },
+    // 下单查询缴费请求验证
+    "rechargePreOrderApi": {
+        "serve": "/data/rechargeFee/rechargePreOrder.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/preOrder",
+        "dev": "//100.105.3.2:8080/payfront/consume/preOrder",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/preOrder",
+        "prod": "//tradeapi.jiedaibao.com/payfront/consume/cityList"
+    },
+
+    /**
+     * 订单详情接口
+     */
+
+    // 订单详情老接口
+    "oldCodeApi": {
+        "serve": "/data/payment/sweepCode.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/orderQuery/queryDetail",
+        "dev": "//100.105.3.2:8080/payfront/orderQuery/queryDetail",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/orderQuery/queryDetail",
+        "prod": "//tradeapi.jiedaibao.com/payfront/orderQuery/queryDetail"
+    },
+    // 订单详情新接口
+    "newCodeApi": {
+        "serve": "/data/payment/sweepCode.json",
+        "dev": "//100.73.11.34:8080/order/query/queryPayOrder",
+		"test": "//payorder.test.jiedaibao.com/order/query/queryPayOrder",
+        "beta": "//beta-payorder.jiedaibao.com/order/query/queryPayOrder",
+        "prod": "//payorder.jiedaibao.com/order/query/queryPayOrder"
+    },
+    // 水电煤获取城市信息
+    "getHydropowerCoalCityApi": {
+        "serve": "/data/rechargeFee/rechargeCity.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/cityList",
+        "dev": "//100.105.3.2:8080/payfront/consume/cityList",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/cityList",
+        "prod": "//tradeapi.jiedaibao.com/payfront/consume/cityList"
+    },
+    // 水电煤获取电力公司信息
+    "getHpydropowerCoalCompanyApi": {
+        "serve": "/data/rechargeFee/rechargeCompany.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/consume/companyList",
+        "dev": "//100.105.3.2:8080/payfront/consume/companyList",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/consume/companyList",
+        "prod": "//tradeapi.jiedaibao.com/payfront/consume/companyList"
+    },
+
+    /**
+     * 信用卡还款接口
+     */
+
+    // 信用卡列表获取接口
+    "getcreditCardListApi": {
+        "serve": "/data/creditCard/index.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/list",
+        "dev": "//100.73.12.24:8081/payfront/card/list",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/list",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/list"
+    },
+    // 还款记录列表接口
+    "getHistoryCardListApi": {
+        "serve": "/data/jdCapital/history.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/orderRecord",
+        "dev": "//100.73.12.24:8081/payfront/card/orderRecord",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/orderRecord",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/orderRecord"
+    },
+    // 添加信用卡
+    "addCreditCardApi": {
+        "serve": "/data/creditCard/addCreditCard.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/saveCreditCard",
+        "dev": "//100.73.12.24:8081/payfront/card/saveCreditCard",
+        "dev": "//100.73.12.24:8081/payfront/card/saveCreditCard",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/saveCreditCard",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/saveCreditCard"
+    },
+    // 信用卡还款
+    "creditCardRepayApi": {
+        "serve": "/data/creditCard/creditRepay.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/repay",
+        "dev": "//100.73.12.24:8081/payfront/card/repay",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/repay",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/repay"
+    },
+    // 删除信用卡
+    "deleteCreditCardApi": {
+        "serve": "/data/creditCard/delete.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/delete",
+        "dev": "//100.73.12.24:8081/payfront/card/delete",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/delete",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/delete"
+    },
+    // 获取信用卡详情
+    "getCreditDetailApi": {
+        "serve": "/data/creditCard/cardDetail.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/getCard",
+        "dev": "//100.73.12.24:8081/payfront/card/getCard",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/getCard",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/getCard"
+    },
+    // 修改信用卡提醒日期
+    "updateCreditCardApi": {
+        "serve": "/data/creditCard/cardupdate.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/update",
+        "dev": "//100.73.12.24:8081/payfront/card/update",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/update",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/update"
+    },
+    // 识别信用卡
+    "creditCardBinApi": {
+        "serve": "/data/creditCard/creditCardBin.json",
+		"test": "//otofront.test.jiedaibao.com/payfront/card/checkCard",
+        "dev": "//100.73.12.24:8081/payfront/card/checkCard",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/checkCard",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/checkCard"
+    },
+    // 信用卡链接外部地址接口
+    "getOutLinkApi": {
+        "serve": "/data/creditCard/outLink.json",
+        "dev": "//100.73.12.24:8081/payfront/card/creditbank",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/card/creditbank",
+        "prod": "//tradeapi.jiedaibao.com/payfront/card/creditbank"
+    },
+    // 修改手机号对应后端
+    "modifyPhoneApi": {
+        "serve": "/data/creditCard/creditCardBin.json",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppassport/passport/validate/checkselfbankcard",
+        "dev": "//119.254.111.25:1282/mybankv21/phppassport/passport/validate/checkselfbankcard",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppassport/passport/validate/checkselfbankcard",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phppassport/passport/validate/checkselfbankcard"
+    },
+    // 个人借贷信息接口
+    "getTransactionInfoApi": {
+        "serve": "/data/public/wxShare.json",
+        "dev": "http://hddev.jiedaibao.com/promotion/get-transaction-info-by-mobile",
+		"test": "//hd.test.jiedaibao.com/promotion/get-transaction-info-by-mobile",
+        "beta": "//betahd.jiedaibao.com/promotion/get-transaction-info-by-mobile",
+        "prod": "//hd.jiedaibao.com/promotion/get-transaction-info-by-mobile"
+    },
+    //
+    "getPersonalInfoApi":{
+        "serve": "/data/targetPro/personalInfo.json",
+        "dev": "//119.254.111.25:1282/mybankv21/share/detail",
+		"test": "//api.test.jiedaibao.com/mybankv21/share/detail",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/share/detail",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/share/detail"
+    },
+    //标的登录结果接口
+    "getResultDetailApi":{
+        "serve": "/data/targetPro/resultPage.json",
+        "dev": "//119.254.211.234/share/share",
+		"test": "//coupons.test.jiedaibao.com.cn/share/share",
+        "beta": "//beta-coupons.jiedaibao.com.cn/share/share",
+        "prod": "//coupon.jiedaibao.com.cn/share/share"
+        },
+    //标的getcode接口
+    "getCodeApi":{
+        "serve": "/data/targetPro/getCodeApi.json",
+        "dev": "//119.254.211.234/share/getcode",
+		"test": "//coupons.test.jiedaibao.com/share/getcode",
+        "beta": "//beta-coupons.jiedaibao.com/share/getcode",
+        "prod": "//coupon.jiedaibao.com/share/getcode"
+    },
+    //提高借款效率获取验证码
+    "getPhoneCodeApi":{
+    "serve": "/data/upBorrow/getPhoneCode.json",
+    "dev": "//api.dev.jiedaibao.com/mybankv21/phptradeui/trade/getPhoneCode",
+	"test": "//api.test.jiedaibao.com/mybankv21/phptradeui/trade/getPhoneCode",
+    "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/trade/getPhoneCode",
+    "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/trade/getPhoneCode"
+    },
+    //提高借款效率绑定关注
+    "bindProductApi":{
+        "serve": "/data/upBorrow/bindProduct.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phptradeui/trade/bindProduct",
+		"test": "//api.test.jiedaibao.com/mybankv21/phptradeui/trade/bindProduct",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/trade/bindProduct",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/trade/bindProduct"
+    },
+    // 获取用户剩余通话时长
+    "getQueryTimeApi": {
+        "serve": "/data/rechargeFee/flowRecharge.json",
+        "dev": " http://119.254.111.25:8223/voip/phone/searchTime",
+        "beta": "//beta-voip.jiedaibao.com/voip/phone/searchTime",
+		"test": "//voip.test.jiedaibao.com/voip/phone/searchTime",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/voip/phone/searchTime"
+    },
+    // 获取专线时长面值列表查询
+    "getparValueQueryApi": {
+        "serve": "/data/rechargeFee/flowRechargeList.json",
+		"test": "http://otofront.test.jiedaibao.com/payfront/vipPhone/parValueQuery",
+        "dev": "http://100.105.3.2:8080/payfront/vipPhone/parValueQuery",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/vipPhone/parValueQuery",
+        "prod": "//tradeapi.jiedaibao.com/payfront/vipPhone/parValueQuery"
+    },
+    // 专线时长缴费下单
+    "prepayApi": {
+        "serve": "/data/rechargeFee/flowRechargeList.json",
+		"test": "http://otofront.test.jiedaibao.com/payfront/vipPhone/prepay",
+        "dev": "http://100.105.3.2:8080/payfront/vipPhone/prepay",
+        "beta": "//beta-tradeapi.jiedaibao.com/payfront/vipPhone/prepay",
+        "prod": "//tradeapi.jiedaibao.com/payfront/vipPhone/prepay"
+    },
+    // 获取优惠劵列表信息
+    "getCouponListsApi" : {
+       "serve": "/data/coupon/couponList.json",
+       "dev": "//api.dev.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCouponList",
+	   "test": "//api.test.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCouponList",
+       "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCouponList",
+       "prod": "//tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/cashierGetCouponList"
+    },
+    //获取账户升级页面信息
+    "getInformationApi": {
+        "serve": "",
+        "dev": "http://119.254.111.25:1282/mybankv21/datagent/outer/account/get-status",
+		"test": "//api.test.jiedaibao.com/mybankv21/datagent/outer/account/get-status",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/datagent/outer/account/get-status",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/datagent/outer/account/get-status"
+    },
+    //提交账户升级页面信息
+    "sendInformationApi": {
+        "serve": "",
+        "dev": "http://119.254.111.25:1282/mybankv21/datagent/outer/account/agree",
+		"test": "//api.test.jiedaibao.com/mybankv21/datagent/outer/account/agree",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/datagent/outer/account/agree",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/datagent/outer/account/agree"
+    },
+    //端外悬赏
+    "postRewardApi": {
+        "serve": "/data/postReward/postReward.json",
+        "dev": "//119.254.111.25:1282/mybankv21/phpreward/reward/homepage/topicDetail",
+		"test": "//api.test.jiedaibao.com/mybankv21/phpreward/reward/homepage/topicDetail",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phpreward/reward/homepage/topicDetail",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phpreward/reward/homepage/topicDetail"
+    },
+    // 微信授权插件API
+    "authApi": {
+        "serve": "/data/common/auth.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/checkauth",
+        "dev2": "//119.254.111.25:1282/mybankv21/phppassport/v2/passport/outer/checkauth",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/checkauth",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/checkauth",
+        "prod": "//tradeapi.jiedaibao.com.cn/mybankv21/phppassport/v2/passport/outer/checkauth"
+    },
+    //绑定微信授权Api
+    "bindApi": {
+        "serve": "/data/common/bind.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/bind",
+        "dev2": "//119.254.111.25:1282/mybankv21/phppassport/v2/passport/outer/bind",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/bind",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/bind",
+        "prod": "//tradeapi.jiedaibao.com.cn/mybankv21/phppassport/v2/passport/outer/bind"
+    },
+    //获取用户信息Api
+    "getInfoApi": {
+        "serve": "/data/common/getInfo.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/getuinfo",
+        "dev2": "//119.254.111.25:1282/mybankv21/phppassport/v2/passport/outer/getuinfo",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/getuinfo",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/getuinfo",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phppassport/v2/passport/outer/getuinfo"
+    },
+    // 获取借贷宝信息Api
+    "getAvatarApi": {
+        "serve": "/data/bigDraw/getAvatar.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/coupons/entry/avatar",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/coupons/entry/avatar",
+		"test": "//api.test.jiedaibao.com/mybankv21/coupons/entry/avatar",
+        "prod": "//coupon.jiedaibao.com/mybankv21/coupons/entry/avatar"
+    },
+    // 获取红包卡券Api
+   "getAwardApi": {
+       "serve": "/data/bigDraw/getAward.json",
+       "dev": "//api.dev.jiedaibao.com/mybankv21/coupons/entry/award",
+       "beta": "//beta-tradeapi.jiedaibao.com.cn/mybankv21/coupons/entry/award",
+	   "test": "//api.test.jiedaibao.com/mybankv21/coupons/entry/award",
+       "prod": "//coupon.jiedaibao.com.cn/mybankv21/coupons/entry/award"
+   },
+    // 获取验证码Api
+    "sendVerifyCodeApi": {
+        "serve": "/data/bigDraw/sendVerifyCode.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppassport/v2/passport/sms/sendVerifyCode",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppassport/v2/passport/sms/sendVerifyCode",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppassport/v2/passport/sms/sendVerifyCode",
+        "prod": "//tradeapi.jiedaibao.com.cn/mybankv21/phppassport/v2/passport/sms/sendVerifyCode"
+    },
+    // 百赚榜列表页Api
+    "getBaizhuanListApi": {
+        "serve": "/data/profitRank/baizhuanList.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanRank",
+		"test": "//api.test.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanRank",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanRank",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanRank"
+    },
+    // 百赚榜详情页Api
+    "getBaizhuanDetailApi": {
+        "serve": "/data/profitRank/baizhuanDetail.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanDetail",
+		"test": "//api.test.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanDetail",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanDetail",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getBaizhuanDetail"
+    },
+      //支付成功信息Api
+    "payOkApi":{
+        "serve": "/data/checkoutPay/payOk.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppayui/payui/pay/getQRPaySuccessInfo",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppayui/payui/pay/getQRPaySuccessInfo",
+        "beta": "https://beta-tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/getQRPaySuccessInfo",
+        "prod": "https://tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/getQRPaySuccessInfo"
+    },
+    //收付款订单详情Api
+    "orderDetailApi":{
+        "serve": "/data/checkoutPay/orderDetail.json",
+        "dev": "//100.73.11.34:8080/order/query/queryPayOrder",
+		"test": "http://payorder.test.jiedaibao.com/order/query/queryPayOrder",
+        "beta": "http://beta-payorder.jiedaibao.com/order/query/queryPayOrder",
+        "prod": "http://payorder.jiedaibao.com/order/query/queryPayOrder"
+    },
+	// 专线电话赚时长
+	"flowPhoneApi": {
+	  "serve": "/data/introduce/flowPhone.json",
+	  "dev": "http://119.254.111.25:8223/voip/phone/searchTime",
+	  "test": "//api.test.jiedaibao.com/mybankv21/voip/phone/searchTime",
+	  "beta": "//beta-voip.jiedaibao.com/voip/phone/searchTime",
+	  "prod": "//tradeapi.jiedaibao.com/mybankv21/voip/phone/searchTime"
+	},
+	// 投资有道文章列表接口
+	"investmentApi": {
+	  "serve": "/data/introduce/investmentList.json",
+	  "dev": "http://119.254.111.25:1282/mybankv21/cms/api/article/article/list",
+	  "beta": "http://122.115.42.79/api/article/article/list",
+	  "test": "//api.test.jiedaibao.com/mybankv21/cms/api/article/article/list",
+	  "prod": "//tradeapi.jiedaibao.com/mybankv21/cms/api/article/article/list"
+	},
+    // 获取支付合规性提示接口
+    "tradeOuterApi": {
+      "serve": "http://119.254.111.25:1282/mybankv21/phptradeui/wallet/get-risk-tip",
+      "dev": "http://119.254.111.25:1282/mybankv21/phptradeui/wallet/get-risk-tip",
+      "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/wallet/get-risk-tip",
+	  "test": "//api.test.jiedaibao.com/mybankv21/phptradeui/wallet/get-risk-tip",
+      "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/wallet/get-risk-tip"
+    },
+    //随机减
+    "randomPayOkApi" : {
+        "serve": "/data/payment/randomPayOk.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppayui/payui/merchant/queryScanPayInfo",
+		"test": "//api.test.jiedaibao.com/mybankv21/phppayui/payui/merchant/queryScanPayInfo",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppayui/payui/merchant/queryScanPayInfo",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phppayui/payui/merchant/queryScanPayInfo"
+    },
+    //借款分享
+    "getTradeInfoApi":{
+        "serve": "/data/upBorrow/getTradeInfo.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phptradeui/share/getTradeInfo",
+		"test": "//api.test.jiedaibao.com/mybankv21/phptradeui/share/getTradeInfo",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getTradeInfo",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getTradeInfo"
+    },
+    //手动还款分享
+    "getRepaymentInfoApi":{
+        "serve": "/data/upBorrow/getRepaymentInfo.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phptradeui/share/getRepaymentInfo",
+		"test": "//api.test.jiedaibao.com/mybankv21/phptradeui/share/getRepaymentInfo",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getRepaymentInfo",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phptradeui/share/getRepaymentInfo"
+    },
+    // 收银台优化统一支付结果页
+    "queryPayResultApi": {
+        "serve": "/data/payment/queryPayResult.json",
+        "dev": "//api.dev.jiedaibao.com/mybankv21/phppayui/payui/pay/queryPayResult",
+        "beta": "//beta-tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/queryPayResult",
+        "prod": "//tradeapi.jiedaibao.com/mybankv21/phppayui/payui/pay/queryPayResult"
+    }
+
+}

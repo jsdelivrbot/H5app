@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>订单详情</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/checkoutPay/orderDetail.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2405b35e6ac1ae53a3c40ddff29c3f78";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body id="orderInfos" v-cloak>
+    
+    <div class="order_head">
+        <div class="success_text">{{baseInfos.tradingStatus}}</div>
+        <div class="money">{{baseInfos.money}}<span>元</span></div>
+        <div class="shopping_mall">
+            <img class="mall_logo" v-bind:src="baseInfos.tradingObject.icon" alt="" v-if="baseInfos.tradingObject.icon">
+            <img class="mall_logo" src="../../img/checkoutPay/mall_logo.png" v-else>
+            <span>{{baseInfos.tradingObject.name}}</span>
+        </div>
+    </div>
+    <ul class="order_body">
+       <li v-for="item in detailInfos" v-show="item.displayStatus === '1'">
+           <span class="info_tip">{{item.key}}</span>
+           <span class="info_content">{{{item.val}}}</span>
+       </li> 
+      <li class="no_border_bottom">
+          <span class="info_tip">条形码</span>
+          <span class="info_content">支持商家扫码退款及查询交易</span>
+      </li>
+      <li class="no_border_bottom tiaoma_li">
+          <span class="info_tip"></span>
+          <div id="barcode" class="barcode" v-on:click="scale($event)">
+           {{barcodeInfo.val | tiaoXingMaFilter}}
+          </div>
+          
+      </li>
+    </ul>
+    
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/barcode/jquery/jquery-barcode.js"></script>
+    <script type="text/javascript" src="/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/js/checkoutPay/orderDetail.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

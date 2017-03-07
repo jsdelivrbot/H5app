@@ -1,0 +1,32 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "",
+    "returnUserMessage": ""
+  },
+  "data": {
+    "cityList": [
+      {
+        "provId": "provhainan",
+        "cityId": "cityhainan",
+        "cityNm": "海南"
+      },
+      {
+        "provId": "provbeijing",
+        "cityId": "citybeijing",
+        "cityNm": "北京"
+      },
+      {
+        "provId": "provnanjing",
+        "cityId": "citynanjing",
+        "cityNm": "南京"
+      },
+      {
+        "provId": "provhangzhou",
+        "cityId": "cityhangzhou",
+        "cityNm": "杭州"
+      }
+    ]
+
+  }
+}

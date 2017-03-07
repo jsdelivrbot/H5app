@@ -1,0 +1,14 @@
+{
+  "error": {
+    "returnCode": 0,
+    "returnMessage": "success",
+    "returnUserMessage": "success"
+  },
+  "data": {
+    "personInfo":{
+      "avatar":"http://img4.duitang.com/uploads/item/201601/03/20160103175943_SkFQf.png",
+      "name":"小朋友",
+      "transactionInfo":"刚在借贷宝做了笔投资，收益0元！还有红包抢！"
+    }
+  }
+}

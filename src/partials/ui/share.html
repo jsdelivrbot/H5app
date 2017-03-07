@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Share Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+	<!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+	<link rel="stylesheet" href="/sass/common/share.scss">
+	<link rel="stylesheet" href="/sass/common/ionic/ionicBase.scss">
+	<link rel="stylesheet" href="/sass/common/ionic/_button.scss">
+	<!-- endbuild -->
+	<style type="text/css">
+		.button-wrap {
+			text-align: center;
+			margin: 50px 0;
+		}
+
+		.dialog-btn-good {
+			color: #D62416;
+		}
+
+		.dialog-btn-genius {
+			color: #F7C717;
+		}
+	</style>
+</head>
+<body>
+	<div class="button-wrap">
+		<a id="share" class="button button-balanced button-outline">分享给好友</a>
+	</div>
+	<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+	<script type="text/javascript" src="/js/common/share.js"></script>
+	<script type="text/javascript">
+		;(function() {
+			// 一般在DomReady的时候初始化分享组件
+			ShareFriends.init({
+				// 分享的图片，本地图片或外网链接
+				shareImg: 'img/notMin/jdb_icon.jpg', 
+				// 分享的url，本地页面或外网url, 若是本地页面则自动取域名和项目名作为前缀
+				// 如果域名已被封，则会被替换成未被封的域名
+				shareUrl: 'partials/jdCapital/index.html',
+				// 分享链接传的参数，可选 
+				shareUrlParams: { 
+					test: 'test'
+				},
+				// 分享内容 
+				// 分享渠道目前有六个，可填一部分，目前都是全填
+				// {{shareUrl}}会被替换成: shareUrl + shareUrlParams
+				shareContent: { 
+					sms: {
+						shareTitle: '',
+						shareText: '【借贷宝发钱，狂嗨一整年】，借贷宝狂发元！！详情猛戳{{shareUrl}}'
+					},
+					wxfeed: {
+						shareTitle: '',
+						shareText: '【借贷宝发钱，狂嗨一整年】，借贷宝狂发元！！'
+					},
+					wxmsg: {
+						shareTitle: '借贷宝发钱，狂嗨一整年',
+						shareText: '【借贷宝发钱，狂嗨一整年】，借贷宝狂发元！！'
+					},
+					qq: {
+						shareTitle: '',
+						shareText: '【借贷宝发钱，狂嗨一整年】，借贷宝狂发元！！'
+					},
+					qqzone: {
+						shareTitle: '借贷宝发钱，狂嗨一整年',
+						shareText: '【借贷宝发钱，狂嗨一整年】，借贷宝狂发元！！'
+					},
+					weibo: {
+						shareTitle: '',
+						shareText: '【借贷宝发钱，狂嗨一整年】，借贷宝狂发元！！详情猛戳{{shareUrl}}'
+					}
+				}
+			});
+
+			$( '#share' ).on( 'click', function( e ) {
+				// 调用分享组件
+				ShareFriends.open();
+			} );
+		
+		})();
+	</script>
+</body>
+</html>

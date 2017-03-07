@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Toast Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+	<!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+	<link rel="stylesheet" href="/sass/common/toast.scss">
+	<link rel="stylesheet" href="/sass/common/ionic/ionicBase.scss">
+	<link rel="stylesheet" href="/sass/common/ionic/_button.scss">
+	<!-- endbuild -->
+	<style type="text/css">
+		.button-wrap {
+			text-align: center;
+			margin: 50px 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="button-wrap">
+		<a id="success" class="button button-balanced button-outline">Success Toast</a>
+	</div>
+
+	<div class="button-wrap">
+		<a id="error" class="button button-assertive button-outline">Error Toast</a>
+	</div>
+
+	<div class="button-wrap">
+		<a id="callback" class="button button-royal button-outline">Toast Callback</a>
+	</div>
+
+	<div class="button-wrap">
+		<a id="custom" class="button button-calm button-outline">Change Time</a>
+	</div>
+
+	<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+	<script type="text/javascript" src="/js/common/toast.js"></script>
+	<script type="text/javascript">
+		$( '#success' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			toastSuccess( 'Success !' );
+		} );
+
+		$( '#error' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			toastError( 'Error !' );
+		} );
+
+		$( '#callback' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			toastSuccess( 
+				'ckeck callback in console !', 
+				function() {
+					console.log( 'callback time: ' + new Date().getTime() );
+				}
+			);
+		} );
+
+		$( '#custom' ).on( 'click', function( e ) {
+			e.preventDefault();
+
+			toastError( {
+				text: 'only show 1000ms!',
+				ms: 1000,
+				callback: function() {
+					console.log( 'callback time: ' + new Date().getTime() );
+				}
+			} );
+		} );
+	</script>
+</body>
+</html>

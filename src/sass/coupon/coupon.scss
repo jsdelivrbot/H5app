@@ -1,0 +1,78 @@
+
+$paddingSide : 14px;
+$checkBtnSize : 18px;
+$couponHeight : 52px;
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../../fonts/iconfont.eot'); 
+    src: url('../../fonts/iconfont.eot?#iefix') format('embedded-opentype'), 
+    url('../../fonts/iconfont.woff') format('woff'), 
+    url('../../fonts/iconfont.ttf') format('truetype'), 
+    url('../../fonts/iconfont.svg#iconfont') format('svg'); 
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  color:#4f86e2;
+  font-size:$checkBtnSize+2px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+[v-cloak]{ display:none;}
+.coupon_list_main{
+    padding:$paddingSide; 
+    padding-top:0;
+    font-family:"Microsoft YaHei";
+    li{
+        height:$couponHeight+2px;
+        padding-bottom:$paddingSide;
+        padding-top:$paddingSide;
+        border-bottom:1px solid #e6e6e6;
+        .coupon_logo{
+            float:left;
+            height:$couponHeight;
+            max-width:$couponHeight;
+            border:1px solid #e1e3e5;  
+            margin-right:$paddingSide;
+        }
+        .coupon_text{
+            float:left;
+            line-height:26px;
+            letter-spacing:1px;
+            
+            span{
+                font-size:10px;
+                color:#979899;
+            }
+            h2{
+                position:relative;
+                top:4px;
+                font-size:16px;
+                color:#19191a;
+                
+            }
+        }
+        .check_btn{
+            float:right;
+            background:url(../../img/coupon/checked.png) no-repeat;
+            background-size:contain;
+            width:$checkBtnSize;
+            height:$checkBtnSize;
+            position:relative;
+            top:50%;
+            left:-10px;
+            margin-top:-$checkBtnSize/2;
+            //@extend .iconfont;
+        } 
+        .no_checked{
+            border:1px solid #CCC;
+            border-radius:$checkBtnSize/2+1px; 
+            left:-8px;
+            background-image:none;
+        }   
+    }
+    
+}

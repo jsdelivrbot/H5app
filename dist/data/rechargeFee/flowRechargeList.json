@@ -1,0 +1,30 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "",
+    "returnUserMessage": ""
+  },
+  "data": {
+    "parValueList": [
+      {
+        "peAmt": "28",
+        "payAmt": "10",
+        "pvId": "",
+        "idName": "140"
+      },
+      {
+        "peAmt": "46",
+        "payAmt": "20",
+        "pvId": "",
+        "idName": "300"
+      },
+      {
+        "peAmt": "60",
+        "payAmt": "30",
+        "pvId": "",
+        "idName": "500"
+      }
+    ]
+
+  }
+}

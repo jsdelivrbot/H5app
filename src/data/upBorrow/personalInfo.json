@@ -1,0 +1,15 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "amount": "5000000.0",
+        "rate": "15.10",
+        "avatarUrl": "http://jdbserver.b0.upaiyun.com/images/46411431344515255!fixed120",
+        "context": "朋友够给力，收益超越P2P",
+        "memberName": "刘清",
+        "URL": "http://www.jiedaibao.com"
+    }
+}

@@ -1,0 +1,40 @@
+<div class="make-money-tips" id="makeMoneyTips">
+    <div class="make-money-intro">
+        <div class="make-money-intro-title">
+            怎么白赚钱？
+        </div>
+        <p>
+            在借贷宝您有多种方式白赚钱，可以赚利差人脉变钱脉，可以低借高贷白赚收益，还可以揭榜、抽奖、领红包，开开心心玩出钱！
+        </p>
+    </div>
+    <ul>
+        <li>
+            <div>
+                <img class="interest" src="../../img/introduce/interest.png"> &nbsp;
+                <span>赚利差</span>
+            </div>
+            <p>无需本金，只需设置利差完成交易，既能帮助好友筹集资金，又能够获得可观利差，人脉创造价值！赚利差是提升排名最轻松的途径！</p>
+        </li>
+        <li>
+            <div>
+                <img class="borrow" src="../../img/introduce/borrow.png"> &nbsp;
+                <span>低借高贷</span>
+            </div>
+            <p>低利率从好友处借入，高利率借给他人，轻松赚取利差！ </p>
+        </li>
+        <li>
+            <div>
+                <img class="reward" src="../../img/introduce/reward.png"> &nbsp;
+                <span>悬赏揭榜</span>
+            </div>
+            <p>悬赏是借贷宝独创的功能，在悬赏中帮好友解答疑惑可以获得赏金，给力的回答更可以获得好友的追赏！只要好友足够多，赏金持续拿不停！</p>
+        </li>
+        <li>
+            <div>
+                <img class="redPacket" src="../../img/introduce/redPacket.png"> &nbsp;
+                <span>活动红包</span>
+            </div>
+            <p>借贷宝会不定期的做活动，每次活动都有海量红包可以领取，最大红包￥8888，拼的就是手气！当前活动为天降奇财！</p>
+        </li>
+    </ul>
+</div>

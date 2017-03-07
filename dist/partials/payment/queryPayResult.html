@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>&#x652F;&#x4ED8;&#x7ED3;&#x679C;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="/h5app/css/payment/queryPayResult.min.css?_=20161107154511">
+</head>
+<body>
+    <div class="pay-logo-wraper">
+        <img class="success_pic" src="../../img/payment/queryPayResult/success.png" alt="">
+    </div>
+    <div class="result-wraper">
+        <div id="success" v-cloak="">
+            <ul class="success_area">
+                <li class="success_text random_success">&#x4ED8;&#x6B3E;&#x6210;&#x529F;</li>
+                <li class="money ">&#xFFE5;{{orderInfos.payedTotal}}</li>
+                <li v-if="orderInfos.payedTotal != orderInfos.orderTotal" class="money payed-total"><span class="order-total">&#xFFE5;{{orderInfos.orderTotal}}</span></li>
+                <li class="coupon_money marginBtom payTips">{{orderInfos.payTips}}</li>
+                <!-- <li class="where_method" v-cloak>{{orderInfos.merName}}: {{orderInfos.payType | payTypeFilter}}</li> -->
+            </ul>
+            <ul class="mingXiList">
+                <!-- <li class="hasBorderTop">订单金额<span>{{orderInfos.payedTotal}}</span></li> -->
+                <li v-for="item in orderInfos.list">{{item.key}}<span>{{item.value}}</span></li>
+            </ul>
+            <ul class="btn_group">
+                <li class="btn1" v-on:click="continuePay($event)">&#x5B8C;&#x6210;</li>
+            </ul>
+        </div>
+    </div>
+    <script src="/h5app/js/payment/queryPayResult.min.js?_=20161107154511"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2405b35e6ac1ae53a3c40ddff29c3f78";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>

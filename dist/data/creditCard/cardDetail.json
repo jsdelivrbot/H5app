@@ -1,0 +1,28 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "id": 189,
+        "memberId": "571661542123118988",
+        "account": "6225751107161403",
+        "name": "玲玲",
+        "bankid": 2,
+        "bankNo": "CMB",
+        "lastBankNo": "1403",
+        "bankName": "招商银行",
+        "remindDate": "7",
+        "paymethod": 1,
+        "cardType": "2",
+        "status": 1,
+        "cardStatus": 1,
+        "messageStatus": "1",
+        "comment": null,
+        "noticeDate": 1459958400000,
+        "createAt": 1458039083000,
+        "amount": null,
+        "noticeDays": 21
+    }
+}

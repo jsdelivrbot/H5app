@@ -1,0 +1,33 @@
+{
+  "name": "Zepto-Cookie",
+  "homepage": "https://github.com/dcompute/Zepto-Cookie",
+  "authors": [
+    "Daniel Lacy <dan@daniellacy.com>"
+  ],
+  "description": "A simple plugin to read, set, and delete cookies. This plugin extends Zepto.js with a $.cookie method.",
+  "main": "zepto.cookie.js",
+  "keywords": [
+    "Zepto",
+    "Cookies"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zeptojs": "~1.1.2"
+  },
+  "_release": "fcca8ac61b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fcca8ac61b8d32819374c9d23b577ec136f9becf"
+  },
+  "_source": "https://github.com/dcompute/Zepto-Cookie.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/dcompute/Zepto-Cookie.git"
+}

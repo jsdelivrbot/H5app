@@ -1,0 +1,81 @@
+<div id="addCreditCard">
+    <ul>
+        <li>
+            <div class="inputContainer">
+                卡号
+                <input id="bankNo" type="tel" placeholder="请输入14-16位信用卡卡号" value="">
+                <span class="deleteBox">
+                    <span class="delete">
+                        <img src="../../img/creditCard/delete_money.png">
+                    </span>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="inputContainer">
+                姓名
+                <input id="cusName" placeholder="请输入持卡人姓名" value="">
+                <span class="deleteBox">
+                    <span class="delete">
+                        <img src="../../img/creditCard/delete_money.png">
+                    </span>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p class="bankPtag">
+                    银行
+                    <span class="logoContainer zhaoshang">
+                        <!-- <img class="bankLogo" src="/img/creditCard/zhaoshang_logo.png" style=""> -->
+                    </span>
+                    <span class="bankName" style="">
+                        <input readonly="readonly" id="bankName" value="招商银行" />
+                        <select id="bankListSelect">
+                            <% var length=data.bankList.length; for (var i=0 ;i < length; i ++) {%>
+                                <option>
+                                    <%=data.bankList[i].bankName%>
+                                </option>
+                                <% }%>
+                        </select>
+                        
+                    </span>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <div>
+                还款提醒
+                <label class="toggle">
+                    <input id="ifRemind" checked type="checkbox">
+                    <div class="track">
+                        <div class="handle">
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </li>
+        <li style="">
+            <div>
+                <p style="position:relative;white-space: nowrap;">
+                    提醒日期
+                    <select id="remindDate" class="remindDate">
+                        <% for (var i=1 ;i<29; i ++) {%>
+                            <option><%=i%>日</option>
+                            <% }%>
+                    </select>
+                    <font class="dateFont">
+                        1日
+                    </font>
+                    <span class="leftArrow">
+                    </span>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <button id="confirm" class="bigButton">
+        确认
+    </button>
+</div>

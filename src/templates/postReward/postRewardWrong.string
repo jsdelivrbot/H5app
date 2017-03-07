@@ -1,0 +1,8 @@
+<div class="hideInfo">
+    <div class="showImg">
+        <img src="../../img/postReward/hideInfo.png" alt=""/>
+    </div>
+    <div class="showInfo"><%=shieldedTip%></div>
+
+</div>
+

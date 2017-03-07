@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>余额生息</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/common/toast.scss">
+    <link rel="stylesheet" href="/sass/jdCapital/information.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+<div class="container">
+    <p class="complete">根据相关监管机构规定，您须完善以下个人信息</p>
+    <ul class="input-list">
+        <li>
+            <label for="job">职业</label>
+            <input id="jobCode" type="hidden" name="jobCode" value="0" />
+            <input id="job" type="text" name="job" value="国家机关、党群组织、企事业单位负责人"/>
+        </li>
+        <li>
+            <label for="home_address">家庭地址</label>
+            <input id="home_address" type="text" name="fnyAddr" placeholder="请输入你的家庭地址" maxlength="100" />
+        </li>
+        <li>
+            <label for="date">身份证有效期</label>
+            <input id="idcard-text" type="text" placeholder="例如：2016-01-01或长期"/>
+        </li>
+    </ul>
+    <div class="sub">
+        
+        <a class="complate-btn" id="btn-submit">完成</a>
+    </div>
+</div>
+
+<div class="cover">
+    <div class="background"></div>
+    <div class="menu">
+        <ul class="occ-list">
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="0" checked="checked">
+                    <span>国家机关、党群组织、企事业负责人</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="1">
+                    <span>专业技术人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="2">
+                    <span>教学、金融、文艺工作人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="3">
+                    <span>国家办事人员和相关人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="4">
+                    <span>商业、服务业人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="5">
+                    <span>农林牧渔、水利业生产人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="6">
+                    <span>生产、运输设备操作及相关人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="X">
+                    <span>军人</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+            <li class="item-radio">
+                <label>
+                    <input type="radio" name="group" value="Y">
+                    <span>其他从业人员</span>
+                    <i class="item-check"></i>
+                </label>
+            </li>
+        </ul>
+        <a class="btn-back" href="#">确认</a>
+    </div>
+</div>
+<!-- build:js [jsBuildPath] -->
+<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+<script type="text/javascript" src="/zepto.js/src/fx.js"></script>
+<script type="text/javascript" src="/js/common/utls.js"></script>
+<script type="text/javascript" src="/js/common/toast.js" ></script>
+<script type="text/javascript" src="/js/jdCapital/information.js"></script>
+<!-- endbuild -->
+</body>
+</html>

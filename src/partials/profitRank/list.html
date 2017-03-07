@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>借贷宝百赚榜</title>
+    <meta name="description" content="借贷宝百赚榜">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/profitRank/profitRank.scss">
+    <link rel="stylesheet" href="/sass/profitRank/list.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="personal-info" id="personalInfo">
+        <div class="user-title">
+            <img class="avatar" :src="memberInfo.thumbnailUrl || '../../img/common/avatar-default-50.png'" alt="avatar" /> {{ memberInfo.memberName }}在借贷宝白赚到
+        </div>
+        <a class="how-intro j-how-intro" href="#makeMoneyTips">
+            <img src="../../img/profitRank/questionMark.png" alt="?" /> 如何白赚钱
+        </a>
+        <div class="profit-count clearfix">
+            <p class="profit-count-num">
+                <a :href="'./detail.html?id=' + memberInfo.memberID" target="_blank">￥{{ amount | formatMoney }}</a>
+            </p>
+        </div>
+    </div>
+    <div class="profit-rank-list" id="profitRankList">
+        <ul>
+            <li v-for="item in list">
+                <p class="user-title">
+                    <span>
+                        <img v-if="$index === 0" class="rankIcon" src="../../img/profitRank/rankIcon1.png" alt="1" />
+                        <img v-if="$index === 1" class="rankIcon" src="../../img/profitRank/rankIcon2.png" alt="2" />
+                        <img v-if="$index === 2" class="rankIcon" src="../../img/profitRank/rankIcon3.png" alt="3" />
+                        {{ $index > 2 ? $index + 1 : '' }}
+                    </span>
+                    <img class="avatar" :src="item.memberInfo.thumbnailUrl || '../../img/common/avatar-default-50.png'" alt="avatar" /> {{ item.memberInfo.memberName }}
+                </p>
+                <p class="money">
+                    <span>￥</span> {{ item.amount | formatMoney }}
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="makeMoneyTipsContainer clearfix make-money-tips-wrap">
+
+    </div>
+
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+    <script type="text/javascript" src="/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/js/profitRank/vue-filter-money.js"></script>
+    <script type="text/javascript" src="/js/profitRank/list.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+#manageCreditCard{
+	display:block;
+	.topDiv{
+		border-bottom: 1px solid #E6E8EB;
+		padding-bottom: 23px;
+		background-color: white;
+		padding-top: 15px;
+		/* padding-left: 20px; */
+		position: relative;
+		width: 100%;
+		float: left;
+		.topLeft{
+			width: 75%;
+			float: left;
+			height: 72px;
+			color: #3d434c;
+			.bank_p{
+				margin-top: 18px;
+				position: relative;
+				margin-left: 21px;
+				margin-left: 7.5%;
+				font-size: 14px; 
+				line-height: 14px;
+				font-size: 14px;
+				font-size: 3.73vw;
+				line-height: 3.7vw; 
+				@media (min-width: 420px){ 
+					line-height: 14px;
+					font-size: 14px;
+
+				 }
+				.logoContainer {
+					min-width: 26px;
+					position: absolute;
+					top: 11px;
+					width: 7%;
+					left: 53px;
+					top: -8px;
+					left: 0px;
+					height: 25px;
+					overflow: hidden;
+					background-image: url(../../img/creditCard/bank-icons.png);
+					background-repeat: no-repeat;
+					background-size: 26px;
+					background-position: 0px 0px;
+					//background
+					.bankLogo {
+						width: 25px;
+						//position: absolute;
+						/* top: 11px; */
+						width: 100%;
+						/* left: 53px; */
+						//top: -50px;
+						/* left: 16%; */
+						//left: 0px;
+					}
+
+    			}
+				img{
+					width: 25px;
+					position: absolute;
+					top: -5px;
+					width: 9.5%;
+				}
+				.bankName{
+					margin-left: 34px;
+					
+					margin-left: 13%;
+
+				}
+				.bankSize {
+					font-size: 22px;
+				}
+				.payDate {
+					margin-left: 2px;
+					color: #afb1b2;
+					/* margin-top: 0px; */
+					
+				}
+			}
+			.bankNo_p {
+				padding-left: 55px;
+				margin-top: 16px;
+				font-size: 22px;
+		    	padding-left: 19.5%;
+			}
+			.bankNo_b {
+				padding-left: 55px;
+				margin-top: 16px;
+				font-size: 14px;
+				color: #dadadc;
+		    	padding-left: 19.5%;
+			}
+		}
+
+		.bankNo_b {	
+			padding-left: 55px; 	
+			font-size: 14px;	
+			color: #dadadc;
+	    	padding-left: 19.5%;
+		}
+		.topRight{
+			width: 25%;
+			float: left;
+			/* position: absolute; */
+			/* right: 20px; */
+			/* top: 30px; */
+			/* border-radius: 15px; */
+			/* display: block; */
+			/* width: 250px; */
+			height: 72px;
+			/* padding-top: 20px; */
+			padding-right: 0px;
+
+			button{
+				display: block;
+				width: 54px;
+				height: 24px;
+				border-radius: 12px;
+				border: 1px solid #d43f3e;
+				background-color: white;
+				/* margin-left: 20px; */
+				color: #d43f3e;
+				font-size: 12px;
+				/* margin-left: 23%; */
+				float: right;
+				margin-top: 20px;
+				margin-right: 20px;
+
+			}
+		}
+	}
+	ul{
+		border-top: 1px solid #e6e8eb;
+		
+		background-color: #f5f7fa;
+		margin-top: 17px;
+		float: left;
+    	li{
+    		padding-left: 25px;
+
+    		input {
+				border: none;
+				margin-left: 13px;
+    		}
+    		.bankPtag {
+    			position: relative;
+    			.bankLogo {
+					width: 25px;
+					position: absolute;
+					top: 11px;
+					width: 7%;
+					left: 53px;
+					top: 27%;
+					left: 16%;
+    			}
+    			.bankName {
+					width: 73%;
+					text-align: left;
+					input {
+						margin-left: 0px;
+						color: gray;
+					}
+
+    			}
+    		}
+
+    		.toggle {
+				position: relative;
+				/* right: 3px; */
+				top: 10px;
+				float: right;
+    		}
+    		.remindDate{
+				position: absolute;
+				right: 0px;
+				top: 10px;
+				/* float: right; */
+				display: block;
+				/* visibility: hidden; */
+				opacity: 0;
+				z-index: -1;
+    		}
+    		.dateFont{
+				position: absolute;
+				right: 10px;
+				color: gray;
+				width: 50px;
+    			text-align: right;
+
+    		}
+    		.leftArrow{
+				position: absolute;
+				right: 0px;
+				top: 21px;
+    		}
+    		&:nth-of-type(2) {
+    			border-bottom: 1px solid #e6e8eb;
+	   	}
+ 	
+    		&:last-child {
+ 	
+    			border-top: 1px solid #e6e8eb;
+ 	
+    			margin-top: 20px;
+ 	
+    			& div {
+    				border-top: none;
+    			}
+    		}
+  		}
+	}
+	#deleteCard {
+		background-color: #ff5f57;
+		color: #fff;
+		&:active {
+			background-color: #e5564d;
+		}
+	}
+	.press {
+		background-color: #e6564d;
+	}
+	#deleteCard {
+		background-color: #ff5f57;
+		color: #fff;
+	}
+	.press {
+		background-color: #e6564d;
+	}
+}

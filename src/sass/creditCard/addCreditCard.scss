@@ -1,0 +1,161 @@
+#addCreditCard{
+	display:block;
+	ul{
+	    border-top: 1px solid #e6e8eb;
+    	//padding-left: 15px;
+    	margin-top: 17px;
+    	li{
+    		input {
+				border: none;
+				margin-left: 13px;
+				min-width: 195px;
+				height:40px;
+				width:80%;
+				//line-height: 40px;
+
+    		}
+    		.inputContainer{
+    			position: relative;
+    		    line-height: 48px;
+    			.deleteBox{
+    				position:absolute;
+    				top:0px;
+    				right:10px;
+    			}
+
+    		}
+    		.deleteBox {
+    			width: 30px;
+    			text-align: center;
+    			padding-bottom: 8px;
+
+	    		.delete{
+				    height: 14px;
+				    width: 14px;
+				    /* display: block; */
+				    /* position: relative; */
+				    /* right: 20px; */
+				    /* top: 18px; */
+				   /* background-color: #afb1b2;*/
+				    color: white;
+				    text-align: center;
+				    line-height: 13px;
+				    border-radius: 10px;
+				    font-size: 12px;
+				    float: right;
+				    margin-top: 19px;
+		       		 margin-right: 5px;
+		       		 img {
+		       		 	width:14px;
+		       		 }
+   			 	}
+   			 }
+    		.bankPtag {
+    			position: relative;
+    			.logoContainer{
+					min-width: 26px;
+					position: absolute;
+					top: 11px;
+					width: 7%;
+					left: 53px;
+			    	top: 27%;
+					left: 16%;
+					height: 25px;
+					overflow: hidden;
+					background-image: url(../../img/creditCard/bank-icons.png);
+					background-repeat: no-repeat;
+					background-size: 26px;
+					background-position: 0px 0px;
+					//background
+					.bankLogo{
+						width: 25px;
+						//position: absolute;
+						/* top: 11px; */
+						width: 100%;
+						/* left: 53px; */
+						//top: -50px;
+						/* left: 16%; */
+						//left: 0px;
+					}
+
+    			}
+
+    			.bankLogo{
+    				width: 25px;
+					position: absolute;
+					top: 11px;
+					width: 7%;
+					left: 53px;
+					top: 27%;
+					left: 16%;
+    			}
+    			
+    			.bankName{
+					width: 73%;
+					text-align: left;
+					input{
+						margin-left: 0px;
+						color: gray;
+					}
+
+    			}
+    			#bankListSelect{
+					position: absolute;
+					right: 0px;
+					top: 10px;
+					/* float: right; */
+					display: block;
+					/* visibility: hidden; */
+					opacity: 0;
+					z-index: -1;
+					width:200px;
+    			}
+    			.bankChoice{
+					position: absolute;
+					right: 0px;
+					color: gray;
+					top: 0px;
+    			}
+    		}
+
+    		.toggle{
+				position: relative;
+				/* right: 3px; */
+				top: 10px;
+				float: right;
+    		}
+    		.remindDate{
+				position: absolute;
+				right: 0px;
+				top: 10px;
+				/* float: right; */
+				display: block;
+				/* visibility: hidden; */
+				opacity: 0;
+				z-index: -1;
+
+    		}
+    		.dateFont{
+				position: absolute;
+				right: 10px;
+				color: gray;
+				width: 50px;
+    			text-align: right;
+
+    		}
+    		.leftArrow{
+	    		position: absolute;
+			    right: 0px;
+			    top: 21px;
+    		}
+  		}
+    		
+	}
+	.bigButton {
+	   	background-color: #2a8bf8;; 
+	   	&:active {
+			background-color: #2277d7;
+		}
+	}
+
+}

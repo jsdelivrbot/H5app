@@ -1,0 +1,32 @@
+{
+    "error": {
+      "returnCode": "0",
+      "returnMessage": "",
+      "returnUserMessage": ""
+    },
+	"data":{
+		"amount":"100",
+		"payAmount":"80",
+		"preferentialAmount":"20",
+		"merName":"小卖部",
+		"payType":2,
+		"couponList":[
+			{
+				"title":"借贷宝立减",
+				"version":"卡卷批次",
+				"type":"1",
+				"cid":"卷ID",
+				"amount":"5"
+			},
+			{
+				"title":"优惠卷",
+				"version":"卡卷批次",
+				"type":"1",
+				"cid":"卷ID",
+				"amount":"15"
+			}
+
+		]
+
+	}
+}

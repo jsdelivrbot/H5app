@@ -1,0 +1,41 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "ProcessBank": [
+            {
+                "bankno": "https://jdbserver.b0.upaiyun.com/images/icon_zhongxin.png",
+                "bankname": "中信银行",
+                "bankurl": "https://creditcard.ecitic.com/citiccard/wap/cardappquery/app_inq.jsp?foot_s=0&head_s=0&sid=SJJDB",
+                "content": null,
+                "type": "1"
+            },
+            {
+                "bankno": "https://jdbserver.b0.upaiyun.com/images/icon_zhongxin.png",
+                "bankname": "中信银行",
+                "bankurl": "https://creditcard.ecitic.com/citiccard/wap/cardappquery/app_inq.jsp?foot_s=0&head_s=0&sid=SJJDB",
+                "content": null,
+                "type": "1"
+            }
+        ],
+        "ApplicationBank": [
+            {
+                "bankno": "http://jdbserver.b0.upaiyun.com/images/icon_pufa.png",
+                "bankname": "上海浦东发展银行",
+                "bankurl": "https://mbank.spdbccc.com.cn/creditcard/indexActivity.htm?data=001823",
+                "content": "网购满88减10",
+                "type": "0"
+            },
+            {
+                "bankno": "http://jdbserver.b0.upaiyun.com/images/icon_zhongxin.png",
+                "bankname": "中信银行",
+                "bankurl": "http://creditcard.ecitic.com/h5/shenqing/list.html?foot_s=0&head_s=0&sid=SJJDB",
+                "content": "9元看电影",
+                "type": "0"
+            }
+        ]
+    }
+}

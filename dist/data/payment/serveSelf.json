@@ -1,0 +1,12 @@
+{
+    "errno": "C0000",
+    "errmsg": "成功",
+    "data": {
+        "id": "商户ID",
+        "title": "商户名称",
+        "logo": "/img/payment/yabo_log2.png",
+        "type": "商户类型：0-企业 1-个人",
+        "active": "商户是否禁用: 0-是，1-否",
+        "time_create": "创建时间，时间戳"
+    }
+}

@@ -1,0 +1,8 @@
+<div id="timeFail">
+                <div>
+                    <img src="../../img/rechargeFee/timeFail01.png">
+                    <p>
+                        <%=decodeURIComponent(institutionName)%>的缴费时段是<%=fromTime%>至<%=endTime%>
+                    </p>
+                </div>
+            </div>

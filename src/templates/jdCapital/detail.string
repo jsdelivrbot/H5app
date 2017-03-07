@@ -1,0 +1,167 @@
+		<a class="title">
+			<div>
+				<div>
+					<h2><%=title%></h2>
+					<p><%=creDt%> <%=creTm%></p>
+				</div>
+				<div>
+					<h2><%=txAmt%></h2>
+					<p><%=curAcBal%></p>
+				</div>
+			</div>
+		</a>
+		<div class="result-turnIn">
+
+<%if(txCd == 1){%>
+		<%if(viewResult == "转出失败"){%>
+				<ul class="second-step">
+					<li>
+						<div class="step-view">
+							<div class="alive-line step-icon step-1">
+								<div></div>
+							</div>
+							<i class="bottom-line alive-line"></i>
+						</div>
+						<p class="step-name alive-text">提交转出申请</p>
+						<p class="step-date"><%=bankName%>（尾号<%=cardNo%>）</p>
+						<p class="step-date"><%=creDm%> <%=creTm%></p>
+					</li>
+					<li>
+						<div class="step-view">
+							<i class="top-line alive-line"></i>
+							<div class="step-icon step-2">
+								<div></div>
+							</div>
+						</div>
+						<p class="step-name alive-text">转出到银行卡失败</p>
+						<p class="step-date"><%=catchDt%> <%=catchTm%> <%=catchWeekDay%></p>
+					</li>
+				</ul>
+		<%}else{%>
+				<%if(title == "转出到借贷宝余额"){%>
+							<ul class="first-step">
+								<li>
+									<div class="step-view">
+										<div class="alive-line step-icon step-1">
+											<div></div>
+										</div>
+									</div>
+									<p class="step-name alive-text">成功转出至借贷宝余额</p>
+									<p class="step-date">实时到账 <%=creDm%> <%=creTm%></p>
+								</li>
+							</ul>
+				<%}else if(title == "转出到银行卡"){%>
+							<ul class="third-step">
+								<li>
+									<div class="step-view">
+										<div class="alive-line step-icon step-1">
+											<div></div>
+										</div>
+										<i class="bottom-line alive-line"></i>
+									</div>
+									<p class="step-name alive-text">提交转出申请</p>
+									<p class="step-date"><%=bankName%>（尾号<%=cardNo%>）</p>
+									<p class="step-date"><%=creDm%> <%=creTm%></p>
+								</li>
+					<% if(viewResult == "已到账"){ %>
+								<li>
+									<div class="step-view">
+										<i class="top-line alive-line"></i>
+										<div class="alive-line step-icon step-3">
+											<div></div>
+										</div>
+									</div>
+									<p class="step-name alive-text">预计到账时间</p>
+									<p class="step-date"><%=catchDt%> <%=catchTm%> <%=catchWeekDay%></p>
+								</li>
+					<% }else{ %>
+								<li>
+									<div class="step-view">
+										<i class="top-line"></i>
+										<div class=" step-icon step-3" style="border-color: #d2d3d6">
+											<div></div>
+										</div>
+									</div>
+									<p class="step-name">预计到账时间</p>
+									<p class="step-date"><%=lastCatchDt%> <%=lastCatchTm%> <%=lastCatchWeekDay%></p>
+								</li>
+					<% } %>
+							</ul>
+				<% } %>
+		<% } %>
+
+<% }else{ %>
+
+	<%if(viewResult == "转入失败"){%>
+				<ul class="second-step">
+					<li>
+						<div class="step-view">
+							<div class="alive-line step-icon step-1">
+								<div></div>
+							</div>
+							<i class="bottom-line alive-line"></i>
+						</div>
+				<%if(title == "从银行卡转入" ){%>
+						<p class="step-name alive-text"><%=creDm%> 转入</p>
+						<p class="step-date alive-text"><%=bankName%>（尾号<%=cardNo%>）</p>
+						<p class="step-date alive-text"><%=creDm%> <%=creTm%></p>
+				<% }else{ %>
+						<p class="step-name alive-text" style="line-height: 36px;"><%=creDm%> 转入</p>
+				<% } %>
+					</li>
+					<li>
+						<div class="step-view">
+							<i class="top-line alive-line"></i>
+							<div class="step-icon step-2">
+								<div></div>
+							</div>
+						</div>
+						<p class="step-name alive-text">转入失败</p>
+						<p class="step-date alive-text"><%=catchDt%> <%=catchTm%> <%=catchWeekDay%></p>
+					</li>
+				</ul>
+	<%}else{%>
+				<ul class="third-step">
+					<li>
+						<div class="step-view">
+							<div class="alive-line step-icon step-1">
+								<div></div>
+							</div>
+							<i class="bottom-line alive-line"></i>
+						</div>
+				<%if(title == "从银行卡转入" ){%>
+						<p class="step-name alive-text"><%=creDm%> 转入</p>
+						<p class="step-date alive-text"><%=bankName%>（尾号<%=cardNo%>）</p>
+						<p class="step-date alive-text"><%=creDm%> <%=creTm%></p>
+				<% }else{ %>
+						<p class="step-name alive-text" style="line-height: 36px;"><%=creDm%> 转入</p>
+				<% } %>
+					</li>
+		
+					<li>
+						<div class="step-view">
+							<i class="top-line <%=begCurLine%>"></i>
+							<div class="<%=begCurLine%> step-icon step-2" style="border-color:<%=color%>">
+								<div></div>
+							</div>
+							<i class="bottom-line <%=begCurLine%>"></i>
+						</div>
+						<p class="step-name <%=begCurText%>"><%=begCalDt%> <%=begCalWeekDay%></p>
+						<p class="step-date <%=begCurText%>">开始计算收益</p>
+					</li>
+					<li>
+						<div class="step-view">
+							<i class="top-line <%=getCurLine%>"></i>
+							<div class="<%=getCurLine%> step-icon step-3" style="border-color:<%=color%>">
+								<div></div>
+							</div>
+						</div>
+						<p class="step-name <%=getCurText%>"><%=getProfitDt%> <%=getProfitWeekDay%></p>
+						<p class="step-date <%=getCurText%>">第一笔收益到账</p>
+					</li>
+				</ul>
+	<% } %>
+
+<% } %>
+
+		</div>

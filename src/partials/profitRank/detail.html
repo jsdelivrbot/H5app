@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>借贷宝百赚榜</title>
+    <meta name="description" content="借贷宝百赚榜">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/profitRank/profitRank.scss">
+    <link rel="stylesheet" href="/sass/profitRank/detail.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="member-info" id="memberInfo">
+        <div class="user-title">
+            <img class="avatar" :src="memberInfo.thumbnailUrl || '../../img/common/avatar-default-50.png'" alt="avatar" /> {{ memberInfo.memberName }}
+        </div>
+        <a class="how-intro j-how-intro" href="#makeMoneyTips">
+            <img src="../../img/profitRank/questionMark.png" alt="?" /> 如何白赚钱
+        </a>
+        <div class="canvas-wrap">
+            <canvas id="infoChart"></canvas>
+            <p>
+                <span>白赚到</span>
+                <br> ￥{{ baizhuanInfo.total | formatMoney 'short' 2 }}
+            </p>
+        </div>
+    </div>
+    <div class="detail-list" id="detailList">
+        <ul>
+            <li v-for="item in list">
+                <p class="user-title">
+                    <span>
+                        <img class="rankIcon" :src="'../../img/profitRank/' +  imageNameMap[item] + '.png'" alt="{{ item }}" />
+                    </span> {{ nameMap[item] }}
+                </p>
+                <p class="money">
+                    ￥{{ baizhuanInfo[item].num | formatMoney }}
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="makeMoneyTipsContainer clearfix make-money-tips-wrap">
+
+    </div>
+
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/promise-js/promise.js"></script>
+    <script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+    <script type="text/javascript" src="/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/js/profitRank/vue-filter-money.js"></script>
+    <script type="text/javascript" src="/js/profitRank/ringChart.js"></script>
+    <script type="text/javascript" src="/js/profitRank/detail.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "",
+        "returnUserMessage": ""
+    },
+    "data": [
+        {
+            "type": "sms",
+            "shareUrl": "http://100.66.152.237:8008/sharedHongbao.html"
+        },
+        {
+            "type": "wxfeed",
+            "shareUrl": "http://100.66.152.237:8008/sharedHongbao.html"
+        },
+        {
+            "type": "wxmsg",
+            "shareUrl": "http://100.66.152.237:8008/sharedHongbao.html"
+        },
+        {
+            "type": "qq",
+            "shareUrl": "http://100.66.152.237:8008/sharedHongbao.html"
+        },
+        {
+            "type": "qqzone",
+            "shareUrl": "http://100.66.152.237:8008/sharedHongbao.html"
+        },
+        {
+            "type": "weibo",
+            "shareUrl": "http://100.66.152.237:8008/sharedHongbao.html"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+            <ul class="cardList">
+                <%for( var i = 0; i < list.length; i++ ){%>
+                <li class="bank-<%=list[i].code%>">
+                    <a href="./creditPayments.html?id=<%=list[i].id%>&token=<%=token%>#creditPay">
+                        <div class="card-ctn">
+                            <div class="card-img">
+                                <div class="card-logo"></div>
+                            </div>
+                            <div class="card-info">
+                                <h2><%=list[i].bankName%></h2>
+                                <p class="card-retuenDay">距离还款日:<%=list[i].noticeDays%>天</p>
+                                <p class="card-no">**** **** **** <%=list[i].bankNum%></p>
+                            </div>
+                        </div>
+                        <div class="card-btn" >
+                            <p>还</br>款</p>
+                        </div>
+                    </a>
+                </li>
+                <%}%>
+            </ul>
+            <a class="btn-addCard" href="./creditPayments.html?token=<%=token%>#addCreditCard"><span>添加信用卡</span></a>
+            <a href="./outLink.html?token=<%=token%>" class="bottom_link">
+                免费申请信用卡<img src="./../../img/creditCard/bottom_link.png" />
+            </a>

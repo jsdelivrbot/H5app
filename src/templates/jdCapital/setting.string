@@ -1,0 +1,9 @@
+		<li class="item item-toggle">
+		    金额变动通知
+			<label class="toggle toggle-balanced">
+		        <input type="checkbox" <%if( nfyflg == 1 ){%>checked<%} else {%><%}%>>
+		        <div class="track">
+		            <div class="handle"></div>
+		        </div>
+		    </label>
+		</li>

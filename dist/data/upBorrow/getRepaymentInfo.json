@@ -1,0 +1,36 @@
+{
+    "error": 
+    {
+        "returnCode": "0",
+        "returnMessage": "success",
+        "returnUserMessage": "获取数据成功"
+    },
+    "data": 
+    {
+        "memberInfo": 
+        {
+            "memberID": "538522734200627290",
+            "memberName": "测二五",
+            "thumbnail_url": ""
+        },
+        "tradeInfo": 
+        {
+            "averageRate": "15.60",
+            "totalCount": 11
+        },
+        "statics": 
+        {
+            "totalCount": 0,
+            "totalAmount": 0
+        },
+         "text": 
+        {
+            "shareTitle": "借贷宝 直投熟人更高明",
+            "shareText": "借款利率高达15.00%，1年相当于银行10年的利息",
+            "footerA": "借钱给我，轻松理财又安全",
+            "key": "JDB_UI_SHARE_getTrade21"
+        },
+        "repayAmount": "11.0",
+        "time": "1463733204"
+    }
+}

@@ -1,0 +1,131 @@
+<%if (resData.dataPaykind == "40") {%>
+                <ul class="clearfix">
+              <%
+                        if (resData.billList[0].customerName) {
+                %>
+                        <li>客户名称<span ><%=resData.billList[0].customerName%></span></li>
+                <%
+                        };if(resData.contractNo){
+                %>
+                        <li>合同号<span ><%=resData.billList[0].contractNo%></span></li>
+                <%
+                        };if(resData.institutionName){
+                %>
+                        <li>缴费单位<span ><%=resData.institutionName%></span></li>
+                <%
+                        };if(resData.billList[0].vueDue){
+                %>
+                        <li>滞纳金<span><%=resData.billList[0].vueDue%>元</span></li>
+                <%
+                        };if(resData.billList[0].balance){
+                %>
+                        <li>余额<span><%=resData.billList[0].balance%>元</span></li>
+                <%
+                        };if(resData.billList[0].beginDate){
+                %>
+                        <li>起始日期<span><%=resData.billList[0].beginDate%></span></li>
+                <%
+                        };if(resData.billList[0].endDate){
+                %>
+                        <li>截至日期<span><%=resData.billList[0].endDate%></span></li>
+                <%
+                        };if(resData.billList[0].billDat ){
+                %>
+                        <li>账期<span><%=resData.billList[0].billDat %></span></li>
+                <%
+                        };if(resData.billList[0].payAmount){
+                %>
+                        <li id="jiaofei">应缴金额<span ><em><%=resData.billList[0].payAmount%></em>元</span></li>
+                <%
+                        };
+                %>
+                </ul>
+                <%
+                } else if (resData.dataPaykind == "41") {
+                %>
+                <ul class="clearfix">
+                 <%
+                        if (resData.billList[0].customerName) {
+                %>
+                        <li>客户名称<span ><%=resData.billList[0].customerName%></span></li>
+                <%
+                        };if(resData.contractNo){
+                %>
+                        <li>合同号<span ><%=resData.billList[0].contractNo%></span></li>
+                <%
+                        };if(resData.institutionName){
+                %>
+                        <li>缴费单位<span ><%=resData.institutionName%></span></li>
+                <%
+                        };if(resData.billList[0].vueDue){
+                %>
+                        <li>滞纳金<span><%=resData.billList[0].vueDue%>元</span></li>
+                <%
+                        };if(resData.billList[0].balance){
+                %>
+                        <li>余额<span><%=resData.billList[0].balance%>元</span></li>
+                <%
+                        };if(resData.billList[0].beginDate){
+                %>
+                        <li>起始日期<span><%=resData.billList[0].beginDate%></span></li>
+                <%
+                        };if(resData.billList[0].endDate){
+                %>
+                        <li>截至日期<span><%=resData.billList[0].endDate%></span></li>
+                <%
+                        };if(resData.billList[0].billDat ){
+                %>
+                        <li>账期<span><%=resData.billList[0].billDat %></span></li>
+                <%
+                        };if(resData.billList[0].payAmount){
+                %>
+                        <li id="jiaofei">应缴金额<span ><em><%=resData.billList[0].payAmount%></em>元</span></li>
+                <%
+                        };
+                %>
+                </ul>
+                <%} else if (resData.dataPaykind == "42") {%>
+                     <ul class="clearfix">
+                <%
+                        if (resData.billList[0].customerName) {
+                %>
+                        <li>客户名称<span ><%=resData.billList[0].customerName%></span></li>
+                <%
+                        };if(resData.contractNo){
+                %>
+                        <li>合同号<span ><%=resData.billList[0].contractNo%></span></li>
+                <%
+                        };if(resData.institutionName){
+                %>
+                        <li>缴费单位<span ><%=resData.institutionName%></span></li>
+                <%
+                        };if(resData.billList[0].vueDue){
+                %>
+                        <li>滞纳金<span><%=resData.billList[0].vueDue%>元</span></li>
+                <%
+                        };if(resData.billList[0].balance){
+                %>
+                        <li>余额<span><%=resData.billList[0].balance%>元</span></li>
+                <%
+                        };if(resData.billList[0].beginDate){
+                %>
+                        <li>起始日期<span><%=resData.billList[0].beginDate%></span></li>
+                <%
+                        };if(resData.billList[0].endDate){
+                %>
+                        <li>截至日期<span><%=resData.billList[0].endDate%></span></li>
+                <%
+                        };if(resData.billList[0].billDat ){
+                %>
+                        <li>账期<span><%=resData.billList[0].billDat %></span></li>
+                <%
+                        };if(resData.billList[0].payAmount){
+                %>
+                        <li id="jiaofei">应缴金额<span ><em><%=resData.billList[0].payAmount%></em>元</span></li>
+                <%
+                        };
+                %>
+                </ul>
+                <%
+                 }
+                %>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>余额生息</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+	<!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/common/toast.scss">
+    <link rel="stylesheet" href="/sass/jdCapital/index.scss">
+    <link rel="stylesheet" href="/sass/jdCapital/someInfomation.scss">
+	<!-- endbuild -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+<div class="coupon">
+	<div class="someInformation">
+		<p class="detailInfomation">
+            1111111sfasfadfadfasdafasfs
+		</p>
+		<span class="delete">
+			<img src="../../img/jdCapital/delete.png">
+		</span>
+	</div>
+	<div class="idx-content">
+		<div class="idx-head">
+			<p class="top-title"><i></i>昨日收益(元)<a class="setting-btn" data-href="./setting.html?token="></a></p>
+			<p class="income linkIncome" data="revAmt"></p>
+			<p class="sum-money">
+				<a data-href="./history.html?token=" class="history-icon"></a>
+				<span class="sum-title">总金额(元)</span>
+				<span class="sum-mtext" data="totAmt"></span>
+			</p>
+		</div>
+		<div class="idx-view">
+			<div class="middle-bar clearfix">
+				<div>
+					<p>万份收益</p>
+					<span data="cnPrdIn"></span>
+				</div>
+				<div class="elsediv linkIncome">
+					<p>累计收益</p>
+					<span data="totRevAmt"></span>
+				</div>
+			</div>
+			<div class="chart-view">
+				<p>七日年化收益率(％)</p>
+				<canvas></canvas>
+				<p class="idx-foot">
+					合作机构：九泰基金(基金代码：001842)
+				</p>
+			</div>
+
+		</div>
+
+	</div>
+	<div class="bottom-bar clearfix">
+		<a class="btn-turnout" id="turnOutCheck"><span>转出</span></a>
+        <a class="btn-turnin" data-href="./turnIn.html?token="><span>转入</span></a>
+	</div>
+</div>
+<!-- build:js [jsBuildPath] -->
+<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+<script type="text/javascript" src="/Zepto-Cookie/zepto.cookie.min.js"></script>
+<script type="text/javascript" src="/js-url/url.min.js"></script>
+<script type="text/javascript" src="/microtemplates/index.js"></script>
+<script type="text/javascript" src="/zepto.js/src/fx.js"></script>
+<script type="text/javascript" src="/Chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="/js/common/utls.js"></script>
+<script type="text/javascript" src="/js/common/toast.js"></script>
+<script type="text/javascript" src="/js/jdCapital/index.js"></script>
+<!-- <script type="text/javascript" src="/js/jdCapital/someInformation.js"></script> -->
+<!-- endbuild -->
+</body>
+</html>

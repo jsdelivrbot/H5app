@@ -1,0 +1,30 @@
+<div class="all_list get_card_list">
+        <p class="title"><span class="icon"></span>在线免费办卡</p>
+        <ul>
+            <% for(var i = 0; i<ApplicationBank.length; i++){ %>
+                <li>
+                    <img src="<%=ApplicationBank[i].bankno%>" alt="">
+                    <div>
+                        <h3><%=ApplicationBank[i].bankname%></h3>
+                        <p><%=ApplicationBank[i].content%></p>
+                    </div>
+                    <a href="<%=ApplicationBank[i].bankurl%>">立即申请</a>
+                </li>
+            <%}%>
+            
+        </ul>
+    </div>
+    <div class="all_list query_list">
+        <p class="title"><span class="icon"></span>办卡进度查询</p>
+        <ul>   
+            <% for(var i = 0; i<ProcessBank.length; i++){ %>
+                <li>
+                    <img src="<%=ProcessBank[i].bankno%>" alt="">
+                    <div>
+                        <h3><%=ProcessBank[i].bankname%></h3>
+                    </div>
+                    <a class="linkIcon" href="<%=ProcessBank[i].bankurl%>">进度查询</a>
+                </li>
+            <%}%>
+        </ul>
+    </div>

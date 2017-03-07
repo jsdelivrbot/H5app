@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>&#x4F18;&#x60E0;&#x52B5;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="/h5app/css/coupon/couponListNew.min.css?_=20161107154511">
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+			var s = document.getElementsByTagName("script")[0]; 
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+	
+	<ul class="coupon_list_main" id="coupon_list" v-cloak="">
+		<li v-for="(index ,coupon) in coupons" v-on:click="switchCheck(index)">
+			<img class="coupon_logo" v-bind:src="coupon.logoUrl" alt="">
+			<div class="coupon_text">
+				<h2 class="coupon_title">{{coupon.merName+coupon.couponTitle}}</h2>
+				<span class="expire_time">&#x6709;&#x6548;&#x671F;&#x81F3;{{coupon.endTime | getRightTime}}</span>
+			</div>
+			<i class="check_btn" v-if="coupon.hasSelected"></i>
+			<i class="check_btn no_checked" v-else=""></i>
+		</li>
+	</ul>
+	
+	<script src="/h5app/js/coupon/couponListNew.min.js?_=20161107154511"></script>
+</body>
+</html>

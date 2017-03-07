@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #f5f7fa;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+.make-money-tips-wrap {
+    padding-bottom: 55px
+}
+.make-money-tips {
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e3e6;
+    border-top: 1px solid #e1e3e6;
+    .make-money-intro {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        .make-money-intro-title {
+            padding-top: 16px;
+            text-align: center;
+            line-height: 18px;
+            font-size: 15px;
+            color: #3385ff;
+            &:before, &:after {
+                content: ' ';
+                position: absolute;
+                left: 24%;
+                top: 23px;
+                width: 8%;
+                border-top: 1px solid #3385ff;
+            }
+            &:after {
+                left: auto;
+                right: 25%;
+            }
+        }
+        p {
+            color: #979799;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px 0 20px 0;
+            line-height: 18px;
+            font-size: 13px;
+        }
+    }
+    ul {
+        width: 90%;
+        margin: 0 auto;
+        li {
+            border-top: 1px solid #e1e3e6;
+            >div {
+                height: 52px;
+                line-height: 52px;
+                position: relative;
+                img {
+                    width: 17px;
+                    height: 17px;
+                    position: absolute;
+                    top: 50%;
+                    left: 4px;
+                    margin-top: -8.5px;
+                }
+                span {
+                    color: #1a1a1a;
+                    font-size: 16px;
+                    margin-left: 24px;
+                }
+            }
+        }
+        p {
+            color: #656566;
+            margin: 0 auto;
+            padding: 0 0 20px 0;
+            line-height: 18px;
+            font-size: 13px;
+        }
+        .reward {
+            width: 16px;
+            height: 17px;
+            margin-top: -8.5px;
+        }
+        .redPacket {
+            width: 14.5px;
+            height: 16px;
+            margin-top: -8px;
+        }
+        .borrow {
+            width: 15px;
+            height: 17px;
+            margin-top: -8.5px;
+        }
+    }
+}
+.fixFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid #cacbcc;
+    background: rgba(255, 255, 255, 0.95);
+    img {
+        display: block;
+    }
+    .banner {
+        float: left;
+        margin-top: 13px;
+        margin-left: 5%;
+        width: 220px;
+    }
+    .arrow {
+        float: right;
+        margin-top: 22px;
+        margin-right: 5%;
+        width: 8px;
+    }
+}

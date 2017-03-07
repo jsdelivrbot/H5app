@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	.topImg{
+			width: 100%;
+		}
+	.box{
+		font-size: 17px;
+		color: #656566;
+		padding:30px 20px 63px 20px;
+
+			.hello{
+				margin-top: 16px;
+			}
+			.summary{
+				margin-top: 18px;
+				line-height: 24px;
+			}
+			.txt{
+				margin-top: 5px;
+				color: black;
+				font-weight: bold;
+			}
+			p{
+				line-height: 24px;
+			}
+			.lastp{
+				margin-bottom:30px;
+			}
+			.apology{
+				margin-top: 18px;
+				float: right;
+			}
+			.team{
+				text-align: right;
+				font-size: 14px;
+				color: #979899;
+				@media screen and (max-height: 480px){
+	            padding-bottom:30px;
+	        }
+			}
+		
+    }
+}

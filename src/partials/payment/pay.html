@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>支付</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+	<!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+	<link rel="stylesheet" href="/sass/common/toast.scss">
+    <link rel="stylesheet" href="/sass/payment/pay.scss">
+	<!-- endbuild -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+			var s = document.getElementsByTagName("script")[0]; 
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+	<div class="pay_page">
+		<div class="head">
+			<p>实际支付</p>	
+			<h3><strong class="money" id="disMoney">--.--</strong>元</h3>
+		</div>
+		<div class="youhui_info">
+			<p class="youhuiquan"><label class="color_yellow">优惠券</label><span id="couponDis">-元</span></p>
+			<!--<p><label>借贷宝优惠</label><span>0元</span></p>-->	
+		</div>
+		<p class="sum_money">消费总额<span id="sumMoney">--</span>元</p>
+		<a href="#" class="pay" id="pay_btn">支付</a>
+	</div>
+	<div class="coupon_select hidden">
+		<a class="nouse_btn" href="#">本次不使用优惠券</a>		
+		<div class="coupon_zone">
+			<!--
+			<div class="card_item  choosed"">
+				<div class="top">
+					<div class="logo_wrap">
+						<img class="logo" src="http://p1.meituan.net/460.280/deal/201210/30/66_1030194843.jpg"/>	
+					</div>
+					<h3>绝味鸭脖</h3>
+					<p class="money">20元代金券</p>
+				</div>
+				<p class="expire_time">有效期至2015-10-19</p>
+				<img src="../../img/payment/checked.png" alt="" class="checked_icon"/>
+			</div>
+			<div class="card_item can_use">
+				<div class="top">
+					<div class="logo_wrap">
+						<img class="logo" src="./20091209235130-1519043773.jpg"/>	
+					</div>
+					<h3>绝味鸭脖</h3>
+					<p class="money">20元代金券</p>
+				</div>
+				<p class="expire_time">有效期至2015-10-19</p>
+			</div>
+			<div class="card_item cannot_use">
+				<div class="top">
+					<div class="logo_wrap">
+					<img class="logo" src="http://p1.meituan.net/460.280/deal/201210/30/66_1030194843.jpg"/>	
+					</div>
+					<h3>绝味鸭脖</h3>
+					<p class="money">20元代金券</p>
+				</div>
+				<p class="expire_time">有效期至2015-10-19</p>
+			</div>
+			-->
+		</div>
+	</div>
+	<div class="tip-container">
+		<div class='wrapper'>
+			<a class="close" href="javascript:void(0);"></a>
+			<p class="title">提示</p>
+			<p class="massage" id="message"><span>提示内容</span></p>
+			<a class="confirm" href="javascript:void(0);">确认</a>
+		</div>
+	</div>
+	<!-- build:js [jsBuildPath] -->
+	<script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+	<script type="text/javascript" src="/js/common/toast.js"></script>
+	<script type="text/javascript" src="/js/payment/pay.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

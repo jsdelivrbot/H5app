@@ -1,0 +1,182 @@
+$w:100%;
+
+html,.container{
+    width:$w;
+    height:$w;
+    font-size:14px;
+    background:#f5f7fa;
+}
+
+.user{
+    width:$w;
+    height:91px;
+    border-bottom:1px solid #e6e8eb;
+    background:#FFF;
+    display:-webkit-box;
+    dt{
+        width:55px;
+        height:55px;
+        padding-left:24px;
+        padding-top:17px;
+        position: relative;
+        #head{
+            width: $w;
+            height: $w;
+            border-radius: 50%;
+        }
+    }
+    dd{
+        -webkit-box-flex:1;
+        padding-left:19px;
+        padding-top:17px;
+        p{
+            height:31px;
+            line-height:31px;
+            font-size:18px;
+        }
+        p:last-child{
+            height:24px;
+            line-height:24px;
+            color:#969799;
+            font-size:11px;
+        }
+    }
+}
+.setmeal{
+    width:$w;
+    height:34px;
+    vertical-align:middle;
+    text-indent:28px;
+    border-bottom:1px solid #e6e8eb;
+    line-height:34px;
+    -webkit-text-size-adjust: none;
+    position:relative;
+    span{
+        width:12px;
+        height:15px;
+        display: inline-block;
+        background:url("../../img/rechargeFee/gift.png") no-repeat;
+        background-size:100%;
+        position:absolute;
+        top:9px;
+        left:10px;
+    }
+
+}
+.favorable{
+    >div{
+        background:#fff;
+        position:relative;
+        height:222;
+    }
+    .Recommend{
+        width:34px;
+        height:34px;
+        position:absolute;
+        left:0;
+        top:74px;
+        index:1;
+        background:url("../../img/rechargeFee/tuijian.png") no-repeat;
+        background-size:100%;
+    }
+    dl{
+        width:96%;
+        height:74px;
+        border-bottom:1px solid #e6e8eb;
+        margin-left:4%;
+        padding:18px 18px 0 21px;
+        position:relative;
+        -webkit-box-sizing:border-box;
+        dt{
+            float:left;
+            .time{
+                height:20px;
+                font-size:16px;
+                position:relative;              
+                span{
+                    font-size:11px;
+                }
+                
+            }
+            .time::after{
+                content:"";
+                position:absolute;
+                left:-13px;
+                top:50%;
+                margin-top:-6px;
+                width:8px;
+                height:8px;
+                background:#ff7a21;
+                border-radius:50%;
+            }
+            .primeCost{
+                color:#afb0b3;
+                font-size:12px;
+                span.line{
+                    text-decoration:line-through;
+                }
+                span.save{
+                    display:inline-block;
+                    width:54px;
+                    height:18px;
+                    color:#fff;
+                    text-indent:11px;
+                    line-height:18px;
+                    background:url("../../img/rechargeFee/cost1.png") no-repeat;
+                    background-size:100%;
+                    margin-left:10px;
+                }
+            }
+            
+        }
+      
+       
+        dd{
+            float:right;
+            padding:7px 20px;
+            border:1px solid #1c7bf1;
+            border-radius:20px;
+            -webkit-text-size-adjust: none;
+            font-size:10px;
+            position:absolute;
+            top:50%;
+            right:21px;
+            margin-top:-15px;  
+            color:#1c7bf1;
+            span{
+                font-size:14px;
+                
+            }
+        }
+    }
+    dl:nth-child(2) .time:after{
+        background:#ffb521;
+    }
+    dl:last-child{
+        border-bottom:none;
+        .time:after{
+            background:#21b3ff;
+        }
+    } 
+}
+.prompt{
+    color:#969799;
+    padding:16px 14px;
+    border-top:1px solid #e6e8eb;
+    -webkit-box-sizing:border-box;
+    p{
+        height:30px;
+    }
+    ul li{
+        font-size:10px;
+        margin-bottom:17px;
+        line-height:16px;
+    }
+}
+.phoneImg{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

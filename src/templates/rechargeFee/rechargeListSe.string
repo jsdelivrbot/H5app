@@ -1,0 +1,117 @@
+<%if(resData.dataPaykind == "04") {%>
+        <ul class="clearfix">
+         <%if (resData.customerName) {%>
+         <li>客户名称<span ><%=resData.customerName%></span></li>
+         <%};if(resData.ammeterNo){%>
+         <li>客户编号<span ><%=resData.ammeterNo%></span></li>
+         <%};if(resData.institutionName){%>
+         <li>缴费单位<span ><%=resData.institutionName%></span></li>
+         <%};if(resData.useElectAddr){%>
+         <li>用水地址<span ><%=resData.useElectAddr%></span></li>
+         <%};if(resData.suppAmt){%>
+         <li>补加金额<span ><%=resData.suppAmt%>元</span></li>
+         <%};if(resData.minusAmt){%>
+         <li>扣减金额<span ><%=resData.minusAmt%>元</span></li>
+         <%};if(resData.reSubmitAmt){%>
+         <li>补交阶梯差价金额<span ><%=resData.reSubmitAmt%>元</span></li>
+         <%};if(resData.reSubmitMoth ){%>
+         <li>补交阶梯差价电费月份<span ><%=resData.reSubmitMoth %>月</span></li>
+         <%};if(resData.buyElectNum){%>
+        <li id="goudian">购电次数<span ><%=resData.buyElectNum%>次</span></li>
+        <%};if(resData.buyElectAmt){%>
+        <li id="jiaofei">缴费金额<span ><em><%=resData.buyElectAmt%></em>元</span></li>
+        <%};%>
+         </ul>
+ <%} else if (resData.dataPaykind == "05") {%>
+         <ul class="clearfix">
+         <% if (resData.customerName) {%>
+         <li>客户名称<span ><%=resData.customerName%></span></li>
+         <%};if(resData.ammeterNo){%>
+         <li>客户编号<span ><%=resData.ammeterNo%></span></li>
+ <%
+         };if(resData.institutionName){
+ %>
+         <li>缴费单位<span ><%=resData.institutionName%></span></li>
+ <%
+         };if(resData.useElectAddr){
+ %>
+         <li>用电地址<span><%=resData.useElectAddr%></span></li>
+ <%
+         };if(resData.suppAmt){
+ %>
+         <li>补加金额<span ><%=resData.suppAmt%>元</span></li>
+ <%
+         };if(resData.minusAmt){
+ %>
+         <li>扣减金额<span ><%=resData.minusAmt%>元</span></li>
+ <%
+         };if(resData.reSubmitAmt){
+ %>
+         <li>补交阶梯差价金额<span ><%=resData.reSubmitAmt%>元</span></li>
+ <%
+         };if(resData.reSubmitMoth ){
+ %>
+         <li>补交阶梯差价电费月份<span><%=resData.reSubmitMoth %>月</span></li>
+ <%
+         };if(resData.buyElectNum){
+ %>
+        <li id="goudian">购电次数<span><%=resData.buyElectNum%>次</span></li>
+         <%} else if(resData.buyElectAmt){%>
+        <li id="jiaofei">缴费金额<span><em><%=resData.buyElectAmt%></em>元</span></li>
+ <%
+         };
+ %>
+ </ul>
+ <%
+         } else if (resData.dataPaykind == "06") {
+
+ %>
+ <ul class="clearfix">
+ <%
+         if (resData.customerName) {
+ %>
+         <li>客户名称<span><%=resData.customerName%></span></li>
+ <%
+         };if(resData.ammeterNo){
+ %>
+         <li>客户编号<span><%=resData.ammeterNo%></span></li>
+ <%
+         };if(resData.institutionName){
+ %>
+         <li>缴费单位<span ><%=resData.institutionName%></span></li>
+ <%
+         };if(resData.useElectAddr){
+ %>
+         <li>用暖地址<span><%=resData.useElectAddr%></span></li>
+ <%
+         };if(resData.suppAmt){
+ %>
+         <li>补加金额<span ><%=resData.suppAmt%>元</span></li>
+ <%
+         };if(resData.minusAmt){
+ %>
+         <li>扣减金额<span><%=resData.minusAmt%>元</span></li>
+ <%
+         };if(resData.reSubmitAmt){
+ %>
+         <li>补交阶梯差价金额<span ><%=resData.reSubmitAmt%>元</span></li>
+ <%
+         };if(resData.reSubmitMoth ){
+ %>
+         <li>补交阶梯差价电费月份<span ><%=resData.reSubmitMoth %>月</span></li>
+ <%
+         };if(resData.buyElectNum){
+ %>
+        <li id="goudian">购电次数<span ><%=resData.buyElectNum%>次</span></li>
+ <%
+         };if(resData.buyElectAmt){
+ %>
+        <li id="jiaofei">缴费金额<span ><em><%=resData.buyElectAmt%></em>元</span></li>
+ <%
+         };
+ %>
+ </ul>
+ <%
+
+ }
+%>

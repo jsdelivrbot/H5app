@@ -1,0 +1,14 @@
+{
+    "error": {
+        "returnCode": "0", 
+        "returnMessage": "success", 
+        "returnUserMessage": "信息提交成功"
+    }, 
+    "data": {
+        "resultNo": 3,
+        "followStatus": 3,
+        "messageTip": "要添加的用户不存在！",
+        "mdMobile": "fsdf822@fsfs#",
+        "mobile":null
+    }
+}

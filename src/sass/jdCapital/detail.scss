@@ -1,0 +1,340 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #f5f7fa;
+
+	p {
+		margin: 0;
+	}
+
+	.list-wrap {
+		height: 100%;
+		overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+	}
+
+	.history-list {
+		background: #fff;
+
+		a.title {
+			display: block;
+			padding: 0 16px 0 16px;
+			text-decoration: none;
+			border-bottom: 1px solid #e1e3e6;
+			>div {
+				position: relative;
+				padding: 16px 0 14px 5px;
+				border-top: 1px solid #e1e3e6;
+				div:first-child {
+					display: inline-block;
+				}
+				h2 {
+					font-size: 16px;
+					color: #3d434c;
+					margin-bottom: 8px;
+					text-align: right;
+				}
+
+				p {
+					font-size: 12px;
+					color: #afb1b2;
+				}
+			
+				div:last-child {
+					float: right;
+					h2 {
+						font-size: 16px;
+						color: #3d434c;
+						margin-bottom: 8px;
+					}
+
+					p {
+						font-size: 12px;
+						color: #afb1b2;
+						text-align: right;
+					}
+				}
+			}
+		}
+
+		.result-turnIn {
+			margin-bottom: 24px;
+			padding: 10px 30px;
+			background: #fff;
+			border-bottom: 1px solid #e1e3e6;
+			.first-step {
+				li {
+					position: relative;
+					height: 30px;
+					padding: 12px 0 22px 54px;
+
+					.step-view {
+						position: absolute;
+						top: 0;
+						left: 5px;
+						height: 100%;
+						width: 34px;
+
+						.step-icon {
+							position: absolute;
+							left: 0;
+							top: 14px;
+							width: 34px;
+							height: 34px;
+							background: #e1e3e5;
+							border-radius: 50%;
+							overflow: hidden;
+							border: 1px solid #3e89e8;
+							div {
+								height: 100%;
+							    background-size: 50% auto;
+							}
+						}
+						
+						.step-1 {
+							div {
+								background: url( '../../img/jdCapital/checked.png' ) no-repeat center center;
+								background-size: 50% auto;
+							}
+						}
+
+						.step-2 {
+							width: 30px;
+							height: 30px;
+							border: 2px solid #4598ff;
+							background-color: #fff;
+							div {
+
+								background: url( '../../img/jdCapital/exclamation.png' ) no-repeat center center;
+								background-size: 10% auto;
+								
+							}
+						}
+
+						i {
+							position: absolute;
+							left: 50%;
+							height: 32px;
+							width: 3px;
+							margin: -1px;
+							background: #e1e3e5;
+						}
+
+						.alive-line {
+							background: #4598ff;
+						}
+
+						.top-line {
+							top: 0;
+						}
+
+						.bottom-line {
+							bottom: 0;
+						}
+					}
+
+					.step-name {
+						font-size: 18px;
+						color: #3d434c;
+						margin-bottom: 8px;
+					}
+
+					.step-date {
+						font-size: 14px;
+						color: #afb1b2;
+						margin-bottom: 8px;
+					}
+
+					.alive-text {
+						color: #4598ff;
+					}
+				}
+			}
+			.second-step {
+				li {
+					position: relative;
+					height: 42px;
+					padding: 26px 0 24px 54px;
+
+					.step-view {
+						position: absolute;
+						top: 0;
+						left: 5px;
+						height: 100%;
+						width: 34px;
+
+						.step-icon {
+							position: absolute;
+							left: 0;
+							top: 28px;
+							width: 34px;
+							height: 34px;
+							background: #e1e3e5;
+							border-radius: 50%;
+							overflow: hidden;
+							border: 1px solid #3e89e8;
+
+							div {
+								height: 100%;
+							    background-size: 50% auto;
+							}
+						}
+						
+						.step-1 {
+							div {
+								background: url( '../../img/jdCapital/checked.png' ) no-repeat center center;
+								background-size: 50% auto;
+							}
+						}
+
+						.step-2 {
+							width: 30px;
+							height: 30px;
+							border: 2px solid #4598ff;
+							background-color: #fff;
+							div {
+
+								background: url( '../../img/jdCapital/exclamation.png' ) no-repeat center center;
+								background-size: 10% auto;
+								
+							}
+						}
+
+						i {
+							position: absolute;
+							left: 50%;
+							height: 32px;
+							width: 3px;
+							margin: -1px;
+							background: #e1e3e5;
+						}
+
+						.alive-line {
+							background: #4598ff;
+						}
+
+						.top-line {
+							top: 0;
+						}
+
+						.bottom-line {
+							bottom: 0;
+						}
+					}
+
+					.step-name {
+						font-size: 18px;
+						color: #3d434c;
+						margin-bottom: 8px;
+					}
+
+					.step-date {
+						font-size: 14px;
+						color: #afb1b2;
+						margin-bottom: 8px;
+					}
+
+					.alive-text {
+						color: #4598ff;
+					}
+				}
+			}
+
+
+			.third-step {
+				li {
+					position: relative;
+					height: 42px;
+					padding: 26px 0 24px 54px;
+
+					.step-view {
+						position: absolute;
+						top: 0;
+						left: 5px;
+						height: 100%;
+						width: 34px;
+
+						.step-icon {
+							position: absolute;
+							left: 0;
+							top: 28px;
+							width: 34px;
+							height: 34px;
+							background: #e1e3e5;
+							border-radius: 50%;
+							overflow: hidden;
+							border: 1px solid #3e89e8;
+							z-index: 10;
+
+							div {
+								height: 100%;
+								
+							    background-size: 50% auto;
+							}
+						}
+						
+						.step-1 {
+							div {
+								background: url( '../../img/jdCapital/checked.png' ) no-repeat center center;
+								background-size: 50% auto;
+							}
+						}
+
+						.step-2 {
+							div {
+								background: url( '../../img/jdCapital/computer.png' ) no-repeat center center;
+								background-size: 40% auto;
+							}
+						}
+
+						.step-3 {
+							div {
+								background: url( '../../img/jdCapital/money.png' ) no-repeat center center;
+								background-size: 36% auto;
+							}
+						}
+
+						i {
+							position: absolute;
+							left: 50%;
+							height: 32px;
+							width: 3px;
+							margin: -1px;
+							background: #e1e3e5;
+						}
+
+						.alive-line {
+							background: #4598ff;
+						}
+
+						.top-line {
+							top: 0;
+						}
+
+						.bottom-line {
+							bottom: 0;
+						}
+					}
+
+					.step-name {
+						font-size: 18px;
+						color: #3d434c;
+						margin-bottom: 8px;
+					}
+
+					.step-date {
+						font-size: 14px;
+						color: #afb1b2;
+						margin-bottom: 8px;
+					}
+
+					.alive-text {
+						color: #4598ff;
+					}
+				}
+			}
+			
+		}
+		
+	}
+}

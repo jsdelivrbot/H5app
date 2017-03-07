@@ -1,0 +1,15 @@
+{
+	"errno": "C0000",
+	"errmsg": "成功",
+	"data": {
+		"account": "12345678",
+		"order": "2323232",
+		"trade_id" : "11111",
+		"total_amount": "订单总金额，单位为分",
+		"off_amount": "优惠金额，单位为分",
+		"pay_amount": "12000",
+		"pay_account": "商户支付账号",
+		"callback": "支付成功后的回调地址",
+		"time_create": "创建时间，时间戳"
+	}
+}

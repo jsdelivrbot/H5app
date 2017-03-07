@@ -1,0 +1,31 @@
+<div id="addCreditCardSuccess">
+                <div class="topDiv" style="">
+                    <h3 style="">
+                        添加成功  
+                        <span class="flagImg">
+                             <img src="../../img/creditCard/ok.png">
+                        </span>
+                    </h3>
+                    <p class="cardNo " style="">
+                        卡号： <%=tools.getShowNum(data.account)%>
+                    </p>
+                    <p class="bankName_p" style="">
+                        银行：
+                         <span class="logoContainer <%=tools.getBankClass(data.bankNo)%>">                             
+                              <!--  <img class="bankLogo" src="/img/creditCard/zhaoshang_logo.png" style=""> -->                         
+                                </span>                       
+                         <span class="bankName" style="">
+                            <%=tools.getBankName(data.bankNo)%>
+                        </span>
+                    </p>
+                    <p class="remind_p" style="">
+                        您会在每月<%=data.remindDate%>日收到小秘书还款提醒，点击消息就能还款啦！
+                    </p>
+                </div>
+                <button id="gotoPay" class="bigButton" style="">
+                    现在去还款
+                </button>
+                 <button id="backList" class="bigButton"  style="">
+                    返回首页
+                </button>
+            </div>

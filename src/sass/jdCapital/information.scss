@@ -1,0 +1,181 @@
+body {
+    background-color: #f0f2f5;
+}
+.container {
+    padding-top: 15px;
+}
+.input-list {
+    background-color: #fff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-top: 1px solid #e1e3e6;
+    border-bottom: 1px solid #e1e3e6;
+    li {
+        &:first-child {
+            border-top: none;
+        }
+        height: 56px;
+        line-height: 56px;
+        border-top: 1px solid #f0f2f5;
+        overflow: hidden;
+        label {
+            float: left;
+            display: block;
+            overflow: hidden;
+            color: #667180;
+            width: 34%;
+        }
+        input {
+            height: 55px;
+            display: block;
+            float: right;
+            width: 59%;
+        }
+    }
+}
+.complete {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #afb1b2;
+}
+input {
+    border: none;
+    outline: none;
+}
+input::-webkit-input-placeholder {
+    color: #e1e3e5;
+    opacity: 0.5;
+}
+#idcard-text {
+    position: relative;
+    z-index: 100;
+}
+.sub {
+    margin-top: 30px;
+    text-align: left;
+    p {
+        padding-left: 15px;
+    }
+}
+.complate-btn {
+    position: relative;
+    background-color: #2d81e0;
+    display: block;
+    margin: 20px auto;
+    width: 94%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    &:active {
+        background: #0f71cc;
+    }
+    &.disabled:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        left: -2px;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+}
+#idcard-date {
+    -webkit-appearance: none;
+}
+.cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba( 0, 0, 0, .7 );
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 320px;
+        background: #fff;
+        .occ-list {
+            position: absolute;
+            top: 0;
+            bottom: 54px;
+            width: 100%;
+            margin-top: 20px;
+            overflow-y: scroll;
+            li {
+                height: 48px;
+                line-height: 48px;
+                color: #667180;
+                label {
+                    position: relative;
+                    display: block;
+                    padding-left: 20px;
+                    span {
+                        font-size: 14px;
+                    }
+                    input {
+                        position: absolute;
+                        left: -9999px;
+                    }
+                    .item-check {
+                        visibility: hidden;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -11px;
+                        height: 22px;
+                        width: 22px;
+                        right: 20px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background: #2d81e0;
+                        &:after {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: url("../../img/jdCapital/step-icons.png") no-repeat 4px 6px;
+                            background-size: 17px auto;
+                            content: ' ';
+                        }
+                    }
+                }
+                .view-check {
+                    .item-check {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .btn-back {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 54px;
+            line-height: 54px;
+            border-top: 1px solid #e1e3e6;
+            font-size: 18px;
+            background: #fff;
+            color: #2d81e0;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+  "error": {
+    "returnCode": 0,
+    "returnMessage": "success",
+    "returnUserMessage": ""
+  },
+  "data": {
+    "memberInfo": {
+      "memberID": "538522734200627227",
+      "memberName": "测零四",
+      "thumbnailUrl": "http://jdbserver.b0.upaiyun.com/images/53851449130518756!percent25"
+    },
+    "baizhuanInfo": {
+      "invite": {
+        "type": 1,
+        "num": 5,
+        "rate": 21.880064829822
+      },
+      "licha": {
+        "type": 2,
+        "num": 666,
+        "rate": 21.588330632091
+      },
+      "hlicha": {
+        "type": 3,
+        "num": 331,
+        "rate": 10.729335494327
+      },
+      "reward": {
+        "type": 4,
+        "num": 839,
+        "rate": 27.196110210697
+      },
+      "luckyMoney": {
+        "type": 5,
+        "num": 574,
+        "rate": 18.606158833063
+      },
+      "total": 3085
+    },
+    "shareContents": [
+      {
+        "shareTo": "wxmsg",
+        "shareTitle": "我在借贷宝白赚了30.85元",
+        "shareText": "这里有100种无需本金的赚钱方法，你也快来吧！",
+        "shareImageUrl": null,
+        "sharePageUrl": "http://119.254.111.25:8002/shareApp/index.html?arg=AE08258E19918E99D0281390062B022C214BF031D7686FB863C46380BD83855D6C98CAA547D3559CACC20943D95CF038"
+      },
+      {
+        "shareTo": "wxfeed",
+        "shareTitle": "",
+        "shareText": "我在借贷宝中白赚了30.85元，你也快来和我一起赚钱吧！",
+        "shareImageUrl": null,
+        "sharePageUrl": "http://119.254.111.25:8002/shareApp/index.html?arg=AE08258E19918E99D0281390062B022C214BF031D7686FB863C46380BD83855D6C98CAA547D3559CACC20943D95CF038"
+      },
+      {
+        "shareTo": "qq",
+        "shareTitle": "我在借贷宝白赚了30.85元",
+        "shareText": "这里有100种无需本金的赚钱方法，你也快来吧！",
+        "shareImageUrl": null,
+        "sharePageUrl": "http://119.254.111.25:8002/shareApp/index.html?arg=AE08258E19918E99D0281390062B022C214BF031D7686FB863C46380BD83855D6C98CAA547D3559CACC20943D95CF038"
+      },
+      {
+        "shareTo": "qqzone",
+        "shareTitle": "",
+        "shareText": "我在借贷宝中白赚了30.85元，你也快来和我一起赚钱吧！",
+        "shareImageUrl": null,
+        "sharePageUrl": "http://119.254.111.25:8002/shareApp/index.html?arg=AE08258E19918E99D0281390062B022C214BF031D7686FB863C46380BD83855D6C98CAA547D3559CACC20943D95CF038"
+      },
+      {
+        "shareTo": "sms",
+        "shareTitle": "",
+        "shareText": "我在借贷宝中白赚了30.85元，你也快来和我一起赚钱吧！",
+        "shareImageUrl": null,
+        "sharePageUrl": "http://119.254.111.25:8002/shareApp/index.html?arg=AE08258E19918E99D0281390062B022C214BF031D7686FB863C46380BD83855D6C98CAA547D3559CACC20943D95CF038"
+      }
+    ],
+    "share": {
+      "sharePageUrl": "http://119.254.111.25:8002/shareApp/index.html?arg=AE08258E19918E99D0281390062B022C214BF031D7686FB863C46380BD83855D6C98CAA547D3559CACC20943D95CF038",
+      "shareTitle": "借贷宝",
+      "shareText": "我正在借款，安全可靠利息高。借我比存钱靠谱多了！"
+    }
+  }
+}

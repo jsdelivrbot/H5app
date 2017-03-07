@@ -1,0 +1,134 @@
+.avatar {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+.rankIcon {
+    width: 26px;
+}
+.hide-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.personal-info {
+    display: none;
+    width: 100%;
+    height: 165px;
+    background: #3385ff url(../../img/profitRank/bannerBg.png) 50px 20px repeat;
+    .user-title {
+        width: 65%;
+        height: 27px;
+        margin-top: 20px;
+        margin-left: 5%;
+        float: left;
+        line-height: 27px;
+        font-size: 16px;
+        color: #ffffff;
+        .avatar {
+            margin-right: 6px;
+            vertical-align: middle;
+            float: left;
+        }
+    }
+    .how-intro {
+        float: right;
+        display: block;
+        width: 25%;
+        margin-top: 29px;
+        margin-right: 5%;
+        text-align: right;
+        height: 13px;
+        line-height: 13px;
+        font-size: 13px;
+        text-decoration: none;
+        position: relative;
+        color: #ffffff;
+        img {
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top:-1px;
+            right:69px;
+        }
+    }
+    .profit-count {
+        padding-top: 89px;
+        text-align: center;
+        .profit-count-num a {
+            text-decoration: none;
+            display: inline;
+            font-size: 40px;
+            color: #ffffff;
+            &:after {
+                content: ' ';
+                width: 10px;
+                height: 20px;
+                background: url(../../img/profitRank/iconArrowSm.png) 3px 0 no-repeat;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.profit-rank-list {
+    display: none;
+    width: 100%;
+    ul {
+        background: #fff;
+        li {
+            padding: 0px 4%;
+            height: 67px;
+            line-height: 67px;
+            border-bottom: 1px solid #e1e3e6;
+            .user-title {
+                width: 42%;
+                float: left;
+                line-height: 66px;
+                height: 66px;
+                font-size: 16px;
+                @extend .hide-text;
+                @media screen and (max-width: 320px) {
+                    font-size: 12px;
+                }
+                span {
+                    display: block;
+                    float: left;
+                    width: 26px;
+                    margin-right: 8px;
+                    text-align: center;
+                    color: #3385ff;
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 8px;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                }
+            }
+            .money {
+                width: 56%;
+                float: right;
+                text-align: right;
+                line-height: 66px;
+                height: 66px;
+                font-size: 26px;
+                @media screen and (max-width: 320px) {
+                    font-size: 21px;
+                }
+                @extend .hide-text;
+                span {
+                    position: relative;
+                    top: -2px;
+                    right: -3px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

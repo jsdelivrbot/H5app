@@ -1,0 +1,162 @@
+	ul{
+		width: 100%;
+		//height: 459px;
+		//padding-left: 15px;
+		background-color: #fff;
+		border-bottom: 1px solid #e6e8eb;
+		box-sizing: border-box;
+		margin-top: 20px;
+		overflow: hidden;
+		li{
+			width: 100%;
+			
+			margin-top: -1px;
+			background-color: #fff;
+			
+			padding-left: 15px;
+			
+			
+			
+			box-sizing: border-box;
+			color: #3d434c;
+			div {
+				border-top: 1px solid #f0f2f5;
+				padding-left:3px;
+				padding-right: 18px;
+				height: 51px;
+				text-align: left;
+				line-height: 51px;
+				font-size: 15px;
+			}
+			span {
+				float: right;
+				color: #afb1b2;
+			}
+			&:active {
+				background-color: #f0f2f5;
+			}
+			//&:nth-last-child(1){
+			//  border-bottom: none;
+			//}
+		}
+		li:last-child{
+		//border-bottom: 0px solid #e6e8eb;
+		}
+	}
+	html{
+		//text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	   
+	body{
+		background-color: #f5f7fa;
+	}
+
+	.zhaoshang{
+		background-size: 26px!important;
+		background-position: 0px 0px!important;
+	}
+	.beijing{
+		background-size: 26px;
+		background-position: 0px -37px!important;
+	}
+	.minsheng{
+		background-size: 26px!important;
+		background-position: 0px -70px!important;
+	}
+	.jianshe{
+		background-size: 26px!important;
+		background-position: 0px -107px!important;
+	}
+	.huaxia{
+		background-size: 26px!important;
+		background-position: 0px -147px!important;
+	}
+	.guangfa{
+		background-size: 26px!important;
+	    background-position: 0px -181px!important;
+	}
+	.xingye{
+		background-size: 26px!important;
+		background-position: 0px -218px!important;
+	}
+	.pufa{
+		background-size: 26px!important;
+		background-position: 0px -244px!important;
+	}
+
+	.zhongxin{
+		background-size: 26px!important;
+		background-position: 0px -284px!important;
+	}
+	.guangda {
+		background-size: 26px!important;
+		background-position: 0px -320px!important;
+		background-repeat: no-repeat!important;
+		width: 10%!important;
+	}
+
+	.jiaotong{
+		background-size: 26px!important;
+		background-position: 0px -495px !important;
+	}
+
+	.zhongguo{
+		background-size: 26px!important;
+		background-position: 0px -456px!important;
+	}
+	.nongye{
+		background-size: 26px!important;
+		background-position: 0px -417px!important;
+	}
+	.baoshang{
+		background-size: 26px!important;
+		background-position: 0px -385px!important;
+	}
+	.gongshang{
+		background-size: 26px !important;
+	    background-position: 0px -532px !important;
+	    height: 28px!important;
+	}
+	.pingan{
+	    background-size: 28px !important;
+    	background-position: 0px -375px !important;
+	}
+
+
+	.leftArrow {
+		display: block;
+	    height: 10px;
+	    width: 10px;
+	    border-right: 1px solid rgb(128, 128, 128);
+	    border-bottom: 1px solid rgb(128, 128, 128);
+	    transform: rotate(-45deg);
+		-moz-transform:rotate(-45deg); 	/* Firefox */
+		-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+		-o-transform:rotate(-45deg); 	/* Opera */
+	}
+
+
+	.bigButton {
+		width: 92%;
+		margin-left: 4%;
+		height: 56px;
+		border: none;
+		border-radius: 4px;
+		margin-top: 31px;
+		background-color: #2a8bf8;
+		color: white;
+		//height: 15vw;
+		font-size:18px;
+		&:active {
+			background-color: #2277d7;
+		}
+	}
+
+	.disableButton{
+		background-color: rgb(208, 226, 247)!important;
+	}
+	.ableButton{
+		background-color: #2a8bf8;
+	}

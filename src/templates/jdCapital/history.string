@@ -1,0 +1,16 @@
+	<%for( var i = 0; i < compList.length; i++ ){%>
+		<a href="detail.html?token=<%=compList[i].token%>&txJurNo=<%=compList[i].txJurNo%>&applyTime=<%=compList[i].date%>" class="<%=compList[i].viewClass%> <%=compList[i].className%>">
+			<div>
+				<div>
+					<h2><%=compList[i].viewtype%></h2>
+					<p><%=compList[i].creDt%></p>
+				</div>
+				<img src="<%=compList[i].bigIcon%>" alt="">
+				<div>
+					<h2><%=compList[i].txPayAmt%></h2>
+					<p><%=compList[i].viewTitle%></p>
+				</div>
+				<span><%=compList[i].viewResult%></span>
+			</div>
+		</a>
+	<%}%>

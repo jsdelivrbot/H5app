@@ -1,0 +1,21 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "",
+    "returnUserMessage": ""
+  },
+  "data": {
+        "isCapacity": "2",
+        "totalNum": "1",
+        "customerName": "103",
+        "ammeterNo": "400",
+        "institutionName": "国网北京市电力公司(智能电表)",
+        "useElectAddr": "四单元",
+        "suppAmt": "012",
+        "minusAmt": "12",
+        "reSubmitAmt": "232",
+        "reSubmitMoth": "3",
+        "contractNo": "343",
+        "buyElectAmt": "45"
+  }
+}

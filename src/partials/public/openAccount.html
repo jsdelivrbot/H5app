@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>账户升级</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+    <!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/common/toast.scss">
+    <link rel="stylesheet" href="/sass/public/openAccount.scss">
+    <!-- endbuild -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="tip" class="toast">
+            <div>
+                <p>您已选择暂不升级账户。您还可以在“发现”—“投资有道”中再次申请升级。</p>
+                <button class="know">我知道了</button>
+            </div>
+        </div>
+        <div id="bank" class="toast">
+            <div>
+                <p>您需首先通过银行卡认证，成功后在“发现”—“投资有道”中，申请账户升级。</p>
+                <div>
+                    <a class="know">取消</a>
+                    <a id="attestation">去认证</a>
+                </div>
+            </div>
+        </div>
+        <div class="sky">
+            <h1>一键升级账户</h1>
+            <h3>让您的资产更安全</h3>
+            <p>为了保障您的资产更加安全，借贷宝与银行联合邀您一键升级账户！</p>
+            <p>立即在借贷宝合作银行开通电子账户，将保证您享受借贷宝的各项最新功能和流畅安全的体验。</p>
+        </div>
+        <div class="cloud">
+            <div id="apply">
+                <div class="check-block">
+                    <p class="desc-link">
+                        <input type="checkbox" id="allow-protocal" class="checkbox-protocal" checked>已阅读并同意<a id="btn-plist" href="../agreement/accountAccord.html">《宜宾市商业银行电子账户服务协议》</a>
+                    </p>
+                    <button id="turnIn-btn" class="button button-full">确定</button>
+                    
+                </div>
+                <a class="link-bottom">暂不升级</a>
+            </div>
+            <div id="sure" class="check-block">
+                <p class="desc-link">您已阅读并同意<a id="btn-plist" href="../agreement/accountAccord.html">《宜宾市商业银行电子账户服务协议》</a></p>
+                <p>已申请升级</p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+    <script type="text/javascript" src="/microtemplates/index.js"></script>
+    <script type="text/javascript" src="/js-url/url.min.js"></script>
+    <script type="text/javascript" src="/js/common/toast.js"></script>
+    <script type="text/javascript" src="/js/public/openAccount.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

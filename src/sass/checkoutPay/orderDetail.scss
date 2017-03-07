@@ -1,0 +1,120 @@
+body{ 
+    background-color:#f5f7fa;
+    font-family:"Microsoft YaHei";
+}
+
+[ v-cloak]{ display:none;}
+
+@mixin font($size,$color,$lineH){
+    font-size:$size;
+    color:$color; 
+    line-height:$lineH
+}
+.order_head{
+    background-color:#FFF;
+    border-bottom:1px solid #e1e2e4;
+    margin-bottom:30px;
+    padding:0 14px;
+    .success_text{
+        
+        @include font(16px,#979797,2.6);
+    }
+    .money{
+        
+        padding-left:4px;
+        font-family:"STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        @include font(50px,#2b2b2b,2);
+        span{
+            font-size:20px;
+            vertival-align:suber;
+        }
+    }
+    .shopping_mall{
+       
+        border-top:1px solid #e1e2e4;
+        @include font(16px,#19191a,3.4);
+        span{
+           vertical-align:middle; 
+        }
+    }   
+    .mall_logo{
+        vertical-align:middle;
+        width:30px;
+        height:30px;
+        border:1px solid #f0f2f5;
+        border-radius:6px;
+        padding:4px;
+        margin-right:8px;
+    }
+}
+
+.order_body{
+    background-color:#FFF;
+    border-top:1px solid #e1e2e4;
+    border-bottom:1px solid #e1e2e4;
+    padding:0 14px;
+    //margin-bottom:30px;
+    li{
+        line-height:40px;
+        height:40px;
+        border-bottom:1px solid #e1e2e4;
+        font-size:14px;
+        position:relative;
+        top:1px;
+    }
+    .info_tip{
+        color:#7e7f80;
+        width:90px;
+        display:inline-block;
+    }
+    .info_content{
+        color:#19191a;
+        a{
+            text-decoration: none;
+            color:#19191a;
+        }
+    }
+    .no_border_bottom{
+        border-bottom:none;
+    }
+    .tiaoma_li{
+        height:92px;
+    }
+    .tiao_xing_ma{
+        width:110px;
+        border:1px solid #e1e2e4;
+        padding:8px;
+    }
+}
+
+.barcode{
+    position:absolute;
+    border:1px solid #f0f2f5;
+    padding:8px 0!important;
+    line-height:1.4;
+    display:inline-block;
+    background-color:#FFF;
+    left:95px;
+}
+
+.scale{
+    left:50%!important;
+    top:0px;
+    padding:20px 0!important;
+    //position:fixed;
+}
+.codeBg{
+    position:fixed;
+    display:none;
+    top:0;
+    width:100%;
+    background-color:#fff;
+}
+.bgBarcode{
+    position:absolute;
+    overflow: visible!important;
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}

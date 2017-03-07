@@ -1,0 +1,41 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "",
+        "returnUserMessage": ""
+    },
+    "data": {
+        "addressList": [
+            {
+                "provinceId": "010",
+                "cityId": "010",
+                "payKind": "04",
+                "institutionNo": "0404",
+                "institutionName": "北京国电网燕山区电力局",
+                "billKey": "123443",
+                "instRmk1": "01",
+                "id": "766767"
+            },
+            {
+                "provinceId": "010",
+                "cityId": "010",
+                "payKind": "04",
+                "institutionNo": "0404",
+                "institutionName": "北京国电网燕山区电力局",
+                "billKey": "121",
+                "instRmk1": "01",
+                "id": "69876542"
+            },
+            {
+                "provinceId": "010",
+                "cityId": "010",
+                "payKind": "04",
+                "institutionNo": "0404",
+                "institutionName": "北京国电网燕山区电力局",
+                "billKey": "12",
+                "instRmk1": "01",
+                "id": "34345577"
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>通知</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection" />
+	<!-- build:css [cssBuildPath] -->
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/sass/public/expenseNotice.scss" />
+	<!-- endbuild -->
+</head>
+<body>
+    <img src="../../img/public/notice.png" alt="图片获取失败">
+    <p id="text">系统维护中</p>
+    <p class="main">系统维护中，预计<span id="hour"></span>小时内恢复，特殊情况请留意顶部公告。</p>
+    <!-- build:js [jsBuildPath] -->
+    <script type="text/javascript" src="/zepto.js/dist/zepto.min.js"></script>
+    <script type="text/javascript" src="/js-url/url.min.js"></script>
+    <!-- endbuild -->
+	<script>
+		;(function () {
+			var hour = url('?hour') || 24;
+			$('#hour').text(hour);
+		})();
+	</script>
+</body>
+</html>

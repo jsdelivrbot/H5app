@@ -1,0 +1,25 @@
+<ul class="clearfix">
+        <li>客户名称<span ><%=customerName%></span></li>
+        <li>客户编号<span ><%=ammeterNo%></span></li>
+        <li>缴费单位<span ><%=institutionName%></span></li>
+        <li>用电地址<span ><%=useElectAddr%></span></li>
+        <li>补加金额<span ><%=suppAmt%>元</span></li>
+        <li>扣减金额<span ><%=minusAmt%>元</span></li>
+        <li>补交阶梯差价金额<span ><%=reSubmitAmt%>元</span></li>
+        <li>补交阶梯差价电费月份<span ><%=reSubmitMoth%>月</span></li>
+        <!-- 根据JSON数据判断条件显示购电金额还是缴费金额-->
+        <%
+                var buyElectNum = buyElectNum || null;
+                if(!reSubmitMoth&!!buyElectNum){
+        %>
+        <li id="goudian">购电次数<span ><%=buyElectNum%>次</span></li>
+        <% } else {%>
+
+        <li id="jiaofei">缴费金额<span ><em><%=buyElectAmt%></em>元</span></li>
+        <% }%>
+</ul>
+        <%
+                if(!!reSubmitMoth){
+        %>
+        <p id = "goudianp">购电金额<input type="number"  id="chargeListFee" placeholder="请输入金额" /></p>
+        <% } %>

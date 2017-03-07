@@ -1,0 +1,22 @@
+  <div id="numberFail">
+                <div class="topDiv" >
+
+                    <div class="content">
+                        <div class="circleLeft" >
+                            <img src="../../img/rechargeFee/noFailXX.png">
+                        </div>
+                        <div class="pDiv">
+                            <p>
+                                该户号尚未出账或户号有误，如确认户号正确，请等待出账后再查询
+                            </p>    
+                        </div>
+                     </div>
+          
+                </div>
+                <div class="divDetail">
+                     <ul class="clearfix">
+                        <li>缴费单位<span><%=decodeURIComponent(institutionName)%></span></li>
+                        <li>客户编号<span><%=billKey%></span></li>
+                    </ul>
+                </div>
+            </div>

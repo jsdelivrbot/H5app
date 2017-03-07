@@ -1,0 +1,82 @@
+<div class="xs_host">
+        <div class="xs_title">
+            <p class="xs_left">
+            <span class="xs_title_ico">
+            <%if(!!topicDetail.memberInfo.isVip) {%>
+            <img class="vicon" src="../../img/postReward/vicon.png" alt="">
+            <%}%>
+            </span>
+             <%if(!topicDetail.memberInfo.isVip) {%>
+            <span class="xs_title_txt"><%=topicDetail.memberInfo.memberName%></span></p>
+            <%} else {%>
+            <span class="xs_title_color"><%=topicDetail.memberInfo.memberName%></span></p>
+            <%}%>
+            <% if (!!topicDetail.leftBonus) {%>
+
+            <p class="xs_right">剩<%=topicDetail.leftBonus %>/<%=topicDetail.totalBonus %>元</p>
+            <%} else {%>
+            <p class="xs_right">赏金<%=topicDetail.totalBonus %>元已抢完</p>
+            <%}%>
+        </div>
+        <pre class="xs_pre"><%=topicDetail.content %></pre>
+        <div class="xs_pic">
+        <% for( var i=0; i<topicDetail.topicImg.length;i++){ %>
+           <div class="xs_pic_item"><img src="<%=topicDetail.topicImg[i].big%>" alt=""/></div>
+        <% }%>
+        </div>
+        <div class="xs_info">
+            <p class="xsi_left"><%=topicDetail.postDate%></p>
+            <% if (topicDetail.likeCount!= 0) {%>
+            <p class="xsi_right"><img src="../../img/postReward/goodplus.png" alt=""/><span><%=topicDetail.likeCount%></span></p>
+       <%} else {%>
+        <p class="xsi_right"><img src="../../img/postReward/good.png" alt=""/><span>赞</span></p>
+       <%}%>
+        </div>
+    </div>
+    <div class="xs_open">
+        <p class="xso_title"><span>揭榜</span></p>
+       <div class="open_show">
+           <ul>
+           <% for(var i=0;i<replyList.length;i++) {%>
+               <li class="xso_item">
+                   <div class="xs_open_ico">
+                        <%if(!!replyList[i].memberInfo.thumbnailUrl) {%>
+                       <img  class="ico_img" src="<%=replyList[i].memberInfo.thumbnailUrl%>" alt=""/>
+                        <%} else{%>
+                        <img  class="ico_img" src="../../img/postReward/default.png" alt=""/>
+                        <%} %>
+                       <%if(!!replyList[i].memberInfo.isVip) {%>
+                       <img class="vicon" src="../../img/postReward/vicon.png" alt="">
+                       <%}%>
+                   </div>
+                   <div class="xs_open_detail">
+                       <ul>
+                           <li>
+                               <span class="xs_detail_left"><%=replyList[i].memberInfo.memberName%></span>
+                               <% if(replyList[i].p2pBonus!=0) {%>
+                               <span class="xs_detail_right"><%=replyList[i].replyBonus%> <%=replyList[i].p2pBonus%></span>
+                               <%} else{%>
+                               <span class="xs_detail_right"><%=replyList[i].replyBonus%></span>
+                               <% } %>
+                           </li>
+                           <li class="contentFs"><%=replyList[i].replyContent%></li>
+                           <li>
+                           <% for (var j=0;j<replyList[i].replyImg.length;j++) {%>
+                             <div class="imgSmall"><img src="<%=replyList[i].replyImg[j].big %>" alt=""></div>
+                           <% }%>
+                           </li>
+                           <li>
+                               <span class="xs_detail_left"><%=replyList[i].postDate%></span>
+                               <% if (replyList[i].likeCount!=0){%>
+                               <span class="xs_detail_right"><img src="../../img/postReward/goodplus.png" alt=""/><em><%=replyList[i].likeCount%></em></span>
+                               <% } else{ %>
+                               <span class="xs_detail_right"><img src="../../img/postReward/good.png" alt=""/><em>赞</em></span>
+                               <%}%>
+                           </li>
+                       </ul>
+                   </div>
+               </li>
+               <% } %>
+           </ul>
+       </div>
+    </div>

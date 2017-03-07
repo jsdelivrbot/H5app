@@ -1,0 +1,29 @@
+.coupon{
+    .someInformation{
+        background: #EEF4FF;
+        position:relative;
+        display:none;
+        .detailInfomation{
+            padding-left: 15px;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            font-size: 12px;
+            width:87%;
+                display: inline-block;
+        }
+        .delete{
+            width: 10%;
+            /* float: right; */
+            /* display: inline-block; */
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            /* right: 15px; */
+            text-align: center;
+            img{
+               margin-right: 5px;
+                width: 20px;
+            }
+        }
+    }
+}

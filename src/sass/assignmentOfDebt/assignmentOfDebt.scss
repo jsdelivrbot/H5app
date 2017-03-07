@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family:"Microsoft YaHei";
+    letter-spacing:0.5px;
+}
+
+body{
+    margin:30px 0 50px;
+    font-size:14px;
+}
+h3{ font-size:15px; color:#3185ff;}
+p{
+    padding:30px 0;
+    border-bottom:1px solid #CCC;
+    &.noBorder{
+        border-bottom:none;
+    }
+    &.paddingTop20{
+        padding-top:15px;
+    }
+}
+
+p img{ 
+    margin-bottom:15px;
+}
+.suchAs{
+    border-bottom:1px solid #CCC;
+   padding:10px 0 30px;
+}
+
+.pic1{
+   height:55px;
+}
+.pic2{
+   height:55px;
+}
+.pic3{
+    width:200px;
+}
+.item{
+    border-bottom:1px solid #CCC;
+    padding:0 13px;
+    margin-top:30px;
+}

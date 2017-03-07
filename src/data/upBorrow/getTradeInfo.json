@@ -1,0 +1,46 @@
+{
+    "error": 
+    {
+        "returnCode": "0",
+        "returnMessage": "success",
+        "returnUserMessage": "获取数据成功"
+    },
+    "data": 
+    {
+        "memberInfo": 
+        {
+            "memberId": "540600895054815746",
+            "productId": "5866511362666090500001",
+            "orderId": "586651136266609005",
+            "userName": "我爱国",
+            "thumbnail_url": ""
+        },
+        "loanData": 
+        {
+            "loanableAmount": "1242423",
+            "rate": "5.70",
+            "dayRate": "0.01561643835616438",
+            "amount": "10",
+            "term": "0",
+            "status":3,
+            "earnings":1
+        },
+        "tradeInfo": 
+        {
+            "averageRate": "24.00",
+            "totalCount": 2
+        },
+        "statics": 
+        {
+            "totalCount": 1,
+            "totalAmount": 234
+        },
+        "text": {
+            "shareTitle": "借贷宝 直投熟人更高明",
+            "shareText": "借款利率高达15.00%，1年相当于银行10年的利息",
+            "footerA": "借钱给我，轻松理财又安全",
+            "footerB":"全额借给TA 预期可获得<span>234</span>元收益",
+            "key": "JDB_UI_SHARE_getTrade21"
+        }
+    }
+}

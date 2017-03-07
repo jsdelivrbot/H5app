@@ -1,0 +1,86 @@
+<div id="manageCreditCard">
+                <div class="topDiv"  style="padding: 5px 0 5px 0;">
+                    <div class="topLeft" style="">
+                        <p class="bank_p" style="margin-top: 19px;">
+                        
+                            <span style="top: -5px;" class="logoContainer <%=tools.getBankClass(data.bankNo)%>">                             
+                              <!--  <img class="bankLogo" src="/img/creditCard/zhaoshang_logo.png" style=""> -->                           
+                              </span>
+
+                            <span class="bankName" style="font-size: 18px;">
+
+                                <%=tools.getBankName(data.bankNo)%>
+                            </span>
+                           <!--   <%if(data.cardStatus) {%>
+                            <span class="payDate">
+                                距离还款日：<%=data.noticeDays%>天
+                            </span>
+                            <%}%>-->
+                        </p>
+
+                        <p class="bankNo_p" style="font-size: 14px;color: #b1b1b3;margin-top: -4px;">
+                             尾号（<%=data.account%>）<%=data.name%>
+
+                        </p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            还款提醒
+                            <label class="toggle">
+                                <input id="ifRemind" <% if(data.cardStatus){%> checked <%}%>  type="checkbox">
+                                <div class="track">
+                                    <div class="handle">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p style="position:relative">
+                                提醒日期
+                                <select id="remindDate" class="remindDate">
+                                    <% for (var i = 1;i<29; i ++) {%>
+                                        <% if (i === data.remindDate) {%>
+                                            <option selected>
+
+                                               每月<%=i%>日
+                                            </option>
+                                        <% } else {%>
+                                            <option >
+                                               每月<%=i%>日
+
+                                            </option>
+
+                                        <% }%>
+                                   <% }%>
+                                </select>
+                                <font class="dateFont" style="width: 100px;">
+
+                                    每月<%=data.remindDate%>日 
+
+                                </font>
+                                 <span class="leftArrow">
+
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li >
+                        <div id="link">
+                            <p style="position:relative">
+                                还款记录
+                                
+                                 <span class="leftArrow">
+
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="bigButton" id="deleteCard">
+                    删除
+                </button>
+            </div>

@@ -1,0 +1,32 @@
+<%for( var i=0; i<arr.length;i++ ){%>
+		<% for(var j = 0; j<arr[i].length; j++){ %>
+			<% if( typeof arr[i][j] == "string"){ %>
+					<p class="title"><%=arr[i][j]%>年</p>
+			<% }else{ %>
+				<a href="./../../partials/payment/paymentDetail.html?memberID=<%=arr[i][j].jdbId%>&businessType=<%=arr[i][j].servicetype%>&orderId=<%=arr[i][j].orderid%>">
+					<div>
+						<div>
+ 	
+							<h2><%=arr[i][j].currentMonth%>月</h2>
+ 	
+							<p><%=arr[i][j].operationTime%></p>
+ 	
+						</div>
+ 	
+						<img src="<%=arr[i][j].icon%>" alt="">
+ 	
+						<div>
+ 								<h2><%=arr[i][j].amountShow%></h2>
+ 	
+							<p>信用卡还款－尾号(<%=arr[i][j].recaccount%>)</p>
+ 	
+						</div>
+ 	
+						<span class="<%=arr[i].viewClass%>"><%=arr[i][j].viewTitle%></span>
+ 	
+					</div>
+ 					</a>
+ 	
+			<% } %>
+		<% } %>
+<% } %>

@@ -1,0 +1,11 @@
+<%for( var i = 0; i < flowRechargeList.length; i++ ){%>
+	<dl data="<%=i%>">
+        <dt>
+            <h2 class="time"><%=flowRechargeList[i].idName%> <span>分钟</span></h2>
+            <p class="primeCost"> 原价：<span class="line"><%=flowRechargeList[i].peAmt/100%></span> <span class="save">省<%=(flowRechargeList[i].peAmt-flowRechargeList[i].payAmt)/100%>元</span></p>
+        </dt>
+        <dd class="cost-btn">
+            ￥<span class="cost"><%=flowRechargeList[i].payAmt/100%></span>
+        </dd>
+    </dl>		
+<%}%>

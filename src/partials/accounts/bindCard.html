@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>关联银行卡</title>
+    <meta name="keywords" content="金融,社交,借款,借钱,赚钱,理财,投资,借贷,jiedaibao,股票,基金,p2p,众筹">
+    <meta name="description" content="借贷宝是国内顶级私募机构九鼎控股倾力打造的熟人间借贷平台。以借款人实名、出借人匿名的单向匿名借贷模式，使借款人能够快速获得借款，出借人根据借款人身份主动评估风险，获得更安全的高收益，是你手机上必备的借钱神器，赚钱利器。人脉变钱脉，就能玩出钱！">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            max-width:420px;
+            margin:0 auto;
+        }
+        body{
+                background-color: #f5f7fa;
+        }
+        .content{
+            text-align:center;
+            margin-top:22%;
+        }
+        .content .confirm_btn{
+            cursor: pointer;
+				    width: 90%;
+				    max-width: 500px;
+				    display: inline-block;
+				    height: 50px;
+				    line-height: 50px;
+				    background: #3385ff;
+				    border-radius: 2px;
+				    margin-top: 58px;
+				    color: #fff;
+				    font-size: 16px;
+        }
+        .content .topimg{
+                    width: 20%;
+                    margin-bottom: 20px;
+                    /* min-width: 100px; */
+                    max-width: 73px;
+        }
+        .content p{
+                font-size: 15px;
+				    padding: 0px 14.5%;
+				    font-size: 4vw;
+           
+        }
+        .content .note_p{
+            color: #999999;
+            font-size: 12px;
+            margin-top: 14px;
+            font-size: 3.2vw;
+        }
+        .content .blue_color{
+            color:#3385ff;
+        }
+        .bottomDiv{
+        	    position: fixed;
+							bottom: 20px;
+							height: 30px;
+							color: #acadb1;
+							width: 100%;
+							/*margin-left: 20%; */
+							text-align: center;
+							/* margin-right: auto; */
+							font-size: 12px;
+                                max-width: 420px;
+        }
+        .bottomDiv .bottomContent{
+					margin-left: auto;
+					margin-right: auto;
+					width: 62%;
+
+        }
+       .bottomDiv .bottomContent img{
+			        width: 216px;
+
+        }
+         @media (min-width: 420px) { 
+            	.content p{
+								font-size:16px;
+							}
+                .content .note_p{
+                        font-size: 12px;
+                    }
+
+		}
+    </style>
+</head>
+<body>
+<div class="content">
+  
+    <img class="topimg" src="http://jdb-dev.jiedaibao.com:8002/h5app_credit//img/accounts/top.png"/>
+    <p >您将进入<span class='blue_color'>中国银联</span>页面进行银行卡关联</p>
+    <p class="note_p">
+    	温馨提示：中国银联需要您输入取款密码以确保是本人操作，防止您的账户被他人冒用
+  	</p>
+    <span class='confirm_btn' id='confirm'>下一步</span>
+    <form id="autoRedirectForm" method="POST" action="<%=url%>">
+        <input type="hidden" value="<%=client_ip%>" name="client_ip">
+        <input type="hidden" value="<%=user_id%>" name="user_id"/>
+        <input type="hidden" value="<%=bank_card%>" name="bank_card"/>
+        <input type="hidden" value="<%=sign%>" name="sign"/>
+        <input type="hidden" value="<%=ts%>" name="ts"/>
+    </form>
+    </div>
+    <div class="bottomDiv" >
+    	<div class="bottomContent">
+    		<img src="http://jdb-dev.jiedaibao.com:8002/h5app_credit//img/accounts/bottomContent.png"/>
+
+    	<!--	
+        <p>
+    			关联银行卡后的账户及支付安全由中国人民财产保险股份有限公司承保
+    	</p>
+    		-->
+    	</div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        var confirmBtn = document.getElementById('confirm');
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r){
+                return unescape(r[2]);
+            } else {
+                return '';
+            }
+        }
+        confirmBtn.onclick = function () {
+            document.getElementById('autoRedirectForm').submit();
+        }
+    }
+</script>
+</html>

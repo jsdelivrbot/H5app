@@ -1,0 +1,40 @@
+	<div class="result-turnIn">
+		<ul class="result-step">
+			<li>
+				<div class="step-view">
+					<div class="alive-line step-icon step-1">
+						<div></div>
+					</div>
+					<i class="bottom-line alive-line"></i>
+				</div>
+
+				<p class="step-name alive-text">成功转入 <%=amount%>元</p>
+
+				<p class="step-date">今天</p>
+			</li>
+			<li>
+				<div class="step-view">
+					<i class="top-line"></i>
+					<div class="step-icon step-2">
+						<div></div>
+					</div>
+					<i class="bottom-line"></i>
+				</div>
+				<p class="step-name">开始计算收益</p>
+				<p class="step-date"><%=calDate%></p>
+			</li>
+			<li>
+				<div class="step-view">
+					<i class="top-line"></i>
+					<div class="step-icon step-3">
+						<div></div>
+					</div>
+				</div>
+				<p class="step-name">收益到账</p>
+				<p class="step-date"><%=estDate%></p>
+			</li>
+		</ul>
+	</div>
+	<div class="check-block">
+		<a href="./index.html?token=<%=token%>&accessToken=<%=accessToken%>&memberID=<%=memberID%>&udid=<%=udid%>&appKey=<%=appKey%>&clientVersion=<%=clientVersion%>" class="button button-clear button-full">完成</a>
+	</div>

@@ -1,0 +1,61 @@
+ <div id="creditPay">
+                <div class="topDiv">
+                    <div class="topLeft">
+                        <p class="bank_p" style="">
+
+                            <span class="logoContainer <%=tools.getBankClass(data.bankNo)%>">
+                              <!--  <img class="bankLogo" src="/img/creditCard/zhaoshang_logo.png" style=""> -->                           </span>
+                            <span class="bankName" style="">
+                                <%=tools.getBankName(data.bankNo)%>
+
+                            </span>
+                            <%if(data.cardStatus) {%>
+                            <span class="payDate">
+                                距离还款日：<%=data.noticeDays%>天
+                            </span>
+                            <%}%>
+                        </p>
+                        <p class="bankNo_p">
+                            <%=tools.getShowNum(data.account)%>
+                        </p>
+                    </div>
+                    <div class="topRight">
+                        <button id="toManage">
+                            管理
+                        </button>
+                    </div>
+                </div>
+                <div class="moneyDiv">
+                    <ul>
+
+                        <li>
+                            <div class="inputContainer">
+                                <label class="wenben">还款金额</label>
+                                <input id="theMoney" type="number" placeholder="单笔最多10万元" style="width: 66%;" value="">
+                                <span id="deletMoney">
+                                    <img src="../../img/creditCard/delete_money.png">
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="bottomDiv">
+                    <div id="agree">
+                        <label class="checkbox">
+                            <input type="checkbox" class="read"  checked="">
+                        </label>
+
+                        <span>
+                            我已阅读并同意
+                            <a href="../agreement/payService.html">
+                                《借贷宝还款服务协议》
+                            </a>
+                        </span>
+
+                    </div>
+                    <button  class="bigButton" id="submitPay" style="background-color: #d0e2f7 ">
+                        立即还款
+                    </button>
+                </div>
+            </div>

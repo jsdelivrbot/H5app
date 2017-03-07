@@ -1,0 +1,12 @@
+{
+	"error": {
+		"returnCode": "0",
+		"returnMessage": "000000",
+		"returnUserMessage": "操作成功"
+	},
+	"data": {
+		"bankCorg": "CMB",
+		"cardTyp": "C",
+		"bankNm": "招商银行"
+	}
+}

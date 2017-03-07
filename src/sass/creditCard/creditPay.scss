@@ -1,0 +1,253 @@
+#creditPay {
+	display:block;
+	.topDiv {
+		border-bottom: 1px solid #E6E8EB;
+		padding-bottom: 23px;
+		background-color: white;
+		padding-top: 15px;
+		/* padding-left: 20px; */
+		position: relative;
+		width: 100%;
+		float: left;
+		.topLeft{
+			width: 75%;
+			float: left;
+			height: 72px;
+			color: #3d434c;
+			.bank_p{
+				margin-top: 18px;
+				position: relative;
+				margin-left: 21px;
+				margin-left: 7.5%;
+				font-size: 14px; 
+				line-height: 14px;
+				font-size: 14px;
+				font-size: 3.73vw;
+				line-height: 3.7vw; 
+				@media (min-width: 420px){ 
+					line-height: 14px;
+					font-size: 14px;
+
+				 }
+				 .logoContainer{
+					min-width: 26px;
+					position: absolute;
+					top: 11px;
+					width: 7%;
+					left: 53px;
+					top: -8px;
+					left: 0px;
+					height: 25px;
+					overflow: hidden;
+					background-image: url(../../img/creditCard/bank-icons.png);
+					background-repeat: no-repeat;
+					background-size: 26px;
+					background-position: 0px 0px;
+					//background
+					.bankLogo{
+						width: 25px;
+						//position: absolute;
+						/* top: 11px; */
+						width: 100%;
+						/* left: 53px; */
+						//top: -50px;
+						/* left: 16%; */
+						//left: 0px;
+
+					}
+
+    			}
+				img{
+					width: 25px;
+					position: absolute;
+					top: -5px;
+					width: 9.5%;
+				}
+				.bankName{
+					margin-left: 34px;		
+					margin-left: 13%;
+
+				}
+				.payDate {
+					margin-left: 2px;
+					color: #afb1b2;
+					/* margin-top: 0px; */
+					
+				}
+			}
+			.bankNo_p {
+				padding-left: 55px;
+				margin-top: 16px;
+				font-size: 22px;
+		    	padding-left: 19.5%;
+			}
+		}
+		.topRight {
+			width: 25%;
+			float: left;
+			/* position: absolute; */
+			/* right: 20px; */
+			/* top: 30px; */
+			/* border-radius: 15px; */
+			/* display: block; */
+			/* width: 250px; */
+			height: 72px;
+			/* padding-top: 20px; */
+			padding-right: 0px;
+
+			button {
+				display: block;
+				width: 54px;
+				height: 24px;
+				border-radius: 12px;
+				border: 1px solid #646566;
+				background-color: white;
+				/* margin-left: 20px; */
+				color: #646566;
+				font-size: 12px;
+				/* margin-left: 23%; */
+				float: right;
+				margin-top: 20px;
+				margin-right: 20px;
+
+			}
+		}
+	}
+	.moneyDiv {
+		/* border-top: 1px solid #e6e8eb; */
+		border-bottom: 0px solid #e6e8eb;
+		float: left;
+		width: 100%;
+		ul {
+			border-bottom: 1px solid #e6e8eb;
+			
+			border-top: 1px solid #e6e8eb;
+			margin-top: 14px;
+			li {
+		 		border-bottom: 0px solid #e6e8eb;
+	 		    position: relative;
+			 	font-size: 16px;
+			 	padding-left: 23px;
+			 	.inputContainer {
+			 		font-size:16px;
+			 		//padding-bottom: 5px;
+					position: relative;
+					line-height: 48px;
+					height: 48px;
+			 		.wenben{
+			 			display:inline-block;
+		 			    height: 47px;
+						line-height: 48px;
+						float:left;
+			 		}
+				 	input {
+						border: none;
+						margin-left: 16px;
+						font-size: 16px;
+						//display: inline-block;
+					    height: 40px;
+    					width: 60%;
+    					float:left;
+    					margin-top:4px;
+    					//line-height: 40px;
+
+					    //line-height: 40px;
+					   // margin-top:-30px;
+					  // padding-bottom: 10px;
+					 }
+		   			input::-webkit-input-placeholder { 
+						  
+						// font-size: 16px;
+						// line-height: 40px;
+						 //height:40px;
+						 //color:red;
+						// display: block;
+						 // margin-top:-40px;
+				  	}	
+
+					
+
+
+					span {
+						height: 14px;
+						width: 14px;
+						display: block;
+						position: absolute;
+						right: 20px;
+						top: 18px;
+						//background-color: #afb1b2;
+						color: white;
+						text-align: center;
+					//	padding-top: -11px;
+						line-height: 13px;
+						border-radius: 10px;
+						font-size: 12px;
+						img{
+							width:14px;
+						}
+					 }
+				 }
+			}
+		}
+
+	}
+	.bottomDiv {
+	    float: left;
+	    width: 100%;
+		#agree{
+	    	padding-left: 20px;
+			margin-top: 15px;
+			font-size: 12px;
+			color: #c2c4c6;
+			box-sizing: border-box;
+			label{
+				//padding: 0px;
+				padding: 0px;
+    			top: 2px;
+    			left: 2px;
+				input{
+					width:15px;
+					height:15px;
+				}
+				input:checked:before {
+			       	background: #2cca55;
+    				border-color: #2cca55;
+				}
+				input:before{
+					border-radius: 2px;
+				}
+				input:after{
+			 		
+					width: 10px;
+					height: 6px;
+					top: 22%;
+					left: 18%;
+					/* border: 2px solid #fff; */
+					border-bottom: 2px solid #FFF;
+					border-left: 2px solid #FFF;
+				}
+			}
+			 
+			span {
+	      		margin-left:10px;
+	      		color: #7a8699;
+		       	a {
+			        text-decoration: none;
+			        color:#2a8bf8
+		      	}
+	      	} 
+    	}
+	    .bigButton{
+	    	
+	    }
+	    
+    	#bigButton{
+    		background-color: #d0e2f7;
+	    	&:active {
+				background-color: #e5564d;
+			}
+	    }
+
+	}
+}
+

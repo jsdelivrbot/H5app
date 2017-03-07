@@ -1,0 +1,185 @@
+*{
+  margin:0;
+  padding:0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  font-size:14px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+ul {
+  list-style: none;
+}
+.hidden {
+	display: none;
+}
+.fill_number {
+	padding-top: 15px;
+	p {
+		border-bottom: 1px solid #e6e8eb;
+		padding: 0 3.5% 0 4%;
+		background-color: #fff;
+		height: 50px;
+		&.zone_choose {
+			margin-bottom: 20px;	
+		}
+		&.start {
+			border-top: 1px solid #e6e8eb;
+		}
+	  	&:nth-child(2){
+		  border-bottom: 0;
+		  padding-left:0;
+		}
+	  	&>.lineSpan {
+		  	display:inline-block;
+		  	border-bottom:1px solid #f0f2f5;
+		  	margin-left: 3%;
+		  	padding:0 3.5% 0 1%;
+		  	width:96.5%;
+		}
+		label {
+			font-size: 16px;
+			color: #3d434c;
+			float: left;
+			height: 50px;
+			line-height: 50px;
+		}
+		input {
+		  	width:70%;
+			font-size: 14px;
+			float:left;
+			margin-left: 10px;
+			border: none;
+			outline: none;
+			vertical-align: middle;
+			height: 40px;
+			margin-top: 4px;
+			color: #3d434c;
+		}
+		.has_arrow {
+			font-size: 14px;
+			color: #afb1b2;
+			float: right;	
+			height: 50px;
+			line-height: 50px;
+		    position: relative;
+			&.has_arrow:after {
+				content: '';
+				color: #afb0b3;
+				margin-left: 8px;
+				display: inline-block;
+				vertical-align: middle;
+				height: 15px;
+				width: 15px;
+				background: url(../../img/payment/arrow.png) no-repeat;
+				background-size: 8px 15px;
+			}
+		  	&.hasCity_c:after{
+			  content: '';
+			  display:none;
+			  background:none;
+			}
+		}
+	}
+	.button {
+		margin-top: 20px;
+		display: inline-block;
+		margin-left: 5%;
+		width: 90%;
+		height: 50px;
+		border-radius: 3px;
+		color: #fff;
+		line-height: 50px;
+		text-align: center;
+		background-color: #2a8bf8;
+		position: relative;
+	  	-webkit-user-select: none;
+	}
+  	.btnCol{
+		background-color: #2277d7;
+	}
+	.disabled:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: #d0e2f7;
+		opacity: 0.7;
+		font-size: 18px;
+	}
+}
+/*search start*/
+.searchPage {
+  width: 100%;
+  .searchBox {
+	background: #e6e8eb;
+	height: 45px;
+	.searchText {
+	  /*font-size:12px;*/
+	  -webkit-border-radius: 4px;
+	  border-radius: 4px;
+	  background: #fff url(../../img/rechargeFee/search.png) no-repeat 42% center;
+	  background-size:14px 14px;
+	  border: none;
+	  outline: none;
+	  width: 95%;
+	  margin: 8px 2.3% 9px;
+	  height: 28px;
+	  color: #afb1b2;
+	  text-align:center;
+	}
+	.searchfocus{
+	  background-image: none;
+	  text-align:left;
+	  padding-left:2%;
+	  width:93%;
+	  color:#3d434c;
+	}
+  }
+  ul {
+	background: #fff;
+	border-bottom: 1px solid #e6e8eb;
+	li{
+	  height: 50px;
+	  background: #fff;
+	  line-height: 50px;
+	  color:#3d434c;
+	  span{
+		display:inline-block;
+		height:49px;
+		line-height: 49px;
+		padding-left: 1.5%;
+		margin-left: 3%;
+		width:97%;
+		border-bottom:1px solid #f0f2f5;
+	  }
+	  &:last-child span{
+		border-bottom: none;
+	  }
+	}
+	li.searchLink{
+	  background:url(../../img/rechargeFee/searchRight.png) no-repeat 94% center;
+	  background-size:20px 20px;
+	}
+  }
+}
+.disBg{
+  background:#f5f7fa url("../../img/rechargeFee/bg.png") no-repeat left bottom;
+  background-size:375px 108px;
+}
+.disBg:after{
+  content: "更多城市陆续添加中~";
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #afb1b2;
+  font-size:16px;
+  margin-top:60%;
+}

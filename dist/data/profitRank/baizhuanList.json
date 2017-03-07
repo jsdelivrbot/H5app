@@ -1,0 +1,105 @@
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "success",
+        "returnUserMessage": ""
+    },
+    "data": {
+        "totalRankNum": 80,
+        "hasMore": 1,
+        "myRank": {
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "易家玮",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 1,
+            "amount": 4212382121
+        },
+        "shareContents": [{
+            "shareTo": "wxmsg",
+            "shareTitle": "我在借贷宝白赚了28.95元",
+            "shareText": "这里有100种无需本金的赚钱方法，你也快来吧！",
+            "shareImageUrl": null,
+            "sharePageUrl": ""
+        }, {
+            "shareTo": "wxfeed",
+            "shareTitle": "",
+            "shareText": "我在借贷宝中白赚了28.95元，你也快来和我一起赚钱吧！",
+            "shareImageUrl": null,
+            "sharePageUrl": ""
+        }, {
+            "shareTo": "qq",
+            "shareTitle": "我在借贷宝白赚了28.95元",
+            "shareText": "这里有100种无需本金的赚钱方法，你也快来吧！",
+            "shareImageUrl": null,
+            "sharePageUrl": ""
+        }, {
+            "shareTo": "qqzone",
+            "shareTitle": "",
+            "shareText": "我在借贷宝中白赚了28.95元，你也快来和我一起赚钱吧！",
+            "shareImageUrl": null,
+            "sharePageUrl": ""
+        }, {
+            "shareTo": "sms",
+            "shareTitle": "",
+            "shareText": "我在借贷宝中白赚了28.95元，你也快来和我一起赚钱吧！",
+            "shareImageUrl": null,
+            "sharePageUrl": ""
+        }],
+        "share": {
+            "sharePageUrl": "",
+            "shareTitle": "借贷宝",
+            "shareText": "我正在借款，安全可靠利息高。借我比存钱靠谱多了！"
+        },
+        "rankList": [{
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "王俊凯",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 1,
+            "amount": 4212382121
+        }, {
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "王俊凯",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 2,
+            "amount": "sdf"
+        }, {
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "王俊凯",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 1,
+            "amount": 212382121
+        }, {
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "王俊凯",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 2,
+            "amount": 12121
+        }, {
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "王俊凯",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 1,
+            "amount": 12382121
+        }, {
+            "memberInfo": {
+                "memberID": 121212,
+                "memberName": "王俊凯",
+                "thumbnailUrl": "../../img/profitRank/testAvatar.jpg"
+            },
+            "order": 2,
+            "amount": 12121
+        }]
+    }
+}

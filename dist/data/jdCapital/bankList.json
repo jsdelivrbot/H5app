@@ -1,0 +1,29 @@
+{
+	"error": {
+		"returnCode": "0",
+		"returnMessage": "success",
+		"returnUserMessage": "success"
+	},
+	"data": {
+		"availableCardList": [],
+		"unavailableCardList": [
+			{
+			"payType": 2,
+			"logoUrl": "http://jdbserver.b0.upaiyun.com/images/486945274204262406",
+			"bankNo": "ABC",
+			"bankName": "中国农业银行",
+			"cardTypeName": "储蓄卡",
+			"cardType": "0",
+			"isUsable": 0,
+			"cardNo": "3878",
+			"title": "中国农业银行储蓄卡(3878)",
+			"eachLimit": "50000.00",
+			"dayLimit": "100000.00",
+			"cardID": "20160412000000022843",
+			"phoneNumber": "13811450632",
+			"subtitle": "单笔上限50000,每日上限100000",
+			"hasCharged": 0
+		}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+	<div class="result-turnOut">
+		<div></div>
+		<h2>转出成功</h2>
+		<a>¥<span><%=txPayAmt%></span></a>
+<% if( bankNo != "" ){ %>
+		<p>转出已提交，等待<%=bankName%>处理</p>
+		<ul>
+			<li>
+				<a class="circle"></a>
+				<p class="head">转出成功</p>
+				<span><%=creDt%> <%=creTm%></span>
+			</li>
+			<li>
+				<a class="circle"></a>
+				<p>最迟到账时间</p>
+				<span><%=lastCatchDt%> <%=lastCatchTm%></span>
+			</li>
+		</ul>
+<% }else{ %>
+		<p>成功转出<%=txPayAmt%>元至借贷宝余额</p>
+<% } %>
+	</div>
+	<div class="check-block">
+		<a href="./index.html?token=<%=token%>&accessToken=<%=accessToken%>&memberID=<%=memberID%>&udid=<%=udid%>&appKey=<%=appKey%>&clientVersion=<%=clientVersion%>" class="button button-clear button-full">完成</a>
+	</div>

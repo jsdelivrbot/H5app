@@ -1,0 +1,69 @@
+{
+    "error":{
+        "returnCode":0,
+        "returnMessage":"success",
+        "returnUserMessage":"success"
+    },
+    "data": [{
+        "amount": 1500,
+        "logoUrl": "http://jdbopt.b0.upaiyun.com/merchant/dev/upload/logo/87d6a479464fb99355777895e0a29a17.png",
+        "endTime": "2017-01-01",
+        "startTime": "2016-06-08",
+        "couponTitle": "15元专用现金券",
+        "merName": "人人行",
+        "categoryID": 1,
+        "couponID": "1020000557988",
+        "type": 1,
+        "isMulti": 1,
+        "version": "828",
+        "batchType": 0,
+        "hasSelected": 1,
+        "uiType": "coupon"
+    }, {
+        "amount": 17,
+        "logoUrl": "http://jdbopt.b0.upaiyun.com/merchant/dev/upload/logo/87d6a479464fb99355777895e0a29a17.png",
+        "endTime": "2017-01-01",
+        "startTime": "2016-06-10",
+        "couponTitle": "15元现金券",
+        "merName": "人人行",
+        "categoryID": 1,
+        "couponID": "1020001445985",
+        "type": 1,
+        "isMulti": 0,
+        "version": "1074",
+        "batchType": 0,
+        "hasSelected": 1,
+        "uiType": "coupon"
+    }, {
+        "amount": 1400,
+        "logoUrl": "http://jdbopt.b0.upaiyun.com/merchant/dev/upload/logo/87d6a479464fb99355777895e0a29a17.png",
+        "endTime": "2017-01-01",
+        "startTime": "2016-06-10",
+        "couponTitle": "15元现金券",
+        "merName": "人人行",
+        "categoryID": 1,
+        "couponID": "1020001447985",
+        "type": 1,
+        "isMulti": 0,
+        "version": "1075",
+        "batchType": 0,
+        "hasSelected": 0,
+        "uiType": "coupon"
+    }, {
+        "amount": 1100,
+        "logoUrl": "http://jdbopt.b0.upaiyun.com/merchant/dev/upload/logo/87d6a479464fb99355777895e0a29a17.png",
+        "endTime": "2017-01-01",
+        "startTime": "2016-06-10",
+        "couponTitle": "15元现金券",
+        "merName": "人人行",
+        "categoryID": 1,
+        "couponID": "1020001449984",
+        "type": 1,
+        "isMulti": 0,
+        "version": "1076",
+        "batchType": 0,
+        "hasSelected": 0,
+        "uiType": "coupon"
+    }]
+
+}

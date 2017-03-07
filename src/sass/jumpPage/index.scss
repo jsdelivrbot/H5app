@@ -1,0 +1,42 @@
+html{
+	font-size:20px;
+}
+body{
+	text-align:center;
+	color:#979797;
+	position:relative;
+	padding-top:3.11rem;
+	.runbg{
+
+		width:11.24rem;
+		height:8.38rem;
+	}
+	.manual{
+		width:100%;
+		line-height:0.55rem;
+		font-size:0.55rem;
+		margin-top:0.73rem;
+		margin-bottom:7.936rem;
+	}
+	.rd{
+		width:100%;
+		line-height:0.55rem;
+		font-size:0.55rem;
+		color:#a3a3a3;
+	}
+	.download{
+		text-decoration:none;
+		display:block;
+		width:10.67rem;
+		height:1.83rem;
+		color:#4e9bf5;
+		font-size:0.68rem;
+		line-height:1.83rem;
+		border:2px solid #bdd8ff;
+		border-radius:7px;
+		position:absolute;
+		left:50%;
+		margin-left:-5.335rem;
+		margin-top:0.384rem;
+	}
+}

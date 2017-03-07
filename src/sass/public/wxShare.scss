@@ -1,0 +1,146 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background:#f5f7fa;
+  font-size:12px;
+  color:#4c4c4c;
+  /*-webkit-overflow-scrolling : touch;
+  overflow-y:hidden;*/
+}
+body,html{
+  width:100%;
+  height:100%;
+}
+html {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+.wrap{
+  width:100%;
+  height:100%;
+  background: url(../../img/public/bg.png) repeat-y;
+  background-size: 100%;
+  position: relative;
+}
+
+.top{
+	width: 100%;
+	height: auto;
+	position: relative;
+	.banner{
+		display: block;
+		width: 73%;
+		margin: 0 auto;
+	}
+    .head{
+    	width: 74px;
+    	height: 74px;
+    	position: absolute;
+    	bottom: -37px;
+    	left: 50%;
+    	margin-left: -37px;
+    	background: #fff;
+    	border-radius: 50%;
+    	border:3px solid #fff;
+    	img{
+    		width: 100%;
+    		height: 100%;
+    		border-radius: 50%;
+    		overflow: hidden;
+    		border-weight:0;
+    	}
+    }
+}
+.main{
+	width: 92%;
+	height: 194px;
+	border:1px solid #e6e8eb;
+	border-radius: 8px;
+	background: #fff;
+	margin: 0 auto;
+	-webkit-box-sizing:border-box;
+	padding: 58px 20px 24px 20px;
+	.wenzi{
+		display: block;
+		width: 100%;
+		width: 200px;
+		margin: 0 auto;
+	}
+	.loan{
+		width: 100%;
+		height: 47px;
+		border-bottom: 1px solid #e6e8eb;
+		line-height: 47px;
+		text-align: center;
+		span{
+			color: #3385ff;
+			font-size: 14px;
+		}
+	}
+	dl{
+		width: 94%;
+		display: -webkit-box;
+		margin: 15px auto 0 auto;
+		dt{
+			width: 36px;
+			height: 36px;
+			img{
+				width: 100%;
+			}
+		}
+		dd{
+			-webkit-box-flex:1;
+			margin-left: 7px;
+			margin-top: 5px;
+			line-height: 14px;
+			color: #646566;
+			span{
+				display: inline-block;
+				color: #3385ff;
+			}
+		}
+	}
+
+}
+
+.btn{
+	width: 100%;
+	height: 88px;
+	margin-top: 105px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	.callDurationBtn{
+		display: block;
+		width: 92%;
+		height: 48px;
+		line-height: 48px;
+		color: #fff;
+		background: #3385ff;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 auto;
+	}
+	.chatHtml{
+		display: block;
+		color: #3479df;
+		width: 90px;
+		height: 12px;
+		text-decoration: none;
+		margin: 14px auto;
+		img{
+			width: 12px;
+			height: 12px;
+			float: right;
+		}
+	}
+}
+
+
+
+

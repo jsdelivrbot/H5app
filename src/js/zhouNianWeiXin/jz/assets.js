@@ -1,0 +1,25 @@
+var assets = [
+	"../../../img/zhouNianWeiXin/lanscape.gif",
+	"../../../img/zhouNianWeiXin/ld_l.png",
+	"../../../img/zhouNianWeiXin/ld_r.png",
+	"../../../img/zhouNianWeiXin/loading-move.jpg",
+	"../../../img/zhouNianWeiXin/lanscape.gif",
+	"../../../img/zhouNianWeiXin/img_1.png",
+	"../../../img/zhouNianWeiXin/img_2.png",
+	"../../../img/zhouNianWeiXin/img_3.png",
+	"../../../img/zhouNianWeiXin/img_4.png",
+	"../../../img/zhouNianWeiXin/img_5.png",
+	"../../../img/zhouNianWeiXin/page_1Txt_1.png",
+	"../../../img/zhouNianWeiXin/page_1Txt_2.png",
+	"../../../img/zhouNianWeiXin/page_1Txt_3.png",
+	"../../../img/zhouNianWeiXin/page_2Txt_1.png",
+	"../../../img/zhouNianWeiXin/page_2Txt_2.png",
+	"../../../img/zhouNianWeiXin/page_2Txt_3.png",
+	"../../../img/zhouNianWeiXin/page_3Txt_1.png",
+	"../../../img/zhouNianWeiXin/page_3Txt_2.png",
+	"../../../img/zhouNianWeiXin/page_3Txt_3.png",
+	"../../../img/zhouNianWeiXin/page_3Txt_4.png",
+	"../../../img/zhouNianWeiXin/logomax.png",
+	"../../../img/zhouNianWeiXin/back.gif"
+]
+

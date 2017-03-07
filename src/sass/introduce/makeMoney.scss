@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding:0;
+}
+.fl{ float:left;display:inline; }
+.fr{ float:right; display:inline; }
+.clearFix:after{ content:''; display:block; clear:both; }
+.clearFix{ zoom:1; }
+body{
+  background:#f5f7fa;
+  font-size:14px;
+  color:#4c4c4c;
+  /*-webkit-overflow-scrolling : touch;
+  overflow-y:hidden;*/
+}
+body,html{
+  width:100%;
+  height:100%;
+}
+.wrap{
+	padding-bottom: 20px;
+}
+.go_see{
+	width:100%;
+	background:#ecf4ff;
+	padding-top:17px;
+	padding-bottom:15px;
+	font-size:12px; 
+	color:#17181d;
+	
+	div{
+		margin-left:15px;
+	}
+	a{
+		margin-right:14px;
+		color:#4279d6;
+		text-decoration:none;
+		span{
+
+		}
+		b{	
+			width:5px;
+			height:10px;
+			background:url(../../img/introduce/go_see_right.png) no-repeat;
+			background-size:100% 100%;
+			margin-top:1px;
+			margin-left:3px;
+		}
+	}
+}
+.banner{
+	width:100%;
+	height:105px;
+	background:url(../../img/introduce/head_banner.png) top no-repeat;
+	background-size:cover;
+	border-bottom:1px solid #e1e3e6;
+}
+@media screen and (max-width: 320px) {
+    .banner {
+      height:90px;
+    }
+  }
+
+.main{
+	width: 100%;
+	background: #fff;
+	margin-top:10px; 
+	border-bottom: 1px solid #e1e3e6;
+	border-top: 1px solid #e1e3e6;
+	>div{
+		width: 90%;
+		margin: 0 auto;
+		height: 52px;
+		line-height: 52px;
+		border-bottom: 1px solid #e1e3e6;
+		position: relative;
+		img{
+			width: 17px;
+			height: 17px;
+			position: absolute;
+			top: 50%;
+			left: 2px;
+			margin-top: -8.5px;
+		}
+		span{
+			color: #1a1a1a;
+			font-size: 16px;
+			margin-left: 24px;
+		}
+		a{
+			border:1px solid #3eb6fb;
+			color: #3eb6fb;
+			float: right;
+			width: 83px;
+			height: 27px;
+			line-height: 27px;
+			font-size: 12px;
+			-webkit-text-size-adjust: none;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 3px;
+			position: absolute;
+			top: 50%;
+			right: 2px;
+			margin-top: -14.5px;
+
+			
+		}
+	}
+
+.reward{
+	width:16px;
+	height: 17px;
+	margin-top: -8.5px;
+}
+
+.redPacket{
+	width:14.5px;
+	height: 16px;
+	margin-top: -8px;
+}
+.borrow{
+	width:15px;
+	height: 17px;
+	margin-top: -8.5px;
+}
+	p{
+		color: #979799;
+		width: 90%;
+		margin: 0 auto;
+		padding: 20px 0;
+		line-height: 18px;
+		font-size: 13px;
+	}
+	
+}

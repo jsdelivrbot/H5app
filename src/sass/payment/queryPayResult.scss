@@ -1,0 +1,161 @@
+[v-cloak]{display:none;}
+body{ background-color: #f6f7fb;}
+.pay-logo-wraper {
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    img {
+        height: 65px;
+        height:65px;
+    }
+}
+.result-wraper {
+    min-height: 260px;
+}
+.success_area{
+    background-color:#FFF;
+    width:100%;
+    font-family:"Microsoft YaHei";
+    text-align:center;
+    line-height:1;
+    padding: 15px 0 14px;
+    .success_pic{
+        width: 65px;
+        height: 65px;
+        margin-bottom:4px;
+    }
+    .success_text{
+        font-size:14px;
+        color:#656565;
+        margin-bottom:18px;
+    }
+    .random_success{
+        color:#b1b1b3;
+    }
+    .money{
+        font-family:"STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:40px;
+        color:#202020;
+        // margin-bottom:5px;
+        letter-spacing:0px;
+        position:relative;
+        left:-4px;
+    }
+    .payed-total {
+        height: 32px;
+    }
+    .order-total {
+        color:#afb0b3;
+        font-size: 16px;
+        display: inline-block;
+        padding: 0 10px;
+        &::after {
+            display: inline-block;
+            content: "";
+            width: 100%;
+            height: 1px;
+            position: relative;
+            /* top: -23px; */
+            bottom: 22px;
+            background-color: #afb0b3;
+        }
+    }
+    .coupon_money{
+        font-size:14px;
+        color:#b2b2b2;
+        margin-bottom:22px;
+
+    }
+    .marginBtom{
+        margin-bottom:8px;
+            padding-top: 14px;
+        // margin-top: -14px;
+        color:#656566;
+    }
+    .where_method{
+        font-size:12px;
+        color:#b2b2b2;
+    }
+}
+.mingXiList{
+    line-height:1;
+    font-size:14px;
+    color:#7e7f80;
+    padding: 0px 10px;
+    background-color: #FFF;
+    position: relative;
+    li{
+        margin:0 15px;
+        overflow:hidden;
+        padding:7px 0;
+    }
+    li:first-child {
+        padding-top: 10px;
+        &::before {
+              content: '';
+              position: absolute;
+              top: -1px;
+              /* left: 5%; */
+              background: #e1e3e5;
+              width: 87%;
+              height: 1px;
+              -webkit-transform: scaleY(0.5);
+              transform: scaleY(0.5);
+              -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+        }
+    }
+    .hasBorderTop{
+        border-top:1px solid #e1e3e6;
+        padding-top:21px;
+    }
+    span{
+        float:right;
+    }
+    .merchantName{
+        display:inline-block;
+        width:50%;
+        line-height:1.4;
+        text-align:right;
+    }
+
+    &:after {
+          content   : '';
+          position  : absolute;
+          bottom: -1px;
+          left      : 0;
+          background: #e1e3e5;
+          width     : 100%;
+          height    : 1px;
+          -webkit-transform       : scaleY(0.5);
+          transform               : scaleY(0.5);
+          -webkit-transform-origin: 0 0;
+          transform-origin        : 0 0;
+    }
+}
+.btn_group{
+    font-family:"Microsoft YaHei";
+    // border-top:1px solid #e1e3e6;
+    color:#FFF;
+    padding:0 15px;
+
+    li{
+        border-radius:6px;
+        margin:22px 0;
+        height:44px;
+        text-align:center;
+        line-height:44px;
+        letter-spacing:1px;
+    }
+    .btn1{
+        background-color:#3479e0;
+    }
+    .btn2{
+        background-color:#2a61b3;
+    }
+    .btn3{
+        background-color:#9bbcf1;
+    }
+}

@@ -1,0 +1,25 @@
+
+<div class="SelectContainer" style="">
+</div>
+<div class="selects" style="">
+
+<p style="">提醒日期
+
+
+<img  id="hideSelects" src="../../img/creditCard/delete.png">
+</p>
+        <ul id="selectUl" style="">
+        
+<li>
+        1日
+        </li>
+<li>
+        1日
+        </li>
+
+        <li>
+        1日
+        </li>
+        
+        </ul>
+    </div>

@@ -1,0 +1,11 @@
+{
+    "errno":0,
+    "msg":"success",
+    "data": {
+        "amount":"180.00",
+        "payAmount":"100.00",
+        "discountAmount":"80.00",
+        "merName":"永和大王",
+        "payType":"1"
+    }
+}

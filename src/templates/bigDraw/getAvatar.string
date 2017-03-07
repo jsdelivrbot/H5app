@@ -1,0 +1,13 @@
+            <div class="bd_ico">
+            <% if(data.personInfo.avatar){   %>
+                <img src="<%=data.personInfo.avatar%>" alt=""/>
+            <%} else{%>
+             <img src="../../img/bigDraw/default.png" alt=""/>
+            <%}%>
+            </div>
+            <div class="bd_detail">
+                <div>
+                    <p class="bd_title"><%=data.personInfo.name%></p>
+                    <p class="bd_content"><%=data.personInfo.transactionInfo%></p>
+                </div>
+            </div>

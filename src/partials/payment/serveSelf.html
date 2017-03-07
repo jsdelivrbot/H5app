@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>
+            自助买单
+        </title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta content="telephone=no" name="format-detection" />
+        <!-- build:css [cssBuildPath] -->
+        <link rel="stylesheet" href="/css/common/base.css" />
+        <link rel="stylesheet" href="/sass/payment/serveSelf.scss" />
+        <link rel="stylesheet" href="/sass/common/toast.scss" />
+        <!-- endbuild -->
+        <script>
+            var _hmt = _hmt || []; (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b65227112318be3ab7c8c12a81815fd7";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+    
+    <body>
+        <!-- Add your site or application content here -->
+        <div class="container">
+            <div class="topDiv">
+                <!--
+                <div>
+                    <div class="imgContainer" style="    width: 70px;
+    margin: 0 auto;
+    border: 1px solid #B7B4B4;
+    /* display: table; */
+    line-height: 70px;
+    height: 70px;">
+                    <img src="/img/payment/yabo_log.png" />
+                    </div>
+                    <p>
+                        绝味鸭脖
+                    </p>
+                </div>
+                -->
+            </div>
+            <div class="moneyDiv">
+                <p>
+                    消费金额
+                </p>
+                <div>
+                    <label for="money">
+                        ¥
+                    </label>
+                    <input type="number" name="money" id="theMoney"  onpaste="return false" ondragenter="return false" oncontextmenu="return false;" placeholder="请输入需支付的金额"  style="ime-mode:disabled"
+                    value="" />
+                </div>
+            </div>
+            <div class="bottomDiv">
+                <button id="next">
+                    <!-- 下一步 -->
+                    支付
+                </button>
+            </div>
+        </div>
+
+        <div class="tip-container">
+        <div class='wrapper'>
+            <a class="close" href="javascript:void(0);"></a>
+            <p class="title">提示</p>
+            <p class="massage" id="message"><span>提示内容</span></p>
+            <a class="confirm" href="javascript:void(0);">确认</a>
+        </div>
+    </div>
+        <!-- build:js [jsBuildPath] -->
+        <script type="text/javascript" src="/zepto.js/dist/zepto.min.js">
+        </script>
+
+        <script type="text/javascript" src="/microtemplates/index.js">
+        </script>
+        <script type="text/javascript" src="/js/common/toast.js">
+        </script>
+        
+        <script type="text/javascript" src="/js/payment/serveSelf.js">
+        </script>
+
+        
+        <!-- endbuild -->
+    </body>
+
+</html>

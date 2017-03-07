@@ -1,0 +1,276 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #242a33;
+
+	.bank-zs, .bank-zx, .bank-hx, .bank-gf, .bank-bj, .bank-zg, .bank-gs {
+	//红色
+		background: -moz-linear-gradient( right,#ef403b,#eb7846);
+		background: -webkit-linear-gradient( right,#ef403b,#eb7846);
+		background: linear-gradient( right,#ef403b,#eb7846);
+
+		.card-btn {
+			background: #f1504e;
+			border-color: #d73935 !important;
+		}
+	}
+
+	.bank-js, .bank-pf, .bank-xy , .bank-jt{
+		//蓝色
+		background: -moz-linear-gradient( right,#208fd1,#3adee8);
+		background: -webkit-linear-gradient( right,#208fd1,#3adee8);
+		background: linear-gradient( right,#208fd1,#3adee8);
+		
+		.card-btn {
+			background: #3391d3;
+			border-color: #1c80bc !important;
+		}
+	}
+
+	.bank-gd ,.bank-ny{
+		//绿色
+		background: -moz-linear-gradient( right,#1fcb80,#a1d360);
+		background: -webkit-linear-gradient( right,#1fcb80,#a1d360);
+		background: linear-gradient( right,#1fcb80,#a1d360);
+		
+		.card-btn {
+			background: #30cf8f;
+			border-color: #1cb674 !important;
+		}
+	}
+
+	.bank-ms {
+
+		//紫色
+		background: -moz-linear-gradient( right,#ae2adc,#e11cc8);
+		background: -webkit-linear-gradient( right,#ae2adc,#e11cc8);
+		background: linear-gradient( right,#ae2adc,#e11cc8);
+		
+		.card-btn {
+			background: #b540e0;
+			border-color: #9c26c6 !important;
+		}
+	}
+
+	.bank-pa ,.bank-bs{
+
+		//橙色
+		background: -moz-linear-gradient( right,#f36e00,#ffbf00);
+		background: -webkit-linear-gradient( right,#f36e00,#ffbf00);
+		background: linear-gradient( right,#f36e00,#ffbf00);
+		
+		.card-btn {
+			background: #da6200;
+			border-color: #f3781a !important;
+		}
+	}
+
+	.bank-zs {
+		.card-logo {
+			background-position: 6px 6px !important;
+		}
+	}
+
+	.bank-bj {
+		.card-logo {
+			background-position: 5px -36px !important
+		}
+	}
+
+	.bank-ms {
+		.card-logo {
+			background-position: 6px -75px !important;
+		}
+	}
+
+	.bank-js {
+		.card-logo {
+			background-position: 6px -118px !important;
+		}
+	}
+
+	.bank-hx {
+		.card-logo {
+			background-position: 5px -162px !important;
+		}
+	}
+
+	.bank-gf {
+		.card-logo {
+			background-position: 5px -203px !important;
+		}
+	}
+
+	.bank-xy {
+		.card-logo {
+			background-position: 5px -244px !important;
+		}
+	}
+
+	.bank-pf {
+		.card-logo {
+			background-position: 7px -278px !important;
+		}
+	}
+
+	.bank-zx {
+		.card-logo {
+			background-position: 5px -322px !important;
+		}
+	}
+
+	.bank-gd {
+		.card-logo {
+			background-position: 6px -362px !important;
+		}
+	}
+	.bank-pa {
+		.card-logo {
+			background-position: 6px -396px !important;
+		}
+	}
+	.bank-gs {
+		.card-logo {
+		    background-position: 5px -631px !important;
+    		background-size: 31px auto!important;
+		}
+	}
+	.bank-bs {
+		.card-logo {
+			background-position: 6px -437px !important;
+		}
+	}
+	.bank-ny {
+		.card-logo {
+			background-position: 6px -475px !important;
+		}
+	}
+	.bank-zg {
+		.card-logo {
+			background-position: 6px -520px !important;
+		}
+	}
+	.bank-jt{
+		.card-logo {
+			background-position: 6px -567px !important;
+		}
+	}
+	
+	.container {
+		padding: 20px 10px 40px 10px;
+		
+		li {
+			position: relative;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			overflow: hidden;
+			color: #fff;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+
+			.card-ctn {
+				margin-right: 50px;
+				margin-left: 70px;
+				padding: 23px 0 26px 0;
+
+				.card-img {
+					position: absolute;
+					left: 20px;
+					top: 20px;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					overflow: hidden;
+					background: #fff;
+
+					div {
+						height: 100%;
+						background: url( '../../img/creditCard/bank-icons.png' ) no-repeat;
+					    background-size: 30px auto;
+					}
+				}
+
+				.card-info {
+
+					h2 {
+						margin-bottom: 6px;
+						font-size: 16px;
+						letter-spacing: .1em;
+					}
+
+					.card-retuenDay {
+						font-size: 12px;
+						margin-bottom: 36px;
+						opacity: .6;
+					}
+
+					.card-no {
+						font-size: 26px;
+					}
+				}
+			}
+
+			.card-btn {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 50px;
+				height: 100%;
+				border-left: 1px solid;
+				font-size: 18px;
+				color: #fff;
+				text-decoration: none;
+
+				p {
+					position: absolute;
+					top: 50%;
+					margin-top: -30px;
+					width: 100%;
+					line-height: 30px;
+					text-align: center;
+				}
+			}
+		}
+
+		.btn-addCard {
+			display: block;
+			height: 80px;
+			line-height: 80px;
+			color: #bec0c2;
+			text-align: center;
+			border-radius: 5px;
+			border: 2px dashed #485465;
+			text-decoration: none;
+
+			span {
+				padding-left: 24px;
+				background: url( '../../img/creditCard/add.png' ) no-repeat;
+				background-size: contain
+			}
+		}
+
+		.bottom_link {
+			font-size: 14px;
+			color: #7e7f80;
+			float: right;
+			margin: 20px 0;
+			text-decoration: none;
+			img {
+				width: 10px;
+				height: 10px;
+				vertical-align: 0;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.card-no {
+		font-size: 20px !important;
+	}
+}
