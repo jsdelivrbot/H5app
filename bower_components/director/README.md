@@ -58,7 +58,7 @@ Here is a simple example:
     <title>A Gentle Introduction</title>
 
     <script
-      src="https://rawgit.com/flatiron/director/master/build/director.min.js">
+      src="https://cdn.jsdelivr.net/gh/flatiron/director/build/director.min.js">
     </script>
 
     <script>
@@ -106,7 +106,7 @@ Director works great with your favorite DOM library, such as jQuery.
     </script>
 
     <script
-      src="https://rawgit.com/flatiron/director/master/build/director.min.js">
+      src="https://cdn.jsdelivr.net/gh/flatiron/director/build/director.min.js">
     </script>
 
     <script>
